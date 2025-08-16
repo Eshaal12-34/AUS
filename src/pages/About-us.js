@@ -10,7 +10,7 @@ const About = () => {
 
 <>
   <Banner
-    title = "About-Us"
+    title = "About-Uss"
 
   />
   {/* About Activities Section Start */}
