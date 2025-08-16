@@ -7,10 +7,11 @@ import TeamSection from "../components/Team";
 import FAQSection from "../components/Faqs";
 const About = () => {
     return(
-      
+
 <>
   <Banner
     title = "About-Us"
+
   />
   {/* About Activities Section Start */}
 
