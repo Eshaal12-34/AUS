@@ -53,7 +53,6 @@ const Faculty = () => {
             flexWrap: "wrap",
             justifyContent: "center",
             gap: "20px",
-            
           }}
         >
           <div className="box">
