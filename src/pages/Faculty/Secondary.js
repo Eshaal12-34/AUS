@@ -5,10 +5,10 @@ import "../../assets/main.css";
 const Secondary = () => {
   const data = [
     {
-      name: "John Doe",
-      imageUrl: "/assets/img/team/01.jpg",
+      name: "Asif Kamran",
+      imageUrl: "/assets/img/sec-faculty/faculty-1.jpeg",
       designation: "Teacher",
-      subject: "Mathematics",
+      subject: "Physics",
     },
     {
       name: "Jane Smith",

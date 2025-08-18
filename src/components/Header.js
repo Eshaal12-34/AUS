@@ -278,14 +278,14 @@ const Header = () => {
                         </li>
 
                         <li>
-                          <a href="news.html">
+                          <a>
                             Events
-                            <i className="fas fa-angle-down" />
                           </a>
+                            <i className="fas fa-angle-down" />
                           <ul className="submenu">
-                            <li><a href="news-grid.html">FunFair</a></li>
-                            <li><a href="news.html">Recreational Trips</a></li>
-                            <li><a href="news-carousel.html">Annual Day</a></li>
+                            <li><Link to="/funfair">FunFair</Link></li>
+                            <li><Link to="/trips">Recreational Trips</Link></li>
+                            <li><Link to="/annual-day">Annual Day</Link></li>
                             <li><a href="news-details.html">Farewell</a></li>
                             <li><a href="news-details.html">Sports Gala</a></li>
                             <li><a href="news-details.html">Student Engagement</a></li>

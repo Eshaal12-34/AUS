@@ -15,9 +15,12 @@ import Preschool from "./pages/Faculty/Preschool";
 import High from "./pages/Faculty/High";
 import Primary from "./pages/Faculty/Primary";
 import Secondary from "./pages/Faculty/Secondary";
+import Funfair from "./pages/Funfair";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Trips from "./pages/Trips"; 
+import Annual from "./pages/Annual"; 
 
 function App() {
   useEffect(() => {
@@ -41,6 +44,9 @@ function App() {
           <Route path="/high-school" element={<High/>} />
           <Route path="/primary-school" element={<Primary/>} />
           <Route path="/secondary-school" element={<Secondary/>} />
+          <Route path="/funfair" element={<Funfair/>} />
+          <Route path="/trips" element={<Trips/>} /> {/* Add the Trips route */}
+          <Route path="/annual-day" element={<Annual/>} /> {/* Add the Annual Day route */}
           {/* Add additional routes here */}
         </Routes>
         <Footer />

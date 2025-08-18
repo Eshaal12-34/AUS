@@ -5,10 +5,10 @@ import "../../assets/main.css";
 const PreSchool = () => {
   const data = [
     {
-      name: "John Doe",
-      imageUrl: "/assets/img/team/01.jpg",
-      designation: "Teacher",
-      subject: "Mathematics",
+      name: "Laila Saleh",
+      imageUrl: "/assets/img/pre-faculty/faculty1.jpeg",
+      designation: "Teacher/Incharge/Event Organizer",
+      classAssigned : "Kg"
     },
     {
       name: "Jane Smith",
@@ -44,6 +44,7 @@ const PreSchool = () => {
         name={member.name}
         imageUrl={member.imageUrl}
         designation={member.designation}
+        classAssigned={member.classAssigned}
         subjects={member.subject ? [member.subject] : []}
       />
 
