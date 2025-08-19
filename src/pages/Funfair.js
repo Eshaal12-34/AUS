@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import Picture from "../components/Picture";
 import "../assets/main.css";
-import "../assets/scss/_footer.scss"; // Assuming you have a specific SCSS file for Funfair styles
+import "../assets/scss/_footer.scss"; 
 
 const Funfair = () => {
   const pics = [
@@ -19,24 +19,21 @@ const Funfair = () => {
       <Banner title="Funfair" />
 
       <section className="funfair-section section-padding">
-        <div
-          className="container"
-          style={{ position: "relative", textAlign: "center" }}
-        >
+        <div className="container" style={{ position: "relative", textAlign: "center" }}>
           <img
             src="assets/img/balloon.jpg"
             alt="balloon"
-            className="balloon"
+            className="balloon d-none d-lg-block"
             style={{
               position: "absolute",
-              top: "-40px",  
-              right: "1%", 
+              top: "-40px",
+              right: "1%",
               width: "140px",
               height: "auto",
             }}
           />
 
-          {/* Heading stays perfectly centered */}
+          {/* Heading */}
           <h2 style={{ margin: 0 }}>A Celebration of Joy</h2>
 
           <p
@@ -51,53 +48,34 @@ const Funfair = () => {
               fontWeight: "400",
             }}
           >
-            The Abasyn School Funfair was an exciting and unforgettable event that
-            brought together students, teachers, and families for a day filled with
-            joy and laughter. The school grounds were transformed into a colorful
-            carnival, featuring food stalls, thrilling games, creative activities,
-            and vibrant performances. From delicious treats to stage shows, every
-            corner was alive with energy and happiness. The Funfair not only
-            provided entertainment but also created a strong sense of community,
-            where parents, teachers, and students shared wonderful moments together.
-            It was truly a day of celebration, showcasing the talent, creativity,
-            and spirit of Abasyn School.
+           The Abasyn School Funfair was an exciting and unforgettable event that brought together students, teachers, and families for a day filled with joy and laughter. The school grounds were transformed into a colorful carnival, featuring food stalls, thrilling games, creative activities, and vibrant performances. From delicious treats to stage shows, every corner was alive with energy and happiness. The Funfair not only provided entertainment but also created a strong sense of community, where parents, teachers, and students shared wonderful moments together. It was truly a day of celebration, showcasing the talent, creativity, and spirit of Abasyn School.
           </p>
         </div>
 
         {/* Pictures grid */}
-       <section className="funfair-section section-padding" style={{ position: "relative" }}>
-         <div className="frame-shape">
-        <img src="assets/img/frame.png" alt="shape-img"   
-        style={{
+        <section className="funfair-section section-padding" style={{ position: "relative" }}>
+          <div className="frame-shape d-none d-lg-block">
+            <img
+              src="assets/img/frame.png"
+              alt="shape-img"
+              style={{
                 position: "absolute",
-                left: "0",  
-                top: "10%",  
-                transform: "translateY(-50%)", 
-                width: "290px", 
+                left: "0",
+                top: "10%",
+                transform: "translateY(-50%)",
+                width: "290px",
                 height: "auto",
-            }}/>
-        </div>
-        <div
-            style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "20px",
-            maxWidth: "900px",
-            margin: "0 auto",
-            position: "relative",
-            zIndex: "1",
-            }}
-        >
-            {pics.map((pic, index) => (
-            <Picture
-                key={index}
-                imgUrl={pic.imgUrl}
-                description={pic.description}
+              }}
             />
+          </div>
+
+          <div className="funfair-grid">
+            {pics.map((pic, index) => (
+              <Picture key={index} imgUrl={pic.imgUrl} description={pic.description} />
             ))}
-        </div>
+          </div>
         </section>
-        </section>
+      </section>
     </>
   );
 };

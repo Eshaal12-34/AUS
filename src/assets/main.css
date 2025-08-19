@@ -9430,3 +9430,25 @@ input.main-search-input::placeholder {
   50% { transform: translateY(-15px); }
   100% { transform: translateY(0); }
 }
+/* Funfair Grid Responsive Layout */
+.funfair-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;         /* 👈 stretch full width */
+  max-width: 1200px;   /* optional: center & limit max size */
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .funfair-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .funfair-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

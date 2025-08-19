@@ -1,12 +1,11 @@
 import React from "react";
-import "../assets/main.css"; 
+import "../assets/main.css";
 
 const Picture = ({ imgUrl, description }) => {
   const containerStyle = {
-    
     width: "100%",
-    maxWidth: "280px",
-    height: "200px",
+    maxWidth: "100%",     
+    aspectRatio: "4 / 3", 
     margin: "10px auto",
     overflow: "hidden",
     borderRadius: "12px",
@@ -23,7 +22,7 @@ const Picture = ({ imgUrl, description }) => {
 
   const descriptionStyle = {
     marginTop: "8px",
-    fontSize: "15px",
+    fontSize: "1rem", // scales with root font size
     fontWeight: "500",
     textAlign: "center",
     color: "#333",

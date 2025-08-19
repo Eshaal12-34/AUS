@@ -508,13 +508,6 @@ const Home = () => {
           School Happenings
           </h2>
         </div>
-        <a
-          href="news.html"
-          className="theme-btn wow fadeInUp"
-          data-wow-delay=".5s"
-        >
-          See All Events <i className="fa-solid fa-arrow-right-long" />
-        </a>
       </div>
       <div className="news-wrapper">
         <div className="row align-items-center">

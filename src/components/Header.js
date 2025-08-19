@@ -101,11 +101,7 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <p className="text d-none d-xl-block">
-            Nullam dignissim, ante scelerisque the is euismod fermentum odio sem
-            semper the is erat, a feugiat leo urna eget eros. Duis Aenean a
-            imperdiet risus.
-          </p>
+        
           <div className="mobile-menu fix mb-3" />
           <div className="offcanvas__contact">
             <h4>Contact Info</h4>
@@ -257,10 +253,9 @@ const Header = () => {
                             <i className="fas fa-angle-down" />
                           </a>
                           <ul className="submenu">
-                            <li><a href="program-carousel.html">Early Years</a></li>
+                            <li><Link to="/early-years">Early Years</Link></li>
                             <li><a href="program-details.html">Primary</a></li>
                             <li><a href="program-details.html">Secondary</a></li>
-                            <li><a href="program-details.html">High School</a></li>
                           </ul>
                         </li>
 
@@ -286,9 +281,9 @@ const Header = () => {
                             <li><Link to="/funfair">FunFair</Link></li>
                             <li><Link to="/trips">Recreational Trips</Link></li>
                             <li><Link to="/annual-day">Annual Day</Link></li>
-                            <li><a href="news-details.html">Farewell</a></li>
-                            <li><a href="news-details.html">Sports Gala</a></li>
-                            <li><a href="news-details.html">Student Engagement</a></li>
+                            <li><Link to="/farewell">Farewell</Link></li>
+                            <li><Link to="/sports-gala">Sports Gala</Link></li>
+                            <li><Link to="/student-engagement">Student Engagement</Link></li>
                           </ul>
                         </li>
 

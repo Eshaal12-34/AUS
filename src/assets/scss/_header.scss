@@ -1140,3 +1140,31 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: all 0.3s;
 }
+/* _header.scss or a related responsive menu SCSS file */
+
+/* Ensure the submenu has spacing from the parent link */
+#mobile-menu li.has-dropdown {
+  position: relative; /* Ensure submenu can be positioned correctly */
+  
+  > a {
+    display: flex;
+    justify-content: space-between; /* Push the plus button to the right */
+    align-items: center;
+    padding-right: 1rem; /* Optional: add some space for the plus icon */
+  }
+  
+  .submenu {
+    margin-top: 0.5rem; /* Adds spacing between parent item and submenu */
+    padding-left: 1rem; /* Indent submenu a bit */
+  }
+
+  /* Plus icon / toggle button spacing */
+  .fa-angle-down {
+    margin-left: 0.5rem; /* gap between text and plus icon */
+  }
+}
+
+/* Optional: make submenu items more readable */
+#mobile-menu li.has-dropdown .submenu li {
+  padding: 0.5rem 0; /* vertical spacing between submenu items */
+}

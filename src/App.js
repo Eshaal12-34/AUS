@@ -21,6 +21,10 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Trips from "./pages/Trips"; 
 import Annual from "./pages/Annual"; 
+import Engage from "./pages/Engage";
+import Gala from "./pages/Gala";
+import Farewell from "./pages/Farewell";
+import Early from "./pages/Early";
 
 function App() {
   useEffect(() => {
@@ -45,9 +49,12 @@ function App() {
           <Route path="/primary-school" element={<Primary/>} />
           <Route path="/secondary-school" element={<Secondary/>} />
           <Route path="/funfair" element={<Funfair/>} />
-          <Route path="/trips" element={<Trips/>} /> {/* Add the Trips route */}
-          <Route path="/annual-day" element={<Annual/>} /> {/* Add the Annual Day route */}
-          {/* Add additional routes here */}
+          <Route path="/trips" element={<Trips/>} /> 
+          <Route path="/annual-day" element={<Annual/>} /> 
+          <Route path="/student-engagement" element={<Engage/>} /> 
+          <Route path="/sports-gala" element={<Gala/>} /> 
+          <Route path="/farewell" element={<Farewell/>} /> 
+          <Route path="/early-years" element={<Early/>} />
         </Routes>
         <Footer />
       </div>
