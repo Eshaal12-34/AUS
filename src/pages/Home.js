@@ -514,7 +514,7 @@ const Home = () => {
           <div className="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
             <div className="news-single-items">
               <div className="news-image">
-                <img src="assets/img/news/01.jpg" alt="news-img" />
+                <img src="assets/img/sports.jpg" alt="news-img" />
               </div>
               <div className="news-content">
                 <div style={{display:"flex", gap:"5px", justifyContent:"center"}}> 
@@ -551,7 +551,7 @@ const Home = () => {
           <div className="col-xl-6 col-lg-8 mt-5 mt-xl-0">
             <div className="news-right-items wow fadeInUp" data-wow-delay=".4s">
               <div className="news-thumb">
-                <img src="assets/img/news/02.jpg" alt="img" />
+                <img src="assets/img/news/4.jpg" alt="img" />
               </div>
               <div className="news-content">
                 <div style={{display:"flex", gap:"5px", justifyContent:"center"}}> 

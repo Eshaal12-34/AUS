@@ -7,13 +7,13 @@ const Footer = () => {
   {/*<< Footer Section Start >>*/}
   <footer className="footer-section section-bg fix">
     <div className="footer-top-shape">
-      <img src="assets/img/footer-top.png" alt="shape-img" />
+      <img src="/assets/img/footer-top.png" alt="shape-img" />
     </div>
     <div className="frame-shape">
-      <img src="assets/img/frame.png" alt="shape-img" />
+      <img src="/assets/img/frame.png" alt="shape-img" />
     </div>
     <div className="zebra-shape">
-      <img src="assets/img/about/zebra.png" alt="shape-img" />
+      <img src="/assets/img/about/zebra.png" alt="shape-img" />
     </div>
     <div className="container">
       <div className="contact-info-area">

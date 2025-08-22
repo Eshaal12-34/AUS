@@ -4231,6 +4231,7 @@ span {
   font-size: 14px;
   border: none;
 }
+
 .header-1 .header-main .header-right {
   gap: 30px;
 }
@@ -5027,67 +5028,6 @@ span {
   height: 100%;
 }
 
-.nice-select {
-  background-color: transparent;
-  border: transparent;
-  float: initial;
-  overflow: initial;
-  height: initial;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  line-height: 150%;
-  width: 100%;
-  border: none;
-}
-.nice-select:focus, .nice-select:hover {
-  border-color: transparent;
-}
-.nice-select::after {
-  height: 8px;
-  width: 8px;
-  right: -25px;
-  top: 15px;
-  border-color: var(--header);
-  border-bottom: 2px solid var(--header);
-  border-right: 2px solid var(--header);
-}
-.nice-select .list {
-  width: initial;
-  background-color: var(--theme);
-  box-shadow: none;
-  overflow: initial;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  width: 100%;
-  top: 100%;
-  padding: 0;
-  max-height: 50vh;
-  overflow-x: auto;
-  right: -50px;
-}
-.nice-select .list::-webkit-scrollbar {
-  width: 2px;
-  opacity: 1;
-  display: block;
-}
-.nice-select .list::-webkit-scrollbar-button, .nice-select .list::-webkit-scrollbar-thumb {
-  background: var(--header);
-}
-.nice-select .option {
-  background-color: transparent;
-  font-size: 16px;
-  line-height: 150%;
-  padding: 4px 5px;
-  min-height: initial;
-  font-weight: 500;
-}
-.nice-select .option:hover, .nice-select .option:focus, .nice-select .option.selected.focus {
-  background-color: transparent;
-}
-.nice-select .current {
-  font-weight: 500;
-  color: var(--header);
-}
 
 .scroll-up {
   cursor: pointer;
@@ -9451,4 +9391,63 @@ input.main-search-input::placeholder {
     grid-template-columns: 1fr;
   }
 }
+.foundation-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+.academics-section {
+  background: linear-gradient(to right, #e6e6fa, #ffffff);
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
 
+.academics-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.academics-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c2c2c;
+  font-family: 'Merriweather', serif; /* professional font */
+}
+
+.academics-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.academics-icon {
+  font-size: 3rem;
+  color: #6a5acd;
+}
+
+.academics-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.academics-list li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+  position: relative;
+  padding-left: 15px;
+}
+
+.academics-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #6a5acd;
+}
+
+.academics-list li:hover {
+  color: #6a5acd;
+  transition: 0.3s ease;
+}

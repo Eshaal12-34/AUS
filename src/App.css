@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.nice-select {
+  display: none !important;
+  visibility: hidden !important;
+}
+select.form-select {
+  display: block !important;
+  visibility: visible !important;
+  background-color: #fff; /* white background */
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  padding: 8px 12px;
+}

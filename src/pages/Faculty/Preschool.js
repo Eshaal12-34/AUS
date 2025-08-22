@@ -8,7 +8,7 @@ const PreSchool = () => {
       name: "Laila Saleh",
       imageUrl: "/assets/img/pre-faculty/faculty1.jpeg",
       designation: "Teacher/Incharge/Event Organizer",
-      classAssigned : "Kg"
+      email : "laila@gmail.com"
     },
     {
       name: "Jane Smith",
@@ -44,8 +44,7 @@ const PreSchool = () => {
         name={member.name}
         imageUrl={member.imageUrl}
         designation={member.designation}
-        classAssigned={member.classAssigned}
-        subjects={member.subject ? [member.subject] : []}
+        email = {member.email}
       />
 
     </div>

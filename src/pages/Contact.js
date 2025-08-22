@@ -1,6 +1,45 @@
 import React from "react";
 import Banner from "../components/Banner";
+import axios from "axios";
+import { useState } from "react";
 const Contact = () => {
+   const [formData,setFormData] = useState({
+    name:"",
+    email : "",
+    message : ""
+   });
+   const [alert,setAlert] = useState({show:false, message:"", variant:""})
+
+   const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+   };
+
+   const handleSubmit = async(e) => {
+      e.preventDefault();
+
+      try{
+        const response = await axios.post("http://localhost:5000/api/contact",formData);
+
+        if(response.data.success) {
+          setAlert({
+            show: true,
+            message:"Your message has been sent successfully",
+            variant:"success"
+          });
+          setFormData({name:"", email:"", message:""})
+        }
+      }catch(error){
+        setAlert({
+          show:false,
+          message:"Sorry,there was an error sending your message",
+          variant:"danger"
+        })
+        console.error("Error:", error)
+      }
+   }
     return(
        <>
      <Banner
@@ -120,7 +159,7 @@ const Contact = () => {
                 ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor
                 ultrices,
               </p>
-              <form
+              <form onSubmit={handleSubmit}
                 action="contact.php"
                 id="contact-form"
                 method="POST"
@@ -133,6 +172,8 @@ const Contact = () => {
                       <input
                         type="text"
                         name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                         id="name"
                         placeholder="Your Name"
                       />
@@ -144,6 +185,8 @@ const Contact = () => {
                       <input
                         type="text"
                         name="email"
+                        value = {formData.email}
+                        onChange={handleChange}
                         id="email"
                         placeholder="Your Email"
                       />
@@ -155,6 +198,8 @@ const Contact = () => {
                       <textarea
                         name="message"
                         id="message"
+                        value={formData.message}
+                        onChange={handleChange}
                         placeholder="Write Message"
                         defaultValue={""}
                       />

@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const FacultyCard = ({ name, imageUrl, designation, subjects, classAssigned}) => {
+const FacultyCard = ({ name, imageUrl, designation, email, classAssigned}) => {
   return (
     <div
       className="faculty-card card shadow-sm h-100 border-0" 
@@ -39,18 +39,9 @@ const FacultyCard = ({ name, imageUrl, designation, subjects, classAssigned}) =>
     <div className="ms-md-3 text-center text-md-start flex-grow-1">
       <h5 className="mb-1 fw-bold">{name}</h5>
       <p className="mb-2 fst-italic text-muted">{designation}</p>
-      {classAssigned && (
-  <p className="mb-2 fw-semibold" style={{ fontSize: "0.95rem" }}>
-    <span style={{ color: "#0C59BB" }}>Class:</span> {classAssigned}
-  </p>
-)}
-
-      {subjects && subjects.length > 0 && (
-        <p className="mb-0 fw-semibold" style={{ fontSize: "0.95rem" }}>
-          <span style={{ color: "#0C59BB" }}>Subjects:</span>{" "}
-          {subjects.join(", ")}
+      <p className="mb-0 fw-semibold" style={{ fontSize: "0.95rem" }}>
+        <span style={{ color: "#0C59BB" }}>{email}</span>
         </p>
-      )}
     </div>
 </div>
 

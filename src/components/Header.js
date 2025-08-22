@@ -181,7 +181,7 @@ const Header = () => {
       {/* Header Top Section */}
       <div className="header-top-section">
         <div className="header-top-shape">
-          <img src="assets/img/header-top-shape.png" alt="shape-img" />
+          <img src="/assets/img/header-top-shape.png" alt="shape-img" />
         </div>
         <div className="container-fluid">
           <div className="header-top-wrapper">
@@ -215,7 +215,7 @@ const Header = () => {
                 <div className="logo">
                   <Link to="/" className="header-logo">
                     <img
-                      src="assets/img/logo/logo.png"
+                      src="/assets/img/logo/logo.png"
                       alt="logo-img"
                       width="100px"
                     />

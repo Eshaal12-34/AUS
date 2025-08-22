@@ -1,43 +1,40 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Highlights = ({ description, bgColor, title, imgUrl }) => {
+const OurFoundations = (props) => {
   return (
-    <div
-      className="highlight-card"
+    <div className="foundation-card"
       style={{
-        backgroundColor: bgColor || "#f8f9fa",
-        padding: "2rem",
+        backgroundColor: props.bgColor,
         borderRadius: "20px",
-        boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-        transition: "transform 0.2s ease, box-shadow 0.2s ease",
-        maxWidth: "350px",
+        padding: "2rem",
+        boxShadow: "0 6px 15px rgba(0,0,0,0.08)",
         textAlign: "center",
+        transition: "transform 0.3s ease",
       }}
     >
-      <h3 style={{ marginBottom: "1rem", fontWeight: "600", color: "#333", fontWeight: "bold"
-       }}>
-        {title}
+      <div
+        style={{
+          width: "60px",
+          height: "60px",
+          borderRadius: "50%",
+          background: "rgba(255,255,255,0.6)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          margin: "0 auto 1rem",
+        }}
+      >
+        <FontAwesomeIcon icon={props.icon} size="lg" color="#1E3A8A" />
+      </div>
+      <h3 style={{ marginTop: "0.5rem", fontSize: "1.5rem", color: "#333" }}>
+        {props.title}
       </h3>
-
-      {imgUrl && (
-        <img
-          src={imgUrl}
-          alt="Highlight"
-          style={{
-            width: "100%",
-            height: "200px",
-            objectFit: "cover",
-            borderRadius: "12px",
-            marginBottom: "1rem",
-          }}
-        />
-      )}
-
-      <p style={{ textAlign: "justify", color: "#385469", fontSize: "1rem" }}>
-        {description}
+      <p style={{ color: "#555", lineHeight: "1.6", marginTop: "0.5rem" }}>
+        {props.description}
       </p>
     </div>
   );
 };
 
-export default Highlights;
+export default OurFoundations;

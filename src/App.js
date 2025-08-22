@@ -11,10 +11,6 @@ import Contact from "./pages/Contact";
 import VisionMission from "./pages/VM";
 import Faculty from "./pages/Faculty/Faculty";
 import History from "./pages/History";
-import Preschool from "./pages/Faculty/Preschool";
-import High from "./pages/Faculty/High";
-import Primary from "./pages/Faculty/Primary";
-import Secondary from "./pages/Faculty/Secondary";
 import Funfair from "./pages/Funfair";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,6 +21,9 @@ import Engage from "./pages/Engage";
 import Gala from "./pages/Gala";
 import Farewell from "./pages/Farewell";
 import Early from "./pages/Early";
+import AdminForm from "./pages/adminPanel";
+import FacultyList from "./pages/facultyList";
+import CvDetails from "./pages/CV";
 
 function App() {
   useEffect(() => {
@@ -44,10 +43,6 @@ function App() {
           <Route path="/vision-mission" element={<VisionMission/>} />
           <Route path="/history" element={<History/>} />
           <Route path="/faculty" element={<Faculty/>} />
-           <Route path="/pre-school" element={<Preschool/>} />
-          <Route path="/high-school" element={<High/>} />
-          <Route path="/primary-school" element={<Primary/>} />
-          <Route path="/secondary-school" element={<Secondary/>} />
           <Route path="/funfair" element={<Funfair/>} />
           <Route path="/trips" element={<Trips/>} /> 
           <Route path="/annual-day" element={<Annual/>} /> 
@@ -55,6 +50,10 @@ function App() {
           <Route path="/sports-gala" element={<Gala/>} /> 
           <Route path="/farewell" element={<Farewell/>} /> 
           <Route path="/early-years" element={<Early/>} />
+          <Route path="/admin-form" element={<AdminForm/>}/>
+          <Route path="/faculty/:section" element={<FacultyList />} />
+          <Route path="/cv/:id" element={<CvDetails />} />
+
         </Routes>
         <Footer />
       </div>
