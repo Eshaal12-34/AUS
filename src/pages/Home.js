@@ -514,7 +514,7 @@ const Home = () => {
           <div className="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
             <div className="news-single-items">
               <div className="news-image">
-                <img src="assets/img/sports.jpg" alt="news-img" />
+                <img src="assets/img/news/sports.jpg" alt="news-img" />
               </div>
               <div className="news-content">
                 <div style={{display:"flex", gap:"5px", justifyContent:"center"}}> 
