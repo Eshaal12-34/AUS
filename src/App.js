@@ -21,10 +21,11 @@ import Engage from "./pages/Engage";
 import Gala from "./pages/Gala";
 import Farewell from "./pages/Farewell";
 import Early from "./pages/Early";
+import Primary from "./pages/Primary";
 import AdminForm from "./pages/adminPanel";
 import FacultyList from "./pages/facultyList";
 import CvDetails from "./pages/CV";
-
+import Message from "./pages/Message"
 function App() {
   useEffect(() => {
   AOS.init({
@@ -53,6 +54,8 @@ function App() {
           <Route path="/admin-form" element={<AdminForm/>}/>
           <Route path="/faculty/:section" element={<FacultyList />} />
           <Route path="/cv/:id" element={<CvDetails />} />
+          <Route path="message" element={<Message />} />
+           <Route path="primary-year" element={<Primary />} />
 
         </Routes>
         <Footer />

@@ -239,7 +239,7 @@ const Header = () => {
                           </Link>
                           <ul className="submenu">
                             <li><Link to="/vision-mission">Vision & Mission</Link></li>
-                             <li><a href="program-details.html">Principal's Message</a></li>
+                             <li><Link to="/message">Messages</Link></li>
                             <li><Link to="/history">History</Link></li>
                             <li><a href="program-details.html">Achievements</a></li>
                             <li><Link to = "/faculty">Our Faculty</Link></li>
@@ -254,7 +254,7 @@ const Header = () => {
                           </a>
                           <ul className="submenu">
                             <li><Link to="/early-years">Early Years</Link></li>
-                            <li><a href="program-details.html">Primary</a></li>
+                            <li><Link to="/primary-year">Primary</Link></li>
                             <li><a href="program-details.html">Secondary</a></li>
                           </ul>
                         </li>
