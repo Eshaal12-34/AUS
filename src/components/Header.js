@@ -22,7 +22,7 @@ const Header = () => {
       <>
 
       <>
-  {/* Preloader Start */}
+  {/* Preloader Start 
   <div id="preloader" className="preloader">
     <div className="animation-preloader">
       <div className="spinner"></div>
@@ -83,6 +83,7 @@ const Header = () => {
       </div>
     </div>
   </div>
+*/}
 </>
       {/* Offcanvas Area */}
   <div className="fix-area">
