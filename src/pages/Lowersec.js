@@ -7,7 +7,7 @@ import "../assets/main.css";
 import Ecard from "../components/Earlyacard";
 import SubjectsOffered from "../components/Subjects";
 
-const Primary = () => {
+const Lowersec = () => {
    const earlySubjects = [
     {
       id: "english",
@@ -52,23 +52,18 @@ const Primary = () => {
       "At Abasyn University School, our Nazra program helps children develop a strong foundation in Quranic reading and recitation. Through guided practice, repetition, and interactive activities, students learn proper pronunciation, fluency, and comprehension. This program instills confidence, discipline, and respect for the teachings of the Quran.\n\nOur curriculum emphasizes gradual learning, ensuring that students progress at their own pace while mastering correct recitation techniques. Through storytelling, discussion, and memorization exercises, children connect the lessons of the Quran with their everyday lives.\n\nLearning Nazra at our school is engaging and inspiring. Students participate in interactive sessions, group recitations, and activities that make learning meaningful and enjoyable. Our teachers guide students with care, helping them develop spiritual growth, focus, and a lifelong appreciation for the Quran."
   },
   {
-    id: "gk",
-    name: "GK",
+    id: "geo",
+    name: "Geography",
     description:
-     "At Abasyn University School,we teach GK from grade 1 to 3.Our General Knowledge (GK) program inspires children to explore a wide range of topics and gain awareness about the world around them. Through discussions, quizzes, interactive activities, and projects, students learn about current affairs, history, science, cultures, and everyday life skills. This approach builds curiosity, confidence, and a habit of staying informed.Our GK curriculum is designed to meet international standards and emphasizes practical understanding, enabling students to connect what they learn with real-world situations. Group activities, debates, and research projects further strengthen communication, critical thinking, and problem-solving abilities.Learning GK at our school is exciting and engaging. Children enjoy exploring facts, sharing ideas, and participating in activities that make learning dynamic and enjoyable. Our teachers guide them to broaden their horizons, develop awareness, and build a lifelong love for learning and discovery."
+      "At Abasyn University School, our Geography program encourages children to explore the world around them and understand its physical and cultural diversity. Through interactive maps, models, and hands-on activities, students learn about landforms, climates, communities, and ecosystems. This approach develops curiosity, analytical skills, and an understanding of the relationship between people and their environment.\n\nOur geography curriculum aligns with international standards and emphasizes real-life applications, helping students relate geographical concepts to their daily experiences. Collaborative projects and field activities further enhance observation, critical thinking, and problem-solving skills.\n\nLearning geography at our school is engaging and immersive. Children enjoy exploring maps, conducting experiments, and participating in projects that make the subject come alive. Our teachers guide students to understand global connections, encouraging exploration, awareness, and a lasting appreciation for the world."
   },
   {
   id: "computer",
   name: "Computer",
   description:
     "At Abasyn University School, our Computer program introduces children to the exciting world of technology and digital literacy. Students learn essential computer skills, including typing, basic software applications, internet safety, and problem-solving using technology. Through hands-on activities and interactive lessons, children develop confidence and competence in navigating digital tools.\n\nOur curriculum emphasizes practical applications of technology, helping students understand how computers and software are used in real-life situations. Collaborative projects and coding exercises foster creativity, logical thinking, and analytical skills, preparing students for the demands of the modern world.\n\nLearning computers at our school is engaging and fun. Children enjoy exploring programs, creating digital projects, and solving challenges that make technology interactive and meaningful. Our teachers guide students in developing skills that enhance their learning, creativity, and problem-solving abilities, ensuring that every child gains a strong foundation in computer literacy."
-},
-  {
-  id: "sst",
-  name: "Social Studies",
-  description:
-    "At Abasyn University School, our Social Studies program for Grades 4 and 5 introduces students to the foundations of history, geography, civics, and culture in an engaging and age-appropriate way. Through stories, discussions, projects, and interactive activities, children learn about their community, country, and the wider world. This helps them understand social values, cultural diversity, and the importance of being responsible citizens.Our Social Studies curriculum is designed to connect classroom learning with real-life experiences, making lessons meaningful and practical. Students explore topics such as heritage, traditions, maps, government, and global awareness, which strengthen their critical thinking, teamwork, and problem-solving skills.At Abasyn University School, learning Social Studies is more than memorizing facts — it is about understanding people, places, and events in ways that spark curiosity and encourage awareness. By the end of Grade 5, students develop a strong foundation that prepares them for higher-level learning and a deeper understanding of society and the world."
 }
+
   ];
 
   const highlight = [
@@ -97,29 +92,29 @@ const Primary = () => {
   const activities = [
     {
       imageUrl: "assets/img/kinder.jpg",
-      title:"Outdoor Adventures",
-      description:"At Abasyn University School, outdoor adventures allow children to explore nature, play freely, and discover the world around them. Through activities like games, teamwork, and exploration, our students build confidence, strengthen social skills, and develop a love for the environment in fun and meaningful ways"
+      title:"Creative Expressions",
+      description:"At Abasyn University School, creative activities inspire children to imagine, design, and bring their ideas to life. Whether through art, crafts, or performances, students learn to express themselves, build confidence, and develop problem-solving skills while having fun"
     },
     {
       imageUrl: "assets/img/kinder.jpg",
-      title:"Team Work",
-      description:"At Abasyn University School, teamwork helps children learn the value of collaboration and respect. By engaging in group activities, projects, and play, students develop communication skills, problem-solving abilities, and a strong sense of responsibility while working together toward shared goals."
+      title:"Interactive Learning",
+      description:"At Abasyn University School, interactive learning helps students connect knowledge with real-life experiences. Through group projects, discussions, and hands-on activities, they strengthen communication, teamwork, and critical thinking in a supportive environment."
     },
     {
       imageUrl: "assets/img/kinder.jpg",
-      title:"Fun with Friends",
-      description:"At Abasyn University School, children learn the joy of collaboration through activities that encourage friendship, communication, and teamwork. Our teachers guide them in creating meaningful connections, solving problems together, and enjoying shared experiences that make learning both fun and memorable "
+      title:"Physical Well-Being",
+      description:"At Abasyn University School, physical activities encourage students to stay active, healthy, and energized. Through sports, games, and fitness exercises, children develop discipline, teamwork, and a strong sense of sportsmanship while having fun."
     },
     ]
   return (
     <div>
-      <Banner title="Primary Years" />
+      <Banner title="Lower Secondary Years" />
       <div className="container">
         {/* Main description */}
         <div className="Right-section">
           <div className="right-content">
             <h2 className="mt-5" style={{ margin: 0 }}>
-              Primary Years Foundation
+              Lower Secondary Foundation
             </h2>
             <p
               style={{
@@ -133,10 +128,13 @@ const Primary = () => {
                 textAlign: "justify",
               }}
             >
-            Welcome to Abasyn University School & College!
-            We provide a dynamic Primary Years Programme (PYP) that supports children in their most formative years. With a carefully designed curriculum and a team of dedicated teachers, we create a safe, engaging, and inspiring environment where learning becomes a joyful journey.
-            Our programme includes English, Mathematics, Science, Social Studies, Geography, Languages, Arts, ICT, and Physical Education, ensuring a balanced and well-rounded education. We focus on developing curiosity, creativity, problem-solving, and critical thinking skills—qualities that help students thrive in academics and in life.
-            At Abasyn, every child receives personal attention and encouragement to reach their full potential. We believe education is not only about success in school but also about shaping confident, responsible, and compassionate individuals. Choose Abasyn University School & College—and see your child grow, learn, and shine.
+           Abasyn University School & College Lower Secondary Programme (AUSC-LSP) is a well-rounded and forward-looking programme designed to prepare students for the academic and personal challenges of secondary education and beyond. The curriculum has been thoughtfully structured to address the developmental needs of learners at this important stage, equipping them with the skills, knowledge, and values essential for long-term success.
+
+The AUSC-LSP offers a broad spectrum of subjects including Mathematics, Science, Social Studies, Languages, Arts, and Physical Education. Teaching and learning at AUSC are centered on interactive, hands-on, and inquiry-driven approaches that inspire curiosity, enhance problem-solving, and build creativity and critical thinking skills.
+
+Our team of dedicated educators focuses on personalized instruction, ensuring that each student’s unique learning style and strengths are recognized and nurtured. We encourage learners to question, explore, and engage actively with the world around them, fostering a genuine passion for knowledge and discovery.
+
+At Abasyn University School & College, we view education as the cornerstone of a meaningful and successful life. By combining personalized guidance with a commitment to holistic development, we provide students with a strong academic foundation and the confidence to achieve their goals and aspirations.
             </p>
           </div>
         </div>
@@ -173,7 +171,7 @@ const Primary = () => {
   </div>
 </div>
    <div>
-    <h3 style={{ fontSize: "2rem",marginBottom: "1rem",textAlign:"left", marginLeft:"140px"}}>Our Little Explorers in Action</h3>
+    <h3 style={{ fontSize: "2rem",marginBottom: "1rem",textAlign:"left", marginLeft:"140px"}}>Learning Through Experiences</h3>
     <p
      style={{
          fontSize: "1.1rem",
@@ -185,8 +183,8 @@ const Primary = () => {
          fontWeight: "400",
          textAlign: "justify",
               }}
-    >
-     We believe learning happens best through joy and exploration. Here’s a glimpse of our children discovering, creating, and growing every day.</p>
+        >
+        At Abasyn University School, we believe that education goes beyond textbooks and classrooms. By engaging students in outdoor adventures, creative projects, physical activities, and interactive learning, we nurture their curiosity, confidence, and character. These experiences not only build essential life skills but also inspire a lifelong love for learning in fun and meaningful ways.</p>
 
   </div>
     <div>
@@ -204,4 +202,4 @@ const Primary = () => {
   );
 };
 
-export default Primary;
+export default Lowersec;

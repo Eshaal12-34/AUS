@@ -26,6 +26,10 @@ import AdminForm from "./pages/adminPanel";
 import FacultyList from "./pages/facultyList";
 import CvDetails from "./pages/CV";
 import Message from "./pages/Message"
+import Lowersec from "./pages/Lowersec";
+import Policy from "./pages/policy";
+import Examination from "./pages/Examinations";
+import PTM from "./pages/PTM";
 function App() {
   useEffect(() => {
   AOS.init({
@@ -56,7 +60,10 @@ function App() {
           <Route path="/cv/:id" element={<CvDetails />} />
           <Route path="message" element={<Message />} />
            <Route path="primary-year" element={<Primary />} />
-
+          <Route path="lower-secondary-year" element={<Lowersec />}/>
+          <Route path="admission-policy" element={<Policy />}/>
+          <Route path="examination-system" element={<Examination />}/>
+           <Route path="parent-teacher-interaction" element={<PTM />}/>
         </Routes>
         <Footer />
       </div>

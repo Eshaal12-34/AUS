@@ -78,84 +78,102 @@ const Early = () => {
   return (
     <div>
       <Banner title="Early Years" />
-      <div className="container">
-        {/* Main description */}
-        <div className="Right-section">
-          <div className="right-content">
-            <h2 className="mt-5" style={{ margin: 0 }}>
-              Early Years Foundations
-            </h2>
-            <p
-              style={{
-                fontSize: "1.1rem",
-                lineHeight: "1.9",
-                color: "#444",
-                maxWidth: "800px",
-                margin: "20px auto 30px auto",
-                padding: "0 15px",
-                fontWeight: "400",
-                textAlign: "justify",
-              }}
-            >
-            At Abasyn University School, the Early Years program is designed to provide children with a strong foundation for lifelong learning. We believe that the first years of a child’s education are the most important, as they shape curiosity, creativity, and confidence. Our approach combines structured learning with play-based activities, allowing children to explore, imagine, and develop essential skills in a joyful environment. With a focus on language, numeracy, social interaction, and creativity, we ensure that every child receives the care and attention they need to thrive. Our experienced teachers create a safe, nurturing space where children feel valued, respected, and encouraged to express themselves. By fostering independence and a love for learning, we prepare 
-            our students not only for academic success but also for personal growth, teamwork, and future challenges.
-            </p>
-          </div>
+    <div className="container">
+      {/* Main Description */}
+     <div className="row align-items-center mt-4">
+  <div className="col-lg-6 order-lg-2 mb-3 mb-lg-0"> 
+    <img
+      src="assets/img/team/01.jpg"
+      alt="Early Years"
+      width={300}
+      className="img-fluid rounded"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    />
+  </div>
+  <div className="col-lg-6 order-lg-1">
+    <h2
+      className="mt-0" 
+      style={{
+        whiteSpace: "nowrap", 
+        fontSize: "2rem", 
+      }}
+    >
+      Early Years Foundations
+    </h2>
+    <p
+      style={{
+        fontSize: "1.1rem",
+        lineHeight: "1.7", 
+        color: "#444",
+        fontWeight: "400",
+        textAlign: "justify",
+        marginTop: "0.5rem", 
+      }}
+    >
+      At Abasyn University School, the Early Years program is designed to provide children
+      with a strong foundation for lifelong learning. We believe that the first years of a
+      child’s education are the most important, as they shape curiosity, creativity, and
+      confidence. Our approach combines structured learning with play-based activities,
+      allowing children to explore, imagine, and develop essential skills in a joyful
+      environment. With a focus on language, numeracy, social interaction, and creativity,
+      we ensure that every child receives the care and attention they need to thrive. Our
+      experienced teachers create a safe, nurturing space where children feel valued,
+      respected, and encouraged to express themselves. By fostering independence and a love
+      for learning, we prepare our students not only for academic success but also for
+      personal growth, teamwork, and future challenges.
+    </p>
+  </div>
+</div>
 
-          <div data-aos="fade-up" data-aos-delay="300" style={{ marginTop: "100px" }}>
-            <img src="assets/img/team/01.jpg" alt="Vision" />
-          </div>
-        </div>
-      </div>
-<div style={{ backgroundColor: "#F4EEE5", padding: "4rem 2rem",marginTop: "4rem",marginBottom: "4rem", borderRadius: "20px", boxShadow: "0 6px 15px rgba(0,0,0,0.1)" }}>
-  <h2
-    style={{
-      fontSize: "2.5rem",
-      marginBottom: "2rem",
-      textAlign: "center",
-    }}
-  >
+
+      {/* Our Foundations */}
+      <div
+  className="container-fluid my-5 p-5 rounded"
+  style={{
+    backgroundColor: "#F4EEE5",
+    boxShadow: "0 6px 15px rgba(0,0,0,0.1)",
+  }}
+>
+  <h2 className="text-center mb-4" style={{ fontSize: "2.5rem" }}>
     Our Foundations
   </h2>
-
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-      gap: "1.5rem",
-      maxWidth: "1000px",
-      margin: "0 auto",
-    }}
-  >
+  <div className="row g-4 justify-content-center">
     {highlight.map((item, index) => (
-      <OurFoundations
-        key={index}
-        icon={item.icon}
-        title={item.title}
-        description={item.description}
-        bgColor={item.bgColor}
-      />
+      <div key={index} className="col-sm-6 col-md-4 col-lg-3">
+        <OurFoundations
+          icon={item.icon}
+          title={item.title}
+          description={item.description}
+          bgColor={item.bgColor}
+        />
+      </div>
     ))}
   </div>
 </div>
-   <div>
-    <h3 style={{ fontSize: "2rem",marginBottom: "1rem",textAlign:"left", marginLeft:"140px"}}>A Different Way of Learning and Teaching</h3>
-    <p
-     style={{
-         fontSize: "1.1rem",
-         lineHeight: "1.9",
-         color: "#444",
-         maxWidth: "800px",
-         marginLeft: "130px",
-         padding: "0 15px",
-         fontWeight: "400",
-         textAlign: "justify",
-              }}
-    >
-      At Abasyn University School, children explore learning through indoor and outdoor activities that reflect their interests, preferences, and curiosity.
-      By engaging students in what they enjoy, our teachers help them develop essential skills and introduce new concepts within meaningful and purposeful contexts.</p>
 
-  </div>
+      {/* Different Way of Learning */}
+      <div className="row justify-content-center mt-5">
+        <div className="col-lg-8">
+          <h3 className="mb-3">A Different Way of Learning and Teaching</h3>
+          <p
+            style={{
+              fontSize: "1.1rem",
+              lineHeight: "1.9",
+              color: "#444",
+              fontWeight: "400",
+              textAlign: "justify",
+            }}
+          >
+            At Abasyn University School, children explore learning through indoor and outdoor
+            activities that reflect their interests, preferences, and curiosity. By engaging
+            students in what they enjoy, our teachers help them develop essential skills and
+            introduce new concepts within meaningful and purposeful contexts.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div>
       {activities.map((item,index) =>(
          <Ecard 

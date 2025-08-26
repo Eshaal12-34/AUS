@@ -13,7 +13,7 @@ const Message = () => {
      <h2 className='section-title mt-5' data-aos="fade-up" data-aos-delay="300">Principal's Message</h2>
      <div className='Left-section'>
         <div className='left-image' data-aos="fade-up" data-aos-delay="300">
-          <img src="assets/img/principal.jpg" alt="Vision" />
+          <img src="assets/img/principa.jpg" alt="Vision" />
         </div>
         <div className='left-content'>
     
