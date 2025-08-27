@@ -113,7 +113,7 @@ const Lowersec = () => {
         {/* Main description */}
         <div className="Right-section">
           <div className="right-content">
-            <h2 className="mt-5" style={{ margin: 0 }}>
+            <h2 className="mt-5" style={{ margin: 0 }} data-aos="fade-up" data-aos-delay="400">
               Lower Secondary Foundation
             </h2>
             <p
@@ -127,6 +127,7 @@ const Lowersec = () => {
                 fontWeight: "400",
                 textAlign: "justify",
               }}
+              data-aos="fade-up" data-aos-delay="400"
             >
            Abasyn University School & College Lower Secondary Programme (AUSC-LSP) is a well-rounded and forward-looking programme designed to prepare students for the academic and personal challenges of secondary education and beyond. The curriculum has been thoughtfully structured to address the developmental needs of learners at this important stage, equipping them with the skills, knowledge, and values essential for long-term success.
 
@@ -146,6 +147,7 @@ At Abasyn University School & College, we view education as the cornerstone of a
       marginBottom: "2rem",
       textAlign: "center",
     }}
+    data-aos="fade-up" data-aos-delay="400"
   >
     Our Aims
   </h2>
@@ -170,23 +172,30 @@ At Abasyn University School & College, we view education as the cornerstone of a
     ))}
   </div>
 </div>
-   <div>
-    <h3 style={{ fontSize: "2rem",marginBottom: "1rem",textAlign:"left", marginLeft:"140px"}}>Learning Through Experiences</h3>
-    <p
-     style={{
-         fontSize: "1.1rem",
-         lineHeight: "1.9",
-         color: "#444",
-         maxWidth: "800px",
-         marginLeft: "130px",
-         padding: "0 15px",
-         fontWeight: "400",
-         textAlign: "justify",
-              }}
-        >
-        At Abasyn University School, we believe that education goes beyond textbooks and classrooms. By engaging students in outdoor adventures, creative projects, physical activities, and interactive learning, we nurture their curiosity, confidence, and character. These experiences not only build essential life skills but also inspire a lifelong love for learning in fun and meaningful ways.</p>
-
+      <div className="row justify-content-center">
+  <div className="col-lg-10 col-xl-8">
+    <h3 className="mb-3 text-center text-md-start fs-3">
+      Our Little Explorers in Action
+    </h3>
+    <p 
+      className="
+        text-justify 
+        text-center text-md-start 
+        fs-6 fs-md-5 
+        lh-lg lh-md-xl 
+        text-secondary
+      "
+      data-aos="fade-up" data-aos-delay="400"
+    >
+      At Abasyn University School, we believe that education goes beyond textbooks and classrooms. 
+      By engaging students in outdoor adventures, creative projects, physical activities, and 
+      interactive learning, we nurture their curiosity, confidence, and character. These experiences 
+      not only build essential life skills but also inspire a lifelong love for learning in fun and 
+      meaningful ways.
+    </p>
   </div>
+</div>
+
     <div>
       {activities.map((item,index) =>(
          <Ecard 
@@ -203,3 +212,4 @@ At Abasyn University School & College, we view education as the cornerstone of a
 };
 
 export default Lowersec;
+

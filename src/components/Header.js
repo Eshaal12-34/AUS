@@ -198,7 +198,7 @@ const Header = () => {
                               Secondary
                               <ul className="submenu nested">
                                 <li><Link to="/lower-secondary-year">Lower Secondary (6–7)</Link></li>
-                                <li><Link to="/program-details#upper-secondary">Higher Secondary (8–10)</Link></li>
+                                <li><Link to="/higher-secondary-year">Higher Secondary (8–10)</Link></li>
                               </ul>
                             </li>
                           </ul>
@@ -210,7 +210,6 @@ const Header = () => {
                             <i className="fas fa-angle-down" />
                           </a>
                           <ul className="submenu">
-                            <li><Link to="/admission-procedure">Admission Procedure</Link></li>
                             <li><Link to="/admission-policy">Admission Policy</Link></li>
                             <li><a href="/examination-system">Examinations</a></li>
                             <li><a href="program-details.html">Fee Structure</a></li>

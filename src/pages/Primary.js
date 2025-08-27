@@ -132,6 +132,7 @@ const Primary = () => {
                 fontWeight: "400",
                 textAlign: "justify",
               }}
+              data-aos="fade-up" data-aos-delay="400"
             >
             Welcome to Abasyn University School & College!
             We provide a dynamic Primary Years Programme (PYP) that supports children in their most formative years. With a carefully designed curriculum and a team of dedicated teachers, we create a safe, engaging, and inspiring environment where learning becomes a joyful journey.
@@ -148,6 +149,7 @@ const Primary = () => {
       marginBottom: "2rem",
       textAlign: "center",
     }}
+    data-aos="fade-up" data-aos-delay="400"
   >
     Our Aims
   </h2>
@@ -172,24 +174,25 @@ const Primary = () => {
     ))}
   </div>
 </div>
-   <div>
-    <h3 style={{ fontSize: "2rem",marginBottom: "1rem",textAlign:"left", marginLeft:"140px"}}>Our Little Explorers in Action</h3>
-    <p
-     style={{
-         fontSize: "1.1rem",
-         lineHeight: "1.9",
-         color: "#444",
-         maxWidth: "800px",
-         marginLeft: "130px",
-         padding: "0 15px",
-         fontWeight: "400",
-         textAlign: "justify",
-              }}
-    >
-     We believe learning happens best through joy and exploration. Here’s a glimpse of our children discovering, creating, and growing every day.</p>
+   <div className="container my-5">
+      <div className="row justify-content-center">
+        <div className="col-lg-10 col-xl-8">
+          <h3 className="mb-3 text-center text-md-start fs-3">
+            Our Little Explorers in Action
+          </h3>
+          <p 
+            className="text-justify text-center text-md-start fs-6 fs-md-5"
+            style={{ lineHeight: "1.9", color: "#444", fontWeight: "400" }}
+            data-aos="fade-up" data-aos-delay="400"
+          >
+            We believe learning happens best through joy and exploration. Here’s a glimpse 
+            of our children discovering, creating, and growing every day.
+          </p>
+        </div>
+      </div>
+     </div>
 
-  </div>
-    <div>
+     <div>
       {activities.map((item,index) =>(
          <Ecard 
            key = {index}

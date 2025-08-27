@@ -92,7 +92,7 @@ const CvDetails = () => {
                 <strong>{exp.title}</strong> at {exp.organization}
                 <br />
                 <span className="text-muted">
-                  <strong>Years:</strong> {exp.years}
+                  <strong>Years/Duration:</strong> {exp.years}
                 </span>
               </li>
             ))}

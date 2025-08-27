@@ -30,6 +30,7 @@ import Lowersec from "./pages/Lowersec";
 import Policy from "./pages/policy";
 import Examination from "./pages/Examinations";
 import PTM from "./pages/PTM";
+import Higher from "./pages/Highsec";
 function App() {
   useEffect(() => {
   AOS.init({
@@ -59,11 +60,12 @@ function App() {
           <Route path="/faculty/:section" element={<FacultyList />} />
           <Route path="/cv/:id" element={<CvDetails />} />
           <Route path="message" element={<Message />} />
-           <Route path="primary-year" element={<Primary />} />
+          <Route path="primary-year" element={<Primary />} />
           <Route path="lower-secondary-year" element={<Lowersec />}/>
           <Route path="admission-policy" element={<Policy />}/>
           <Route path="examination-system" element={<Examination />}/>
-           <Route path="parent-teacher-interaction" element={<PTM />}/>
+          <Route path="parent-teacher-interaction" element={<PTM />}/>
+          <Route path="higher-secondary-year" element={<Higher />}/>
         </Routes>
         <Footer />
       </div>

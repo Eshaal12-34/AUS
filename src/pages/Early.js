@@ -92,37 +92,42 @@ const Early = () => {
     />
   </div>
   <div className="col-lg-6 order-lg-1">
-    <h2
-      className="mt-0" 
-      style={{
-        whiteSpace: "nowrap", 
-        fontSize: "2rem", 
-      }}
-    >
-      Early Years Foundations
-    </h2>
-    <p
-      style={{
-        fontSize: "1.1rem",
-        lineHeight: "1.7", 
-        color: "#444",
-        fontWeight: "400",
-        textAlign: "justify",
-        marginTop: "0.5rem", 
-      }}
-    >
-      At Abasyn University School, the Early Years program is designed to provide children
-      with a strong foundation for lifelong learning. We believe that the first years of a
-      child’s education are the most important, as they shape curiosity, creativity, and
-      confidence. Our approach combines structured learning with play-based activities,
-      allowing children to explore, imagine, and develop essential skills in a joyful
-      environment. With a focus on language, numeracy, social interaction, and creativity,
-      we ensure that every child receives the care and attention they need to thrive. Our
-      experienced teachers create a safe, nurturing space where children feel valued,
-      respected, and encouraged to express themselves. By fostering independence and a love
-      for learning, we prepare our students not only for academic success but also for
-      personal growth, teamwork, and future challenges.
-    </p>
+   <h2
+  className="mt-0"
+  style={{
+    whiteSpace: "nowrap",
+    fontSize: "clamp(1.5rem, 2.5vw, 2.2rem)", // scales between mobile & desktop
+  }}
+>
+  Early Years Foundations
+</h2>
+
+<p
+  style={{
+    fontSize: "clamp(1rem, 1.8vw, 1.1rem)", // responsive font size
+    lineHeight: "1.7",
+    color: "#444",
+    fontWeight: "400",
+    textAlign: "justify",
+    marginTop: "0.5rem",
+    maxWidth: "900px", // keeps text readable on big screens
+  }}
+  data-aos="fade-up" data-aos-delay="400"
+>
+  At Abasyn University School, the Early Years program is designed to provide
+  children with a strong foundation for lifelong learning. We believe that the
+  first years of a child’s education are the most important, as they shape
+  curiosity, creativity, and confidence. Our approach combines structured
+  learning with play-based activities, allowing children to explore, imagine,
+  and develop essential skills in a joyful environment. With a focus on
+  language, numeracy, social interaction, and creativity, we ensure that every
+  child receives the care and attention they need to thrive. Our experienced
+  teachers create a safe, nurturing space where children feel valued, respected,
+  and encouraged to express themselves. By fostering independence and a love for
+  learning, we prepare our students not only for academic success but also for
+  personal growth, teamwork, and future challenges.
+</p>
+
   </div>
 </div>
 
@@ -154,24 +159,22 @@ const Early = () => {
 
       {/* Different Way of Learning */}
       <div className="row justify-content-center mt-5">
-        <div className="col-lg-8">
-          <h3 className="mb-3">A Different Way of Learning and Teaching</h3>
-          <p
-            style={{
-              fontSize: "1.1rem",
-              lineHeight: "1.9",
-              color: "#444",
-              fontWeight: "400",
-              textAlign: "justify",
-            }}
-          >
-            At Abasyn University School, children explore learning through indoor and outdoor
-            activities that reflect their interests, preferences, and curiosity. By engaging
-            students in what they enjoy, our teachers help them develop essential skills and
-            introduce new concepts within meaningful and purposeful contexts.
-          </p>
-        </div>
-      </div>
+  <div className="col-lg-8">
+    <h3 className="mb-3 text-center text-md-start" data-aos="fade-up" data-aos-delay="400">
+      A Different Way of Learning and Teaching
+    </h3>
+    <p 
+      className="text-justify text-center text-md-start fs-6 fs-md-5"
+      style={{ lineHeight: "1.9", color: "#444", fontWeight: "400" }} data-aos="fade-up" data-aos-delay="400"
+    >
+      At Abasyn University School, children explore learning through indoor and outdoor
+      activities that reflect their interests, preferences, and curiosity. By engaging
+      students in what they enjoy, our teachers help them develop essential skills and
+      introduce new concepts within meaningful and purposeful contexts.
+    </p>
+  </div>
+</div>
+
     </div>
 
     <div>

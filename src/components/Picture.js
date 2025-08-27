@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/main.css";
 
-const Picture = ({ imgUrl, description }) => {
+const Picture = ({ imgUrl, description, marks }) => {
   const containerStyle = {
     width: "100%",
     maxWidth: "100%",     
@@ -35,6 +35,7 @@ const Picture = ({ imgUrl, description }) => {
         <img src={imgUrl} alt="Picture" style={imageStyle} />
       </div>
       <p style={descriptionStyle}>{description}</p>
+      <span>{marks}</span>
     </div>
   );
 };

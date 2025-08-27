@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import '../assets/scss/_team.scss'; // contains team styling
+import '../assets/scss/_team.scss'; 
 import '../assets/main.css';
 
 const Gallery = () => {
@@ -24,7 +24,7 @@ const Gallery = () => {
         <div className="section-title-area">
           <div className="section-title mt-60">
             <span>Gallery</span>
-            <h2>Our Photo Gallery</h2>
+            <h2 data-aos="fade-up" data-aos-delay="400">Our Photo Gallery</h2>
           </div>
         </div>
 

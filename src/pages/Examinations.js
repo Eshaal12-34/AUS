@@ -8,14 +8,14 @@ const Examination = () => {
   return (
     <>   <Banner title="Examination System"/>
     <div className="timeline-container">
-      <h2 className="timeline-title">Academic Structure</h2>
+      <h2 className="timeline-title" data-aos="fade-up" data-aos-delay="400">Academic Structure</h2>
 
       <div className="timeline">
         {/* KG–VI */}
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>Classes KG – VI</h3>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="400">
               The academic year is structured into <b>four quarters</b>. Each quarter includes carefully designed assessments that monitor student progress and provide timely feedback for improvement.
             </p>
           </div>
@@ -25,7 +25,7 @@ const Examination = () => {
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>Classes VII – X</h3>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="400">
               Students participate in <b>Mid-Term and Final Examinations</b>, which help build a strong foundation and ensure readiness for board-level education.
             </p>
           </div>
@@ -35,10 +35,10 @@ const Examination = () => {
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>Conceptual Assessments</h3>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="400">
               In addition to traditional exams, students engage in <b>interactive assessments</b> such as presentations, listening exercises, and discussions. These activities foster confidence, enhance communication skills, and prepare students for future challenges.
             </p>
-            <div className="timeline-dot">
+            <div className="timeline-dot" data-aos="fade-up" data-aos-delay="400">
               <div className="circle">
                 <FontAwesomeIcon icon={faChalkboardTeacher} className="fa-icon" />
                 Presentations

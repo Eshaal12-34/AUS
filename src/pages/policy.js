@@ -37,6 +37,7 @@ const Policy = () => {
               margin: "0 auto 50px auto",
               lineHeight: "1.7",
             }}
+            data-aos="fade-up" data-aos-delay="400"
           >
             We ensure a transparent and fair admission process to help students
             join our academic journey with ease.
