@@ -6,12 +6,12 @@ import "../assets/scss/_footer.scss";
 
 const Engage = () => {
   const pics = [
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/se/se.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/se/se1.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl:  "assets/img/se/se2.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl:  "assets/img/se/se3.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl:  "assets/img/se/se4.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl:  "assets/img/se/se5.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
   ];
 
   return (

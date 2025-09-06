@@ -1,23 +1,26 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Carousel from "../components/Carasouel";
+import Picture from "../components/Picture";
 
 const Sports = () => {   
-   const slidesData = [
+   const pics = [
     {
-      imgUrl: "assets/img/annual.JPG",
-      title: "Last Day Memories",
-      description: "Capturing the joy of our farewell day.",
+      imgUrl: "assets/img/sports/sports1.jpeg",
     },
     {
-      imgUrl: "assets/img/about/01.jpg",
-      title: "Last Day Memories",
-      description: "Capturing the joy of our farewell day.",
+      imgUrl: "assets/img/sports/sports2.jpeg"
     },
     {
-      imgUrl: "assets/img/about/01.jpg",
-      title: "Last Day Memories",
-      description: "Capturing the joy of our farewell day.",
+     imgUrl: "assets/img/sports/sports5.jpeg",
+    },
+     {
+      imgUrl: "assets/img/sports/sports4.jpeg",
+    },
+    {
+      imgUrl: "assets/img/sports/sports3.jpeg",
+    },
+    {
+       imgUrl: "assets/img/sports/sports6.jpeg",
     },
   ];
 
@@ -25,23 +28,6 @@ const Sports = () => {
     <>
       <Banner title="Sports Gala" />
       <section className="farewell-section section-padding position-relative">
-        <div className="frame-shape d-none d-md-block">
-          <img
-            src="assets/img/frame.png"
-            alt="shape-img"
-            className="img-fluid"
-            style={{
-              position: "absolute",
-              left: "0",
-              top: "30%",
-              transform: "translateY(-50%)",
-              maxWidth: "250px",
-              height: "auto",
-              zIndex: "-1",
-            }}
-          />
-        </div>
-
         <div className="container text-center">
           <h2 className="mb-4">Fuel the Spirit</h2>
           <p
@@ -59,10 +45,28 @@ const Sports = () => {
             The event brings together students from all grades to participate in a wide range of athletic activities, from track races to exciting team sports. It not only highlights physical fitness and competitive spirit but also instills values of discipline, unity, and resilience. Parents and teachers join in to cheer, making the gala a memorable occasion that inspires confidence, strengthens friendships, and promotes a healthy lifestyle for every student.
           </p>
 
-          {/* Responsive Carousel */}
-          <div className="mx-auto" style={{ maxWidth: "1000px" }}>
-            <Carousel slides={slidesData} />
+          <section className="funfair-section section-padding" style={{ position: "relative" }}>
+          <div className="frame-shape d-none d-lg-block">
+            <img
+              src="assets/img/frame.png"
+              alt="shape-img"
+              style={{
+                position: "absolute",
+                left: "0",
+                top: "10%",
+                transform: "translateY(-85%)",
+                width: "290px",
+                height: "auto",
+              }}
+            />
           </div>
+
+          <div className="funfair-grid">
+            {pics.map((pic, index) => (
+              <Picture key={index} imgUrl={pic.imgUrl} description={pic.description} />
+            ))}
+          </div>
+        </section>
         </div>
       </section>
     </>

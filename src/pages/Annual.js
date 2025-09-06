@@ -6,13 +6,18 @@ import "../assets/scss/_footer.scss"; // Assuming you have a specific SCSS file 
 
 const Annual = () => {
     const pics = [
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/annual/annual1.jpeg" },
+    { imgUrl:"assets/img/annual/annual2.jpeg"},
+    { imgUrl: "assets/img/annual/annual3.jpeg" },
+    { imgUrl: "assets/img/annual/annual4.jpeg" },
+    { imgUrl: "assets/img/annual/annual5.jpeg" },
+    { imgUrl: "assets/img/annual/annual6.jpeg" },
+     { imgUrl: "assets/img/annual/annual7.jpeg" },
+    { imgUrl: "assets/img/annual/annual88.jpeg"},
+    { imgUrl: "assets/img/annual/annual9.jpeg"},
   ];
+
+
 
   return (
     <>

@@ -6,13 +6,17 @@ import "../assets/scss/_footer.scss";
 
 const Funfair = () => {
   const pics = [
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/funfair/funfair1.jpg"},
+    { imgUrl: "assets/img/funfair/funfair2.jpg"},
+    { imgUrl: "assets/img/funfair/funfair3.jpg" },
+    { imgUrl: "assets/img/funfair/funafair4.jpeg" },
+    { imgUrl:"assets/img/funfair/funfair5.jpeg"},
+    { imgUrl: "assets/img/funfair/funfair.jpeg" },
+    { imgUrl: "assets/img/funfair/funfair7.jpeg"},
+    { imgUrl: "assets/img/funfair/funfair8.jpeg"},
+    { imgUrl: "assets/img/funfair/funfair9.jpeg"},
   ];
+
 
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
-import '../assets/scss/_testimonial.scss';
-import '../assets/main.css';
+import "../assets/scss/_testimonial.scss";
+import "../assets/main.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,31 +10,39 @@ const TestimonialItem = ({ description, bgColor }) => (
     className="testimonial-item"
     style={{
       backgroundColor: bgColor,
-      position: "relative",
-      padding: "2rem 2.5rem 1rem",
-      borderRadius: "70px 20px 10px 20px",
+      padding: "2rem 2.5rem 2.5rem",
+      borderRadius: "25px",
       color: "white",
+      minHeight: "300px", // same height for all
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      position: "relative",
+      margin: "0 10px",
     }}
   >
+    <p className="testimonial-text" style={{ flexGrow: 1 }}>
+      {description}
+    </p>
+
+    <hr className="testimonial-divider" />
+
+    {/* Speech bubble tail */}
     <div
       style={{
         position: "absolute",
-        bottom: "-25px",
-        left: "25px",
+        bottom: "-20px",
+        left: "40px",
         width: 0,
         height: 0,
-        borderTop: `25px solid ${bgColor}`,
+        borderTop: `20px solid ${bgColor}`,
         borderLeft: "15px solid transparent",
         borderRight: "15px solid transparent",
       }}
     ></div>
-
-    <p className="testimonial-text">
-      {description}
-    </p>
-    <hr className="testimonial-divider" />
   </div>
 );
+
 
 const Testimonial = () => {
   const testi = [
@@ -72,16 +80,16 @@ const Testimonial = () => {
 
   const settings = {
     infinite: true,
-    speed: 1000,
-    slidesToShow: 4, 
+    speed: 800,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     responsive: [
-      { breakpoint: 1200, settings: { slidesToShow: 4 } },
-      { breakpoint: 1080, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
+      { breakpoint: 1400, settings: { slidesToShow: 4 } },
+      { breakpoint: 1200, settings: { slidesToShow: 3 } },
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 576, settings: { slidesToShow: 1 } },
     ],
   };
 
@@ -90,11 +98,9 @@ const Testimonial = () => {
       <div className="bee-shape float-bob-y">
         <img src="assets/img/testi-bee-shape.png" alt="shape-img" />
       </div>
+
       <div className="section-title text-center">
-        <span
-          className="wow fadeInUp"
-          style={{ marginTop: "140px" }}
-        >
+        <span className="wow fadeInUp" style={{ marginTop: "140px" }}>
           testimonials
         </span>
         <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -102,15 +108,19 @@ const Testimonial = () => {
         </h2>
       </div>
 
-      <Slider {...settings}>
-        {testi.map((item, index) => (
-          <TestimonialItem
-            key={index}
-            description={item.description}
-            bgColor={item.bgColor}
-          />
-        ))}
-      </Slider>
+      <div className="container">
+        <Slider {...settings}>
+          {testi.map((item, index) => (
+            <div key={index} style={{ padding: "0 10px", height: "100%" }}>
+              {/* ✅ wrapper ensures equal slide height */}
+              <TestimonialItem
+                description={item.description}
+                bgColor={item.bgColor}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 };

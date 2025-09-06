@@ -6,12 +6,12 @@ import "../assets/scss/_footer.scss"; // Assuming you have a specific SCSS file 
 
 const Trip = () => {
   const pics = [
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/about/01.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/trip/trip1.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/trip/trip2.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/trip/trip7.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/trip/trip11.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/trip/trip12.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/trip/trip1.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
   ];
 
   return (

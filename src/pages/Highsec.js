@@ -169,7 +169,7 @@ const Higher = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 d-flex">
+          <div className="col-md-6 d-flex mb-4">
             <FaHeart size={40} className="me-3 text-danger" />
             <div>
               <h5 style={{ fontWeight: "600" }}>Emotional & Social Support</h5>
@@ -182,35 +182,7 @@ const Higher = () => {
       </div>
     </section>
 
-    <section className="team-section">
-      <div className="container">
-  <div className="section-title mt-60 text-center">
-    <h2 data-aos="fade-up" data-aos-delay="400">Our Alumni</h2>
-  </div>
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={20}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
-          loop={true}
-          breakpoints={{
-            320: { slidesPerView: 1 },  // Mobile
-            721: { slidesPerView: 3 },  // Tablet & small laptops
-            1401: { slidesPerView: 4 }, // Large desktops
-          }}
-        >
-          {Alumni.map((item, index) => (
-            <SwiperSlide key={index}>
-              <Card
-                title={<span className="team-title">{item.title}</span>}
-                imageUrl={item.imageUrl}
-                description={<span className="team-desc">{item.description}</span>}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </section>
-        </div>
+    </div>
      </div>
     </>
   );

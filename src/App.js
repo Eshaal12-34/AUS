@@ -19,7 +19,6 @@ import Trips from "./pages/Trips";
 import Annual from "./pages/Annual"; 
 import Engage from "./pages/Engage";
 import Gala from "./pages/Gala";
-import Farewell from "./pages/Farewell";
 import Early from "./pages/Early";
 import Primary from "./pages/Primary";
 import AdminForm from "./pages/adminPanel";
@@ -31,6 +30,8 @@ import Policy from "./pages/policy";
 import Examination from "./pages/Examinations";
 import PTM from "./pages/PTM";
 import Higher from "./pages/Highsec";
+import Fee from "./pages/Fees";
+import Scholarship from "./pages/ScholarshipTemp";
 function App() {
   useEffect(() => {
   AOS.init({
@@ -54,7 +55,6 @@ function App() {
           <Route path="/annual-day" element={<Annual/>} /> 
           <Route path="/student-engagement" element={<Engage/>} /> 
           <Route path="/sports-gala" element={<Gala/>} /> 
-          <Route path="/farewell" element={<Farewell/>} /> 
           <Route path="/early-years" element={<Early/>} />
           <Route path="/admin-form" element={<AdminForm/>}/>
           <Route path="/faculty/:section" element={<FacultyList />} />
@@ -66,6 +66,8 @@ function App() {
           <Route path="examination-system" element={<Examination />}/>
           <Route path="parent-teacher-interaction" element={<PTM />}/>
           <Route path="higher-secondary-year" element={<Higher />}/>
+          <Route path="fee-structure" element={<Fee />}/>
+          <Route path="scholarships" element={<Scholarship />}/>
         </Routes>
         <Footer />
       </div>

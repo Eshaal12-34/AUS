@@ -212,8 +212,8 @@ const Header = () => {
                           <ul className="submenu">
                             <li><Link to="/admission-policy">Admission Policy</Link></li>
                             <li><a href="/examination-system">Examinations</a></li>
-                            <li><a href="program-details.html">Fee Structure</a></li>
-                            <li><a href="program-details.html">Scholarships</a></li>
+                            <li><Link to="/fee-structure">Fee Structure</Link></li>
+                            <li><Link to="/scholarships">Scholarships</Link></li>
                           </ul>
                         </li>
 
@@ -226,7 +226,6 @@ const Header = () => {
                             <li><Link to="/funfair">FunFair</Link></li>
                             <li><Link to="/trips">Recreational Trips</Link></li>
                             <li><Link to="/annual-day">Annual Day</Link></li>
-                            <li><Link to="/farewell">Farewell</Link></li>
                             <li><Link to="/sports-gala">Sports Gala</Link></li>
                             <li><Link to="/student-engagement">Student Engagement</Link></li>
                           </ul>

@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../assets/scss/_hero.scss';
-import TeamSection from "../components/Team";
 import Testimonial from "../components/Testimonial";
 import Gallery from "../components/Gallery";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 
 const Home = () => {
@@ -107,7 +108,7 @@ const Home = () => {
               <div className="col-lg-6">
                 <div className="about-image-items">
                   <div className="about-image" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/img/about/02.jpg" alt="about-img" />
+                    <img src="assets/img/news/assembly.jpg" alt="about-img" />
                   </div>
                   <div className="about-image-2" data-aos="fade-up" data-aos-delay="300">
                     <img src="assets/img/about/02.png" alt="about-img" />
@@ -364,7 +365,7 @@ const Home = () => {
         <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
           <div className="activities-img-items">
             <div className="activities-image">
-              <img src="assets/img/about/03.jpg" alt="img" />
+              <img src="assets/img/activites.jpg" alt="img" />
             </div>
             <div className="radius-shape">
               <img src="assets/img/about/radius-shape-1.png" alt="img" />
@@ -448,8 +449,22 @@ const Home = () => {
     </div>
   </div>
 </section>
-{/*Teamsection*/}
+{/*Teamsection
 <TeamSection/>
+*/}
+<div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+  <h2>Meet Our Staff</h2>
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src="assets/img/staff.jpg" className="d-block w-70 mx-auto" alt="staff1" />
+    </div>
+    <div className="carousel-item">
+      <img src="assets/img/staff2.jpg" className="d-block w-70 mx-auto" alt="staff2" />
+    </div>
+  </div>
+</div>
+
+
 {/*Testimonial section*/}
 <Testimonial/>
 
@@ -486,7 +501,7 @@ const Home = () => {
         </div>
         <div className="col-lg-5 wow fadeInUp" data-wow-delay=".4s">
           <div className="cta-image">
-            <img src="assets/img/cta/cta-1.png" alt="cta-img" />
+            <img src="assets/img/cta.png" alt="cta-img" />
             <div className="cta-shape">
               <img src="assets/img/cta/cta-shape.png" alt="img" />
             </div>
