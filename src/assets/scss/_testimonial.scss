@@ -2,35 +2,24 @@
   padding: 60px 0;
   position: relative;
 
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-
-  .slick-slider {
-    margin-left: 0;   /* remove forced stretching */
-    margin-right: 0;
-  }
-
   .slick-slide {
     display: flex !important;
     justify-content: center;
+    align-items: flex-start; /* ✅ prevents vertical stretch */
     padding: 10px;
     box-sizing: border-box;
   }
 
   .slick-slide > div {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    height: auto !important;  /* ✅ override react-slick default */
+    display: flex;
+    justify-content: center;
   }
 
   .testimonial-item {
     width: 100%;
-    max-width: 350px;   /* ✅ keep fixed width per slide */
-    min-height: auto;   /* ✅ allow natural height on all screens */
+    max-width: 350px;
+    min-height: 240px;  /* ✅ consistent but not too tall */
     padding: 2rem 2.5rem 2.5rem;
     border-radius: 25px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.07);
@@ -51,9 +40,10 @@
     text-align: justify;
   }
 
-  /* ✅ Mobile fixes */
   @media (max-width: 576px) {
     .testimonial-item {
+      max-width: 90%;   /* ✅ prevent full-screen stretching */
+      min-height: auto; /* ✅ let it shrink naturally */
       padding: 1.5rem;
       font-size: 15px;
     }
