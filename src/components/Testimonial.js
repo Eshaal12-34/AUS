@@ -1,31 +1,21 @@
 import React from "react";
-import '../assets/scss/_testimonial.scss';
+import "../assets/scss/_testimonial.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialItem = ({ description, bgColor }) => (
-  <div
-    className="testimonial-item"
-    style={{ backgroundColor: bgColor }}
-  >
+  <div className="testimonial-item" style={{ backgroundColor: bgColor }}>
     <p className="testimonial-text">{description}</p>
     <hr className="testimonial-divider" />
 
-    {/* Speech bubble tail */}
+    {/* Bubble Tail */}
     <div
       className="speech-tail"
       style={{
-        position: "absolute",
-        bottom: "-20px",
-        left: "40px",
-        width: 0,
-        height: 0,
         borderTop: `20px solid ${bgColor}`,
-        borderLeft: "15px solid transparent",
-        borderRight: "15px solid transparent",
       }}
-    ></div>
+    />
   </div>
 );
 
@@ -33,27 +23,27 @@ const Testimonial = () => {
   const testi = [
     {
       description:
-        "Our child feels safe and encouraged here, and we truly appreciate the school’s focus on both academic excellence and personal development in a friendly environment.",
+        "Our child feels safe and encouraged here, and we truly appreciate the school’s focus on both academic excellence and personal development.",
       bgColor: "#2f4661",
     },
     {
       description:
-        "The school’s communication with parents is excellent, and the teachers always go above and beyond to help our child succeed academically and emotionally with kindness.",
+        "The school’s communication with parents is excellent, and the teachers always go above and beyond to help our child succeed.",
       bgColor: "#6d9ba4",
     },
     {
       description:
-        "We love how this school fosters creativity, confidence, and respect in our child, creating a positive atmosphere that motivates them to attend school happily every morning.",
+        "We love how this school fosters creativity, confidence, and respect in our child, motivating them every morning.",
       bgColor: "#2e6e44",
     },
     {
       description:
-        "From day one, the school staff made us feel welcome, and our child’s progress and happiness here exceed all our expectations consistently throughout the year.",
+        "From day one, the school staff made us feel welcome, and our child’s progress here exceeds all expectations.",
       bgColor: "#2f4661",
     },
     {
       description:
-        "Being part of this community has brought us peace of mind, knowing our child is supported by caring teachers in a safe, inspiring, and motivating environment.",
+        "Being part of this community brings us peace of mind, knowing our child is supported by caring teachers.",
       bgColor: "#6d9ba4",
     },
   ];
@@ -61,42 +51,25 @@ const Testimonial = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
+    swipeToSlide: true,
     responsive: [
-      {
-        breakpoint: 1200, // lg
-        settings: { slidesToShow: 3 }
-      },
-      {
-        breakpoint: 992, // md
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 768, // sm
-        settings: { slidesToShow: 1, arrows: true, centerMode: false }
-      },
-      {
-        breakpoint: 576, // xs
-        settings: { slidesToShow: 1, arrows: false, centerMode: false }
-      }
-    ]
+      { breakpoint: 1200, settings: { slidesToShow: 3 } },
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1, arrows: false } },
+      { breakpoint: 576, settings: { slidesToShow: 1, arrows: false } },
+    ],
   };
 
   return (
     <section className="testimonial-section">
-      <div className="bee-shape float-bob-y">
-        <img src="assets/img/testi-bee-shape.png" alt="shape-img" />
-      </div>
-
       <div className="section-title text-center">
-        <span className="wow fadeInUp" style={{ marginTop: "140px" }}>
-          testimonials
-        </span>
-        <h2 className="wow fadeInUp mb-4" data-wow-delay=".3s">
+        <span>Testimonials</span>
+        <h2>
           Parents' words are the key <br /> to happy kids
         </h2>
       </div>
@@ -104,12 +77,11 @@ const Testimonial = () => {
       <div className="testimonial-container">
         <Slider {...settings}>
           {testi.map((item, index) => (
-            <div key={index}>
-              <TestimonialItem
-                description={item.description}
-                bgColor={item.bgColor}
-              />
-            </div>
+            <TestimonialItem
+              key={index}
+              description={item.description}
+              bgColor={item.bgColor}
+            />
           ))}
         </Slider>
       </div>
