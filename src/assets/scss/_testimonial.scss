@@ -53,9 +53,9 @@
 
   /* ✅ Mobile fixes */
 @media (max-width: 576px) {
-  .testimonial-item {
+   .testimonial-item {
     max-width: 90%;
-    min-height: auto; /* ✅ no forced height */
+    min-height: auto;
     padding: 1.2rem;
   }
     .testimonial-text {

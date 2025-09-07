@@ -13,7 +13,6 @@ const TestimonialItem = ({ description, bgColor }) => (
       padding: "2rem 2.5rem 2.5rem",
       borderRadius: "25px",
       color: "white",
-      minHeight: "300px", // same height for all
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
