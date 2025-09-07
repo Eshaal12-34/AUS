@@ -54,7 +54,7 @@
 @media (max-width: 576px) {
   .testimonial-section .testimonial-item {
     max-width: 90% !important;
-    min-height: 100px !important;
+    max-height: 100px !important;
     padding: 1.2rem !important;
   }
 }
