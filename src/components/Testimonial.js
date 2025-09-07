@@ -103,7 +103,7 @@ const Testimonial = () => {
         <span className="wow fadeInUp" style={{ marginTop: "140px" }}>
           testimonials
         </span>
-        <h2 className="wow fadeInUp" data-wow-delay=".3s">
+        <h2 className="wow fadeInUp mb-4" data-wow-delay=".3s">
           Parents' words are the key <br /> to happy kids
         </h2>
       </div>

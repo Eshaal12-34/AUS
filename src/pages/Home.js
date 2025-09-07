@@ -501,9 +501,9 @@ const Home = () => {
         </div>
         <div className="col-lg-5 wow fadeInUp" data-wow-delay=".4s">
           <div className="cta-image">
-            <img src="assets/img/cta.png" alt="cta-img" />
+            <img src="assets/img/cta.png" alt="cta-img" className="img-fluid" />
             <div className="cta-shape">
-              <img src="assets/img/cta/cta-shape.png" alt="img" />
+              <img src="assets/img/cta/cta-shape.png" alt="img"/>
             </div>
           </div>
         </div>

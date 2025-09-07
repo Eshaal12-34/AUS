@@ -471,3 +471,49 @@
     font-size: 1rem;
   }
 }
+/* ✅ Testimonial Section Fix */
+.testimonial-section {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .slick-slide > div {
+    width: 100%;
+    max-width: 100%; /* prevent stretching */
+    box-sizing: border-box;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 2.5rem 2.5rem;
+    border-radius: 25px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+
+  /* ✅ Mobile fixes */
+  @media (max-width: 576px) {
+    .testimonial-item {
+      padding: 1.5rem;
+      font-size: 15px;
+      min-height: auto; /* allow natural height */
+    }
+    .testimonial-text {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+}
