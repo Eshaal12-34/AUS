@@ -1,6 +1,4 @@
 import React from "react";
-import "../assets/scss/_testimonial.scss";
-import "../assets/main.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +8,6 @@ const TestimonialItem = ({ description, bgColor }) => (
     className="testimonial-item"
     style={{
       backgroundColor: bgColor,
-      padding: "2rem 2.5rem 2.5rem",
       borderRadius: "25px",
       color: "white",
       display: "flex",
@@ -18,16 +15,17 @@ const TestimonialItem = ({ description, bgColor }) => (
       justifyContent: "space-between",
       position: "relative",
       margin: "0 10px",
+      height: "100%",
+      padding: "2rem 1.5rem 2.5rem"
     }}
   >
-    <p className="testimonial-text" style={{ flexGrow: 1 }}>
-      {description}
-    </p>
+    <p className="testimonial-text">{description}</p>
 
     <hr className="testimonial-divider" />
 
     {/* Speech bubble tail */}
     <div
+      className="speech-tail"
       style={{
         position: "absolute",
         bottom: "-20px",
@@ -41,7 +39,6 @@ const TestimonialItem = ({ description, bgColor }) => (
     ></div>
   </div>
 );
-
 
 const Testimonial = () => {
   const testi = [
@@ -73,38 +70,44 @@ const Testimonial = () => {
   ];
 
   const settings = {
+    dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
     responsive: [
-      { breakpoint: 1400, settings: { slidesToShow: 4 } },
-      { breakpoint: 1200, settings: { slidesToShow: 3 } },
-      { breakpoint: 992, settings: { slidesToShow: 2 } },
-      { breakpoint: 576, settings: { slidesToShow: 1 } },
-    ],
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '40px'
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          arrows: false
+        }
+      }
+    ]
   };
-
-  <Slider
-  dots={true}
-  infinite={true}
-  speed={500}
-  slidesToShow={3}
-  slidesToScroll={1}
-  responsive={[
-    {
-      breakpoint: 992, // tablets
-      settings: { slidesToShow: 2 }
-    },
-    {
-      breakpoint: 576, // phones
-      settings: { slidesToShow: 1 }
-    }
-  ]}
-/>
-
 
   return (
     <section className="testimonial-section">
@@ -124,8 +127,7 @@ const Testimonial = () => {
       <div className="container">
         <Slider {...settings}>
           {testi.map((item, index) => (
-            <div key={index} style={{ padding: "0 10px", height: "100%" }}>
-              {/* ✅ wrapper ensures equal slide height */}
+            <div key={index}>
               <TestimonialItem
                 description={item.description}
                 bgColor={item.bgColor}
@@ -134,6 +136,88 @@ const Testimonial = () => {
           ))}
         </Slider>
       </div>
+
+      <style jsx>{`
+        .testimonial-section {
+          padding: 60px 0;
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .container {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 15px;
+        }
+        
+        /* Slick slider adjustments */
+        .slick-slider {
+          margin: 0 -10px;
+        }
+        
+        .slick-list {
+          overflow: visible;
+        }
+        
+        .slick-slide {
+          padding: 20px 10px;
+          height: auto;
+        }
+        
+        .slick-track {
+          display: flex;
+          align-items: stretch;
+        }
+        
+        .testimonial-item {
+          width: 100%;
+          padding: 2rem 1.5rem 2.5rem;
+          border-radius: 25px;
+          box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: transform 0.2s;
+          height: 100%;
+        }
+        
+        .testimonial-item:hover {
+          transform: translateY(-8px) scale(1.03);
+        }
+        
+        .testimonial-text {
+          margin-bottom: 0.7rem;
+          line-height: 1.5;
+          text-align: justify;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+          .slick-slider {
+            margin: 0 -5px;
+          }
+          
+          .slick-slide {
+            padding: 10px 5px;
+          }
+          
+          .testimonial-item {
+            padding: 1.5rem 1rem 2rem;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .testimonial-item {
+            max-width: 100% !important;
+            padding: 1.2rem !important;
+          }
+          
+          .slick-slide {
+            padding: 5px;
+          }
+        }
+      `}</style>
     </section>
   );
 };
