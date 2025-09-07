@@ -47,11 +47,6 @@ const Testimonial = () => {
   const testi = [
     {
       description:
-        "We are extremely happy with this school; the teachers are very supportive, nurturing, and dedicated, which makes our child excited to learn and grow every single day.",
-      bgColor: "#2e6e44",
-    },
-    {
-      description:
         "Our child feels safe and encouraged here, and we truly appreciate the school’s focus on both academic excellence and personal development in a friendly environment.",
       bgColor: "#2f4661",
     },
@@ -91,6 +86,25 @@ const Testimonial = () => {
       { breakpoint: 576, settings: { slidesToShow: 1 } },
     ],
   };
+
+  <Slider
+  dots={true}
+  infinite={true}
+  speed={500}
+  slidesToShow={3}
+  slidesToScroll={1}
+  responsive={[
+    {
+      breakpoint: 992, // tablets
+      settings: { slidesToShow: 2 }
+    },
+    {
+      breakpoint: 576, // phones
+      settings: { slidesToShow: 1 }
+    }
+  ]}
+/>
+
 
   return (
     <section className="testimonial-section">

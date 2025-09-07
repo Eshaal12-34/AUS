@@ -51,18 +51,14 @@
     text-align: justify;
   }
 
-  /* ✅ Mobile fixes */
 @media (max-width: 576px) {
-   .testimonial-item {
-    max-width: 90%;
-    min-height: auto;
-    padding: 1.2rem;
+  .testimonial-section .testimonial-item {
+    max-width: 90% !important;
+    min-height: auto !important;
+    padding: 1.2rem !important;
   }
-    .testimonial-text {
-      font-size: 14px;
-      line-height: 1.6;
-    }
 }
+
 /* Force slick track to fit content height */
 .slick-track {
   display: flex !important;
