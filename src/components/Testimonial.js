@@ -1,5 +1,5 @@
 import React from "react";
- import '../assets/scss/_testimonial.scss'
+import '../assets/scss/_testimonial.scss';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,21 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 const TestimonialItem = ({ description, bgColor }) => (
   <div
     className="testimonial-item"
-    style={{
-      backgroundColor: bgColor,
-      borderRadius: "25px",
-      color: "white",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-between",
-      position: "relative",
-      margin: "0 10px",
-      height: "100%",
-      padding: "2rem 1.5rem 2.5rem"
-    }}
+    style={{ backgroundColor: bgColor }}
   >
     <p className="testimonial-text">{description}</p>
-
     <hr className="testimonial-divider" />
 
     {/* Speech bubble tail */}
@@ -80,32 +68,20 @@ const Testimonial = () => {
     autoplaySpeed: 2500,
     responsive: [
       {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        }
+        breakpoint: 1200, // lg
+        settings: { slidesToShow: 3 }
       },
       {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        }
+        breakpoint: 992, // md
+        settings: { slidesToShow: 2 }
       },
       {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          centerPadding: '40px'
-        }
+        breakpoint: 768, // sm
+        settings: { slidesToShow: 1, arrows: true, centerMode: false }
       },
       {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-          arrows: false
-        }
+        breakpoint: 576, // xs
+        settings: { slidesToShow: 1, arrows: false, centerMode: false }
       }
     ]
   };
@@ -125,7 +101,7 @@ const Testimonial = () => {
         </h2>
       </div>
 
-      <div className="container">
+      <div className="testimonial-container">
         <Slider {...settings}>
           {testi.map((item, index) => (
             <div key={index}>
