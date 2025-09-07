@@ -96,32 +96,4 @@
     }
   }
 }
-/* Fix slick stretching issue */
-.slick-track {
-  display: flex !important;
-  align-items: flex-start !important; /* don't stretch to tallest */
-}
 
-.slick-slide {
-  display: flex !important;
-  height: auto !important;
-}
-
-.slick-slide > div {
-  height: auto !important;
-}
-
-/* Make testimonial card height natural */
-.testimonial-item {
-  height: auto !important;
-  min-height: unset !important;
-  max-width: 100%;
-  padding: 1.5rem;
-}
-
-/* Fix text being too tall */
-.testimonial-text {
-  text-align: left !important; /* justify makes mobile text look stretched */
-  line-height: 1.5 !important;
-  font-size: 14px !important;
-}

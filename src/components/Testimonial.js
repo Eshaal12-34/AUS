@@ -1,8 +1,11 @@
 import React from "react";
 import "../assets/scss/_testimonial.scss";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 
 const TestimonialItem = ({ description, bgColor }) => (
   <div className="testimonial-item" style={{ backgroundColor: bgColor }}>
@@ -48,23 +51,6 @@ const Testimonial = () => {
     },
   ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    swipeToSlide: true,
-    responsive: [
-      { breakpoint: 1200, settings: { slidesToShow: 3 } },
-      { breakpoint: 992, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1, arrows: false } },
-      { breakpoint: 576, settings: { slidesToShow: 1, arrows: false } },
-    ],
-  };
-
   return (
     <section className="testimonial-section">
       <div className="section-title text-center">
@@ -75,15 +61,27 @@ const Testimonial = () => {
       </div>
 
       <div className="testimonial-container">
-        <Slider {...settings}>
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={3}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          breakpoints={{
+            1200: { slidesPerView: 3 },
+            992: { slidesPerView: 2 },
+            0: { slidesPerView: 1 }, // mobile
+          }}
+        >
           {testi.map((item, index) => (
-            <TestimonialItem
-              key={index}
-              description={item.description}
-              bgColor={item.bgColor}
-            />
+            <SwiperSlide key={index}>
+              <TestimonialItem
+                description={item.description}
+                bgColor={item.bgColor}
+              />
+            </SwiperSlide>
           ))}
-        </Slider>
+        </Swiper>
       </div>
     </section>
   );
