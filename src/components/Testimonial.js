@@ -1,4 +1,5 @@
 import React from "react";
+ import '../assets/scss/_testimonial.scss'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -136,88 +137,6 @@ const Testimonial = () => {
           ))}
         </Slider>
       </div>
-
-      <style jsx>{`
-        .testimonial-section {
-          padding: 60px 0;
-          position: relative;
-          overflow: hidden;
-        }
-        
-        .container {
-          width: 100%;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 15px;
-        }
-        
-        /* Slick slider adjustments */
-        .slick-slider {
-          margin: 0 -10px;
-        }
-        
-        .slick-list {
-          overflow: visible;
-        }
-        
-        .slick-slide {
-          padding: 20px 10px;
-          height: auto;
-        }
-        
-        .slick-track {
-          display: flex;
-          align-items: stretch;
-        }
-        
-        .testimonial-item {
-          width: 100%;
-          padding: 2rem 1.5rem 2.5rem;
-          border-radius: 25px;
-          box-shadow: 0 6px 24px rgba(0,0,0,0.07);
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          transition: transform 0.2s;
-          height: 100%;
-        }
-        
-        .testimonial-item:hover {
-          transform: translateY(-8px) scale(1.03);
-        }
-        
-        .testimonial-text {
-          margin-bottom: 0.7rem;
-          line-height: 1.5;
-          text-align: justify;
-        }
-        
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-          .slick-slider {
-            margin: 0 -5px;
-          }
-          
-          .slick-slide {
-            padding: 10px 5px;
-          }
-          
-          .testimonial-item {
-            padding: 1.5rem 1rem 2rem;
-          }
-        }
-        
-        @media (max-width: 576px) {
-          .testimonial-item {
-            max-width: 100% !important;
-            padding: 1.2rem !important;
-          }
-          
-          .slick-slide {
-            padding: 5px;
-          }
-        }
-      `}</style>
     </section>
   );
 };
