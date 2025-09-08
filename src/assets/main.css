@@ -9298,7 +9298,7 @@ input.main-search-input::placeholder {
   .testimonial-wrapper-2 .testimonial-right {
     margin-left: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
 .Left-section{
   display:flex;
   flex-direction:row;
@@ -9511,7 +9511,6 @@ input.main-search-input::placeholder {
 }
 
 .circle {
-  border-radius: 50%;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6); /* gradient */
   height: 200px;
   width: 200px;

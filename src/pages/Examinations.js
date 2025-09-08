@@ -32,28 +32,31 @@ const Examination = () => {
         </div>
 
         {/* Conceptual */}
-        <div className="timeline-item">
-          <div className="timeline-content">
-            <h3>Conceptual Assessments</h3>
-            <p data-aos="fade-up" data-aos-delay="400">
-              In addition to traditional exams, students engage in <b>interactive assessments</b> such as presentations, listening exercises, and discussions. These activities foster confidence, enhance communication skills, and prepare students for future challenges.
-            </p>
-            <div className="timeline-dot" data-aos="fade-up" data-aos-delay="400">
-              <div className="circle">
-                <FontAwesomeIcon icon={faChalkboardTeacher} className="fa-icon" />
-                Presentations
-              </div>
-              <div className="circle">
-                <FontAwesomeIcon icon={faHeadphones} className="fa-icon" />
-                Listening Assessments
-              </div>
-              <div className="circle">
-                <FontAwesomeIcon icon={faComments} className="fa-icon" />
-                Conversations
-              </div>
-            </div>
+          <div className="timeline-item col-12 col-md-6 col-lg-12">
+      <div className="timeline-content">
+        <h3>Conceptual Assessments</h3>
+        <p data-aos="fade-up" data-aos-delay="400">
+          In addition to traditional exams, students engage in <b>interactive assessments</b> such as presentations, listening exercises, and discussions. These activities foster confidence, enhance communication skills, and prepare students for future challenges.
+        </p>
+
+        {/* Circles / Dots */}
+        <div className="timeline-dot d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="400">
+          <div className="circle d-flex align-items-center gap-2 p-2 rounded-circle bg-light">
+            <FontAwesomeIcon icon={faChalkboardTeacher} className="fa-icon" />
+            Presentations
+          </div>
+          <div className="circle d-flex align-items-center gap-2 p-2 rounded-circle bg-light">
+            <FontAwesomeIcon icon={faHeadphones} className="fa-icon" />
+            Listening Assessments
+          </div>
+          <div className="circle d-flex align-items-center gap-2 p-2 rounded-circle bg-light">
+            <FontAwesomeIcon icon={faComments} className="fa-icon" />
+            Conversations
           </div>
         </div>
+      </div>
+    </div>
+
       </div>
     </div>
     </>
