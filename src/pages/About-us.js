@@ -5,6 +5,8 @@ import '../assets/scss/_section.scss'
 import "../assets/main.css"
 import TeamSection from "../components/Team";
 import FAQSection from "../components/Faqs";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 const About = () => {
     return(
 
@@ -200,7 +202,18 @@ const About = () => {
     </div>
   </section>
 
-  <TeamSection/>
+<div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+  <h2 className="mt-5">Meet Our Staff</h2>
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src="assets/img/staff.jpg" className="d-block w-70 mx-auto img-fluid" alt="staff1" />
+    </div>
+    <div className="carousel-item">
+      <img src="assets/img/staff2.jpg" className="d-block w-70 mx-auto img-fluid" alt="staff2" />
+    </div>
+  </div>
+</div>
+
 </>
 )
 };

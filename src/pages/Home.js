@@ -54,7 +54,7 @@ const Home = () => {
                 Students actively participate in co-curricular and extracurricular activities throughout the year.
                 Experienced teachers ensure students get individual attention and a supportive learning environment.
                 </p>
-                <div className="hero-button">
+                <div className="hero-button ">
                   <Link to="contact-us"
                     className="theme-btn"
                     data-aos="fade-up"
@@ -62,19 +62,6 @@ const Home = () => {
                   >
                     Apply Today <i className="fa-solid fa-arrow-right-long" />
                   </Link>
-                  <span
-                    className="button-text"
-                    data-aos="fade-up"
-                    data-aos-delay="800"
-                  >
-                    <a
-                      href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                      className="video-btn ripple video-popup"
-                    >
-                      <i className="fa-solid fa-play" />
-                    </a>
-                    <span className="ms-4 d-line">Play Video</span>
-                  </span>
                 </div>
               </div>
             </div>
@@ -214,9 +201,6 @@ const Home = () => {
                 <div className="program-content text-center">
                   <h4><a href="program-details.html">Science Labs</a></h4>
                   <p >Hands-on experiments in physics, chemistry, and biology that turn curiosity into real discovery.</p>
-                  <a href="program-details.html" className="arrow-icon">
-                    <i className="fa-solid fa-arrow-right-long" />
-                  </a>
                 </div>
               </div>
             </div>
@@ -230,9 +214,6 @@ const Home = () => {
                 <div className="program-content text-center">
                   <h4><a href="program-details.html">Computer Lab</a></h4>
                   <p> Modern computers and software empower students to learn, create, and innovate with technology.</p>
-                  <a href="program-details.html" className="arrow-icon color-2">
-                    <i className="fa-solid fa-arrow-right-long" />
-                  </a>
                 </div>
               </div>
             </div>
@@ -246,111 +227,15 @@ const Home = () => {
                 <div className="program-content text-center style-2">
                   <h4><a href="program-details.html">library</a></h4>
                   <p> A quiet, resource-rich space where students read, research, and grow their knowledge daily.</p>
-                  <a href="program-details.html" className="arrow-icon">
-                    <i className="fa-solid fa-arrow-right-long" />
-                  </a>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Work Process Section */}
-       <section className="work-process-section fix section-padding fix">
-  <div className="container">
-    <div className="process-work-wrapper">
-      <div className="row g-4">
-        <div
-          className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-          data-wow-delay=".3s"
-        >
-          <div className="work-process-items text-center">
-            <div className="line-shape">
-              <img src="assets/img/process/line.png" alt="shape-img" />
-            </div>
-            <div
-              className="icon bg-cover"
-              style={{
-                backgroundImage: 'url("assets/img/process/icon-bg.png")'
-              }}
-            >
-              <i className="icon-icon-1" />
-            </div>
-            <div className="content">
-              <h4>Choose A Service</h4>
-              <p>In a free hour, when our power of choice is untrammeled and</p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-          data-wow-delay=".5s"
-        >
-          <div className="work-process-items text-center style-2">
-            <div className="line-shape-2">
-              <img src="assets/img/process/line-2.png" alt="shape-img" />
-            </div>
-            <div
-              className="icon bg-cover"
-              style={{
-                backgroundImage: 'url("assets/img/process/icon-bg.png")'
-              }}
-            >
-              <i className="icon-icon-2" />
-            </div>
-            <div className="content">
-              <h4>Expert Teachers</h4>
-              <p>In a free hour, when our power of choice is untrammeled and</p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-          data-wow-delay=".7s"
-        >
-          <div className="work-process-items text-center">
-            <div className="line-shape">
-              <img src="assets/img/process/line.png" alt="shape-img" />
-            </div>
-            <div
-              className="icon bg-cover"
-              style={{
-                backgroundImage: 'url("assets/img/process/icon-bg.png")'
-              }}
-            >
-              <i className="icon-icon-3" />
-            </div>
-            <div className="content">
-              <h4>E-Learning Media</h4>
-              <p>In a free hour, when our power of choice is untrammeled and</p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-          data-wow-delay=".8s"
-        >
-          <div className="work-process-items text-center">
-            <div className="content style-two">
-              <h4>Full Day Programs</h4>
-              <p>In a free hour, when our power of choice is untrammeled and</p>
-            </div>
-            <div
-              className="icon bg-cover"
-              style={{
-                backgroundImage: 'url("assets/img/process/icon-bg.png")'
-              }}
-            >
-              <i className="icon-icon-4" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{/* Work Process Section End */}
 
+      
       </section>
 <section className="about-activities-section section-padding pt-0">
   <div className="pencil-shape">
@@ -456,10 +341,10 @@ const Home = () => {
   <h2>Meet Our Staff</h2>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="assets/img/staff.jpg" className="d-block w-70 mx-auto" alt="staff1" />
+      <img src="assets/img/staff.jpg" className="d-block w-70 mx-auto img-fluid" alt="staff1" />
     </div>
     <div className="carousel-item">
-      <img src="assets/img/staff2.jpg" className="d-block w-70 mx-auto" alt="staff2" />
+      <img src="assets/img/staff2.jpg" className="d-block w-70 mx-auto img-fluid" alt="staff2" />
     </div>
   </div>
 </div>
@@ -563,48 +448,50 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-8 mt-5 mt-xl-0">
-            <div className="news-right-items wow fadeInUp" data-wow-delay=".4s">
-              <div className="news-thumb">
-                <img src="assets/img/news/4.jpg" alt="img" />
-              </div>
-              <div className="news-content">
-                <div style={{display:"flex", gap:"5px", justifyContent:"center"}}> 
-                  <div>
-                 <i class="fas fa-bus"  style= {{color: "#FF0000"}}></i>
-                  </div>
-                <h3>
-                  <a href="news-details.html">
-                    Recreational Trip
-                  </a>
-                </h3>
-                </div>
-                 <p style={{textAlign:"justify"}}>
-                  An exciting day filled with fun, adventure, and learning beyond the classroom. Our students enjoyed activities, games, and bonding moments in a refreshing outdoor environment.
-                </p>
-              </div>
-            </div>
-            <div className="news-right-items wow fadeInUp" data-wow-delay=".6s">
-              <div className="news-thumb">
-                <img src="assets/img/news/03.jpg" alt="img" />
-              </div>
-              <div className="news-content">
-                <div style={{display:"flex", gap:"5px", justifyContent:"center"}}> 
-                  <div>
-                 <i class="fas fa-smile-beam"  style= {{color: "#FF0000"}}></i>
-                  </div>
-                <h3>
-                  <a href="news-details.html">
-                   Funfair Festivities<br />
-                  </a>  
-                </h3>
-                </div>
-                 <p style={{textAlign:"justify"}}>
-                   Our annual Funfair brought students, teachers, and families together for a day full of laughter, exciting games, delicious treats, and colorful stalls — creating memories that will last a lifetime.
-                  </p>
-              </div>
-            </div>
-          </div>
+          <div className="col-xl-6 col-lg-8 mt-5 mt-xl-0">  
+  <div className="news-right-items wow fadeInUp" data-wow-delay=".4s">  
+    <div className="news-thumb text-center">   {/* Added text-center here */}
+      <img src="assets/img/news/4.jpg" alt="img" className="d-inline-block" /> {/* img-fluid + d-inline-block */}
+    </div>  
+    <div className="news-content">  
+      <div style={{display:"flex", gap:"5px", justifyContent:"center"}}>  
+        <div>  
+          <i className="fas fa-bus" style={{color: "#FF0000"}}></i>  
+        </div>  
+        <h3>  
+          <a href="news-details.html">  
+            Recreational Trip  
+          </a>  
+        </h3>  
+      </div>  
+      <p style={{textAlign:"justify"}}>  
+        An exciting day filled with fun, adventure, and learning beyond the classroom. Our students enjoyed activities, games, and bonding moments in a refreshing outdoor environment.  
+      </p>  
+    </div>  
+  </div>  
+
+  <div className="news-right-items wow fadeInUp" data-wow-delay=".6s">  
+    <div className="news-thumb text-center">   {/* Added text-center here */}
+      <img src="assets/img/news/03.jpg" alt="img" className="d-inline-block" /> {/* img-fluid + d-inline-block */}
+    </div>  
+    <div className="news-content">  
+      <div style={{display:"flex", gap:"5px", justifyContent:"center"}}>  
+        <div>  
+          <i className="fas fa-smile-beam" style={{color: "#FF0000"}}></i>  
+        </div>  
+        <h3>  
+          <a href="news-details.html">  
+            Funfair Festivities<br />  
+          </a>  
+        </h3>  
+      </div>  
+      <p style={{textAlign:"justify"}}>  
+        Our annual Funfair brought students, teachers, and families together for a day full of laughter, exciting games, delicious treats, and colorful stalls — creating memories that will last a lifetime.  
+      </p>  
+    </div>  
+  </div>  
+</div>
+
         </div>
       </div>
     </div>
