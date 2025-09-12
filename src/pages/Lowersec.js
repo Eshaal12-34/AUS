@@ -4,67 +4,66 @@ import "../assets/main.css";
 import { faSeedling, faLaptopCode , faPeopleRoof} from "@fortawesome/free-solid-svg-icons";
 import OurFoundations from "../components/Highlights";
 import "../assets/main.css";
-import Ecard from "../components/Earlyacard";
 import SubjectsOffered from "../components/Subjects";
 
 const Lowersec = () => {
-   const earlySubjects = [
-    {
-      id: "english",
-      name: "English",
-      description:
-        "At Abasyn University School, we recognize that mastering English is key to thriving in the modern world. Our English curriculum is designed to strengthen students’ reading, writing, listening, and speaking skills. Through a blend of classroom teaching, collaborative projects, and technology-enhanced learning, we ensure that every student engages in ways that match their individual learning style.Our curriculum follows internationally recognized standards, including the Common European Framework of Reference (CEFR), and focuses on practical language use in real-life situations. Alongside language proficiency, we emphasize the development of critical thinking skills, preparing students to navigate today’s fast-paced and ever-changing world.Learning English at our school is both fun and meaningful. Our teachers incorporate interactive activities, games, and multimedia tools to make lessons engaging and effective. Students are also encouraged to join language clubs, debating societies, drama groups, and creative writing workshops to further enhance their communication skills and foster creativity."
-    },
-    {
-      id: "maths",
-      name: "Maths",
-      description:
-        "At Abasyn University School, we aim to make mathematics both engaging and meaningful. Our curriculum is designed to help students build strong numeracy skills, logical thinking, and problem-solving abilities. Through a mix of hands-on activities, collaborative projects, and technology-based learning, we ensure that every student can learn in a way that suits their individual style.Our mathematics program aligns with internationally recognized standards and emphasizes practical applications, helping students understand how math relates to real-life situations. We also focus on developing critical thinking and analytical skills, which are essential for success in today’s dynamic world.Learning math at our school is interactive and fun. Students explore numbers, patterns, shapes, and measurements through games, experiments, and creative problem-solving activities. Our teachers encourage curiosity and experimentation, ensuring that every child builds confidence while discovering the joy of mathematics."
-    },
-   {
+   const middleSubjects = [
+  {
+    id: "english",
+    name: "English",
+    description:
+      "At Abasyn University School, the English curriculum for Grades 6–7 is designed to build strong communication skills and critical thinking. Students work on advanced reading comprehension, structured writing, grammar, and vocabulary development. They also practice listening and speaking through debates, presentations, and group discussions. The program follows international standards such as CEFR, ensuring that students are prepared for both academic success and real-world communication. Literature study, creative writing, and drama activities help learners express themselves confidently while developing a deeper appreciation of the language."
+  },
+  {
+    id: "maths",
+    name: "Maths",
+    description:
+      "Our Mathematics program for Grades 6–7 emphasizes logical reasoning, analytical skills, and problem-solving. Students explore fractions, ratios, percentages, geometry, algebra, and data handling with a focus on practical applications. Through hands-on projects, puzzles, and technology-based exercises, learners connect mathematical concepts to real-life situations. The curriculum encourages curiosity and independent thinking, helping students gain confidence in tackling challenging problems while building a strong foundation for higher-level mathematics."
+  },
+  {
     id: "science",
     name: "Science",
     description:
-      "At Abasyn University School, our Science program encourages children to explore, observe, and ask questions about the world around them. Through hands-on experiments, nature walks, and interactive activities, students learn about plants, animals, weather, and basic physical phenomena. This approach helps develop curiosity, critical thinking, and problem-solving skills, while fostering a love for discovery and understanding how things work.\n\nOur science curriculum aligns with internationally recognized standards and emphasizes real-life applications, helping students understand the relevance of scientific concepts in everyday life. Students also engage in collaborative projects and inquiry-based learning, which nurture analytical skills and intellectual confidence.\n\nLearning science at our school is interactive and exciting. Children enjoy experimenting, observing, and discovering patterns in the world around them. Our teachers guide students in making connections between theory and practice, ensuring that learning science is both meaningful and memorable."
+      "The Science curriculum for middle school encourages students to question, investigate, and discover. In Grades 6–7, learners study life sciences, earth sciences, and basic principles of physics and chemistry. They conduct experiments, analyze results, and apply the scientific method to understand how things work. The program emphasizes environmental awareness, innovation, and problem-solving, preparing students to make connections between classroom learning and the world around them."
   },
   {
     id: "urdu",
     name: "Urdu",
     description:
-      "At Abasyn University School, our Urdu program introduces children to the richness and beauty of the Urdu language through storytelling, reading, and creative writing activities. Students build vocabulary, comprehension, and expressive skills in a fun and engaging manner. This program encourages children to enjoy language learning while expressing their thoughts and ideas confidently.\n\nOur Urdu curriculum is designed to balance traditional language skills with creative expression, helping students develop critical thinking, imagination, and communication skills. Through discussions, writing exercises, and interactive reading activities, children learn to use language effectively in various contexts.\n\nLearning Urdu at our school is both enjoyable and educational. Students participate in storytelling sessions, dramatizations, and writing workshops that make language come alive. Our teachers foster a love for reading and writing, ensuring that each child gains confidence and fluency while appreciating the richness of Urdu literature."
+      "Our Urdu program for Grades 6–7 develops strong reading, writing, and communication skills while deepening students’ understanding of Urdu literature and culture. Students engage with prose, poetry, and drama, enhancing vocabulary and comprehension. Writing tasks such as essays, letters, and stories strengthen creative and formal expression. Class discussions, debates, and presentations help students express their ideas fluently and confidently in their national language."
   },
   {
     id: "isl",
     name: "Islamiyat",
     description:
-      "At Abasyn University School, our Islamiyat program introduces children to Islamic teachings, values, and traditions in an engaging and meaningful way. Students learn about ethics, moral character, and spiritual principles through stories, discussions, and interactive activities. This program nurtures empathy, respect, and understanding while encouraging students to reflect on their actions and choices.\n\nOur curriculum focuses on both knowledge and application, helping children connect Islamic teachings to their everyday lives. Through hands-on projects, group activities, and role-playing, students explore concepts of honesty, kindness, responsibility, and compassion in practical ways.\n\nLearning Islamiyat at our school is interactive and inspiring. Children enjoy participating in discussions, activities, and projects that make lessons relevant and memorable. Our teachers guide students in developing a strong moral foundation while fostering curiosity, reflection, and personal growth."
+      "The Islamiyat curriculum for Grades 6–7 introduces students to Islamic beliefs, values, and practices in greater depth. Learners study Seerah, Islamic history, and key teachings from the Quran and Hadith. Emphasis is placed on applying Islamic principles such as honesty, kindness, and responsibility in daily life. Through reflection, discussions, and projects, students strengthen their spiritual growth, moral character, and understanding of Islam’s relevance in the modern world."
   },
   {
-    id: "arts",
-    name: "Arts",
-    description:
-      "At Abasyn University School, our Arts program inspires children to explore, imagine, and create in a joyful and hands-on way. Through painting, drawing, crafting, and other creative activities, students discover colors, shapes, textures, and patterns while expressing their unique ideas. This program nurtures creativity, self-expression, and confidence.\n\nOur arts curriculum encourages experimentation and problem-solving, helping children develop observation, fine motor skills, and focus. Through individual and collaborative projects, students learn to communicate ideas visually and work creatively with others.\n\nLearning arts at our school is fun, engaging, and meaningful. Children enjoy exploring different materials, techniques, and styles, bringing their imagination to life. Our teachers foster a love for creative expression, ensuring every child experiences joy and confidence while developing artistic skills."
-  },
-  {
-    id: "nazra",
+    id: "Mutal-e-Quran",
     name: "Nazra",
     description:
-      "At Abasyn University School, our Nazra program helps children develop a strong foundation in Quranic reading and recitation. Through guided practice, repetition, and interactive activities, students learn proper pronunciation, fluency, and comprehension. This program instills confidence, discipline, and respect for the teachings of the Quran.\n\nOur curriculum emphasizes gradual learning, ensuring that students progress at their own pace while mastering correct recitation techniques. Through storytelling, discussion, and memorization exercises, children connect the lessons of the Quran with their everyday lives.\n\nLearning Nazra at our school is engaging and inspiring. Students participate in interactive sessions, group recitations, and activities that make learning meaningful and enjoyable. Our teachers guide students with care, helping them develop spiritual growth, focus, and a lifelong appreciation for the Quran."
+      "In Grades 6–7, the Nazra program helps students improve their fluency, Tajweed, and understanding of the Quran. Alongside recitation, emphasis is placed on learning the meaning and context of selected Surahs, enabling students to apply Quranic teachings in their daily lives. Group recitations, memorization, and guided discussions foster respect, discipline, and a deeper spiritual connection to the Holy Quran."
   },
   {
     id: "geo",
     name: "Geography",
     description:
-      "At Abasyn University School, our Geography program encourages children to explore the world around them and understand its physical and cultural diversity. Through interactive maps, models, and hands-on activities, students learn about landforms, climates, communities, and ecosystems. This approach develops curiosity, analytical skills, and an understanding of the relationship between people and their environment.\n\nOur geography curriculum aligns with international standards and emphasizes real-life applications, helping students relate geographical concepts to their daily experiences. Collaborative projects and field activities further enhance observation, critical thinking, and problem-solving skills.\n\nLearning geography at our school is engaging and immersive. Children enjoy exploring maps, conducting experiments, and participating in projects that make the subject come alive. Our teachers guide students to understand global connections, encouraging exploration, awareness, and a lasting appreciation for the world."
+      "Geography in Grades 6–7 focuses on developing students’ knowledge of the physical and human world. Learners study landforms, climates, natural resources, populations, and global issues such as sustainability. Map reading, fieldwork, and project-based activities encourage observation, research, and analytical skills. Students gain a broader perspective on how human and natural systems interact, preparing them to understand and engage with global challenges."
   },
   {
-  id: "computer",
-  name: "Computer",
-  description:
-    "At Abasyn University School, our Computer program introduces children to the exciting world of technology and digital literacy. Students learn essential computer skills, including typing, basic software applications, internet safety, and problem-solving using technology. Through hands-on activities and interactive lessons, children develop confidence and competence in navigating digital tools.\n\nOur curriculum emphasizes practical applications of technology, helping students understand how computers and software are used in real-life situations. Collaborative projects and coding exercises foster creativity, logical thinking, and analytical skills, preparing students for the demands of the modern world.\n\nLearning computers at our school is engaging and fun. Children enjoy exploring programs, creating digital projects, and solving challenges that make technology interactive and meaningful. Our teachers guide students in developing skills that enhance their learning, creativity, and problem-solving abilities, ensuring that every child gains a strong foundation in computer literacy."
-}
+    id: "history",
+    name: "History",
+    description:
+      "The History curriculum for Grades 6–7 introduces learners to ancient civilizations, world history, and the history of the subcontinent. Students explore important events, movements, and personalities that shaped societies. Through timelines, research projects, and critical discussions, they develop skills in analysis, comparison, and evidence-based reasoning. The program encourages students to connect past events with present realities, fostering awareness and informed citizenship."
+  },
+  {
+    id: "computer",
+    name: "Computer",
+    description:
+      "Our Computer program for Grades 6–7 equips students with essential digital skills for the 21st century. Learners practice word processing, presentations, spreadsheets, and safe internet usage while also being introduced to coding and problem-solving. They explore how technology is applied in real-world situations through projects, digital design, and collaborative tasks. The program fosters creativity, logical thinking, and confidence, preparing students for advanced ICT learning in higher grades."
+  }
+];
 
-  ];
 
   const highlight = [
     {
@@ -89,23 +88,6 @@ const Lowersec = () => {
       bgColor: "#EDEEEF",
     },
   ];
-  const activities = [
-    {
-      imageUrl: "assets/img/kinder.jpg",
-      title:"Creative Expressions",
-      description:"At Abasyn University School, creative activities inspire children to imagine, design, and bring their ideas to life. Whether through art, crafts, or performances, students learn to express themselves, build confidence, and develop problem-solving skills while having fun"
-    },
-    {
-      imageUrl: "assets/img/kinder.jpg",
-      title:"Interactive Learning",
-      description:"At Abasyn University School, interactive learning helps students connect knowledge with real-life experiences. Through group projects, discussions, and hands-on activities, they strengthen communication, teamwork, and critical thinking in a supportive environment."
-    },
-    {
-      imageUrl: "assets/img/kinder.jpg",
-      title:"Physical Well-Being",
-      description:"At Abasyn University School, physical activities encourage students to stay active, healthy, and energized. Through sports, games, and fitness exercises, children develop discipline, teamwork, and a strong sense of sportsmanship while having fun."
-    },
-    ]
   return (
     <div>
       <Banner title="Lower Secondary Years" />
@@ -195,18 +177,7 @@ At Abasyn University School & College, we view education as the cornerstone of a
     </p>
   </div>
 </div>
-
-    <div>
-      {activities.map((item,index) =>(
-         <Ecard 
-           key = {index}
-           imageUrl = {item.imageUrl}
-           title = {item.title}
-           description = {item.description}
-         />
-      ))}
-    </div>
- <SubjectsOffered title="Subjects Offered" subjects={earlySubjects} />
+ <SubjectsOffered title="Subjects Offered" subjects={middleSubjects} />
    </div>
   );
 };

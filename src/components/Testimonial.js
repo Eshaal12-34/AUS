@@ -3,7 +3,6 @@ import "../assets/scss/_testimonial.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -11,10 +10,6 @@ const TestimonialItem = ({ description, bgColor }) => (
   <div className="testimonial-item" style={{ backgroundColor: bgColor }}>
     <p className="testimonial-text">{description}</p>
     <hr className="testimonial-divider" />
-    <div
-      className="speech-tail"
-      style={{ borderTopColor: bgColor }}
-    />
   </div>
 );
 
@@ -47,10 +42,12 @@ const Testimonial = () => {
           pagination={{ clickable: true }}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           breakpoints={{
-            1200: { slidesPerView: 3, spaceBetween: 30 },
-            992: { slidesPerView: 2, spaceBetween: 20 },
-            0: { slidesPerView: 1, spaceBetween: 10 },
-          }}
+          1200: { slidesPerView: 3, spaceBetween: 30 },
+          992: { slidesPerView: 2, spaceBetween: 20 },
+          576: { slidesPerView: 1, spaceBetween: 15 },
+          0: { slidesPerView: 1, spaceBetween: 10 },
+        }}
+
         >
           {testi.map((item, index) => (
             <SwiperSlide key={index}>

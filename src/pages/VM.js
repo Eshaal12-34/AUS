@@ -22,7 +22,7 @@ const VisionMission = () => {
             data-aos-delay="300"
           >
             <img
-              src="assets/img/team/01.jpg"
+              src="assets/img/vision.jpg"
               alt="Vision"
               className="img-fluid rounded"
             />
@@ -62,7 +62,7 @@ const VisionMission = () => {
         <div className="row align-items-center mt-4 flex-lg-row-reverse">
           <div className="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
             <img
-              src="assets/img/team/01.jpg"
+              src="assets/img/mission.jpg"
               alt="Mission"
               className="img-fluid rounded"
             />

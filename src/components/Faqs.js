@@ -111,7 +111,7 @@ const FAQSection = () => {
         }}
       >
         <img
-          src="assets/img/about/04.png"
+          src="assets/img/about/about.jpeg"
           alt="About"
           className="img-fluid"
           style={{

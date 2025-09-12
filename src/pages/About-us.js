@@ -3,7 +3,6 @@ import Banner from "../components/Banner";
 import '../assets/scss/_about.scss'
 import '../assets/scss/_section.scss'
 import "../assets/main.css"
-import TeamSection from "../components/Team";
 import FAQSection from "../components/Faqs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -12,7 +11,7 @@ const About = () => {
 
 <>
   <Banner
-    title = "About-Uss"
+    title = "About-Us"
 
   />
   {/* About Activities Section Start */}

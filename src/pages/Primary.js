@@ -8,68 +8,69 @@ import Ecard from "../components/Earlyacard";
 import SubjectsOffered from "../components/Subjects";
 
 const Primary = () => {
-   const earlySubjects = [
-    {
-      id: "english",
-      name: "English",
-      description:
-        "At Abasyn University School, we recognize that mastering English is key to thriving in the modern world. Our English curriculum is designed to strengthen students’ reading, writing, listening, and speaking skills. Through a blend of classroom teaching, collaborative projects, and technology-enhanced learning, we ensure that every student engages in ways that match their individual learning style.Our curriculum follows internationally recognized standards, including the Common European Framework of Reference (CEFR), and focuses on practical language use in real-life situations. Alongside language proficiency, we emphasize the development of critical thinking skills, preparing students to navigate today’s fast-paced and ever-changing world.Learning English at our school is both fun and meaningful. Our teachers incorporate interactive activities, games, and multimedia tools to make lessons engaging and effective. Students are also encouraged to join language clubs, debating societies, drama groups, and creative writing workshops to further enhance their communication skills and foster creativity."
-    },
-    {
-      id: "maths",
-      name: "Maths",
-      description:
-        "At Abasyn University School, we aim to make mathematics both engaging and meaningful. Our curriculum is designed to help students build strong numeracy skills, logical thinking, and problem-solving abilities. Through a mix of hands-on activities, collaborative projects, and technology-based learning, we ensure that every student can learn in a way that suits their individual style.Our mathematics program aligns with internationally recognized standards and emphasizes practical applications, helping students understand how math relates to real-life situations. We also focus on developing critical thinking and analytical skills, which are essential for success in today’s dynamic world.Learning math at our school is interactive and fun. Students explore numbers, patterns, shapes, and measurements through games, experiments, and creative problem-solving activities. Our teachers encourage curiosity and experimentation, ensuring that every child builds confidence while discovering the joy of mathematics."
-    },
-   {
+  const primarySubjects = [
+  {
+    id: "english",
+    name: "English",
+    description:
+      "At Abasyn University School, our English program helps students develop strong reading, writing, listening, and speaking skills. Lessons are taught through stories, poems, and creative writing activities that spark imagination. Students also take part in role plays, group discussions, and simple projects to build confidence in communication. Our curriculum follows international standards and focuses on practical language use. Teachers use interactive methods such as games and multimedia tools to make learning fun. Along with language, we encourage critical thinking and creativity. This helps students build a strong foundation in English for higher learning."
+  },
+  {
+    id: "maths",
+    name: "Maths",
+    description:
+      "Our Mathematics program is designed to make learning numbers enjoyable and meaningful. Students build numeracy, logical reasoning, and problem-solving skills through fun activities. Concepts such as shapes, patterns, measurements, and basic operations are taught with games and real-life examples. Group projects and hands-on experiments help children explore math in practical ways. We follow international standards to ensure a solid foundation. Teachers encourage curiosity and creative thinking during lessons. By the end of primary, students gain confidence and enjoy discovering the world of mathematics."
+  },
+  {
     id: "science",
     name: "Science",
     description:
-      "At Abasyn University School, our Science program encourages children to explore, observe, and ask questions about the world around them. Through hands-on experiments, nature walks, and interactive activities, students learn about plants, animals, weather, and basic physical phenomena. This approach helps develop curiosity, critical thinking, and problem-solving skills, while fostering a love for discovery and understanding how things work.\n\nOur science curriculum aligns with internationally recognized standards and emphasizes real-life applications, helping students understand the relevance of scientific concepts in everyday life. Students also engage in collaborative projects and inquiry-based learning, which nurture analytical skills and intellectual confidence.\n\nLearning science at our school is interactive and exciting. Children enjoy experimenting, observing, and discovering patterns in the world around them. Our teachers guide students in making connections between theory and practice, ensuring that learning science is both meaningful and memorable."
+      "The Science program encourages children to explore, question, and discover the world around them. Through experiments, nature walks, and projects, students learn about plants, animals, weather, and simple physical concepts. Lessons are designed to make science exciting and easy to understand. Teachers focus on building observation and problem-solving skills. Students are also encouraged to work in groups and share their ideas. Our curriculum highlights the real-life application of science in everyday life. This approach makes science both meaningful and memorable."
   },
   {
     id: "urdu",
     name: "Urdu",
     description:
-      "At Abasyn University School, our Urdu program introduces children to the richness and beauty of the Urdu language through storytelling, reading, and creative writing activities. Students build vocabulary, comprehension, and expressive skills in a fun and engaging manner. This program encourages children to enjoy language learning while expressing their thoughts and ideas confidently.\n\nOur Urdu curriculum is designed to balance traditional language skills with creative expression, helping students develop critical thinking, imagination, and communication skills. Through discussions, writing exercises, and interactive reading activities, children learn to use language effectively in various contexts.\n\nLearning Urdu at our school is both enjoyable and educational. Students participate in storytelling sessions, dramatizations, and writing workshops that make language come alive. Our teachers foster a love for reading and writing, ensuring that each child gains confidence and fluency while appreciating the richness of Urdu literature."
+      "Our Urdu program introduces students to the richness of their national language. Children develop reading, writing, and speaking skills through storytelling, poems, and short essays. Teachers encourage creativity with activities like role plays, dramatizations, and writing workshops. The curriculum balances traditional skills with modern approaches to expression. Students learn to share their ideas confidently in Urdu. Class discussions help improve vocabulary and comprehension. By the end of primary, students build fluency and appreciation for Urdu literature and culture."
   },
   {
     id: "isl",
     name: "Islamiyat",
     description:
-      "At Abasyn University School, our Islamiyat program introduces children to Islamic teachings, values, and traditions in an engaging and meaningful way. Students learn about ethics, moral character, and spiritual principles through stories, discussions, and interactive activities. This program nurtures empathy, respect, and understanding while encouraging students to reflect on their actions and choices.\n\nOur curriculum focuses on both knowledge and application, helping children connect Islamic teachings to their everyday lives. Through hands-on projects, group activities, and role-playing, students explore concepts of honesty, kindness, responsibility, and compassion in practical ways.\n\nLearning Islamiyat at our school is interactive and inspiring. Children enjoy participating in discussions, activities, and projects that make lessons relevant and memorable. Our teachers guide students in developing a strong moral foundation while fostering curiosity, reflection, and personal growth."
+      "The Islamiyat curriculum helps children understand Islamic teachings and values in a simple way. Students learn about honesty, kindness, and respect through stories and discussions. Teachers connect lessons to everyday life, helping children apply values in practice. Activities such as role-playing and group work make the subject interactive. Students also explore the life of the Prophet (PBUH) and basic Islamic history. The program encourages reflection and moral development. This ensures children build a strong spiritual and ethical foundation."
   },
   {
     id: "arts",
     name: "Arts",
     description:
-      "At Abasyn University School, our Arts program inspires children to explore, imagine, and create in a joyful and hands-on way. Through painting, drawing, crafting, and other creative activities, students discover colors, shapes, textures, and patterns while expressing their unique ideas. This program nurtures creativity, self-expression, and confidence.\n\nOur arts curriculum encourages experimentation and problem-solving, helping children develop observation, fine motor skills, and focus. Through individual and collaborative projects, students learn to communicate ideas visually and work creatively with others.\n\nLearning arts at our school is fun, engaging, and meaningful. Children enjoy exploring different materials, techniques, and styles, bringing their imagination to life. Our teachers foster a love for creative expression, ensuring every child experiences joy and confidence while developing artistic skills."
+      "Our Arts program inspires creativity and imagination in young learners. Students explore painting, drawing, and crafting while experimenting with colors and shapes. The curriculum encourages children to express themselves visually and build confidence. Lessons also develop fine motor skills and observation. Teachers guide students in both individual and group projects. Through creative activities, children learn problem-solving and teamwork. The program helps every child discover joy and self-expression in art."
   },
   {
     id: "nazra",
     name: "Nazra",
     description:
-      "At Abasyn University School, our Nazra program helps children develop a strong foundation in Quranic reading and recitation. Through guided practice, repetition, and interactive activities, students learn proper pronunciation, fluency, and comprehension. This program instills confidence, discipline, and respect for the teachings of the Quran.\n\nOur curriculum emphasizes gradual learning, ensuring that students progress at their own pace while mastering correct recitation techniques. Through storytelling, discussion, and memorization exercises, children connect the lessons of the Quran with their everyday lives.\n\nLearning Nazra at our school is engaging and inspiring. Students participate in interactive sessions, group recitations, and activities that make learning meaningful and enjoyable. Our teachers guide students with care, helping them develop spiritual growth, focus, and a lifelong appreciation for the Quran."
+      "The Nazra program builds a strong foundation in Quranic reading and recitation. Students practice fluency and correct pronunciation through guided lessons. Teachers focus on Tajweed rules and gradual learning. Group recitations and memorization exercises help improve confidence. Lessons also highlight the meaning and values from selected Surahs. Students are encouraged to connect Quranic teachings to daily life. This program nurtures respect, discipline, and spiritual growth."
   },
   {
     id: "gk",
     name: "GK",
     description:
-     "At Abasyn University School,we teach GK from grade 1 to 3.Our General Knowledge (GK) program inspires children to explore a wide range of topics and gain awareness about the world around them. Through discussions, quizzes, interactive activities, and projects, students learn about current affairs, history, science, cultures, and everyday life skills. This approach builds curiosity, confidence, and a habit of staying informed.Our GK curriculum is designed to meet international standards and emphasizes practical understanding, enabling students to connect what they learn with real-world situations. Group activities, debates, and research projects further strengthen communication, critical thinking, and problem-solving abilities.Learning GK at our school is exciting and engaging. Children enjoy exploring facts, sharing ideas, and participating in activities that make learning dynamic and enjoyable. Our teachers guide them to broaden their horizons, develop awareness, and build a lifelong love for learning and discovery."
+      "Our General Knowledge (GK) program for Grades 1–3 develops awareness about the world. Students explore topics in science, history, culture, and current affairs. Learning takes place through stories, quizzes, and interactive discussions. Teachers encourage curiosity by connecting lessons to everyday life. Activities such as group debates and projects help build confidence. The program also strengthens critical thinking and communication. By learning GK, students develop a habit of staying informed and curious."
   },
   {
-  id: "computer",
-  name: "Computer",
-  description:
-    "At Abasyn University School, our Computer program introduces children to the exciting world of technology and digital literacy. Students learn essential computer skills, including typing, basic software applications, internet safety, and problem-solving using technology. Through hands-on activities and interactive lessons, children develop confidence and competence in navigating digital tools.\n\nOur curriculum emphasizes practical applications of technology, helping students understand how computers and software are used in real-life situations. Collaborative projects and coding exercises foster creativity, logical thinking, and analytical skills, preparing students for the demands of the modern world.\n\nLearning computers at our school is engaging and fun. Children enjoy exploring programs, creating digital projects, and solving challenges that make technology interactive and meaningful. Our teachers guide students in developing skills that enhance their learning, creativity, and problem-solving abilities, ensuring that every child gains a strong foundation in computer literacy."
-},
+    id: "computer",
+    name: "Computer",
+    description:
+      "Our Computer program introduces children to digital literacy in a fun way. Students learn typing, basic software use, and internet safety. Lessons include hands-on activities that build problem-solving and creativity. Teachers guide students in making simple digital projects. The curriculum highlights how technology is used in real life. Early exposure to coding fosters logical thinking. This program ensures children gain confidence and a strong foundation in computer skills."
+  },
   {
-  id: "sst",
-  name: "Social Studies",
-  description:
-    "At Abasyn University School, our Social Studies program for Grades 4 and 5 introduces students to the foundations of history, geography, civics, and culture in an engaging and age-appropriate way. Through stories, discussions, projects, and interactive activities, children learn about their community, country, and the wider world. This helps them understand social values, cultural diversity, and the importance of being responsible citizens.Our Social Studies curriculum is designed to connect classroom learning with real-life experiences, making lessons meaningful and practical. Students explore topics such as heritage, traditions, maps, government, and global awareness, which strengthen their critical thinking, teamwork, and problem-solving skills.At Abasyn University School, learning Social Studies is more than memorizing facts — it is about understanding people, places, and events in ways that spark curiosity and encourage awareness. By the end of Grade 5, students develop a strong foundation that prepares them for higher-level learning and a deeper understanding of society and the world."
-}
-  ];
+    id: "sst",
+    name: "Social Studies",
+    description:
+      "Social Studies for Grades 4–5 introduces history, geography, and civics. Students learn about their community, country, and the wider world. Teachers use stories, maps, and projects to make lessons engaging. The curriculum highlights values such as responsibility and respect for diversity. Group activities build teamwork and problem-solving skills. Students also explore culture, heritage, and traditions. This subject prepares them for deeper understanding of society in later grades."
+  }
+];
+
 
   const highlight = [
     {
@@ -202,7 +203,7 @@ const Primary = () => {
          />
       ))}
     </div>
- <SubjectsOffered title="Subjects Offered" subjects={earlySubjects} />
+ <SubjectsOffered title="Subjects Offered" subjects={primarySubjects} />
    </div>
   );
 };
