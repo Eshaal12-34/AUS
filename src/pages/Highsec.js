@@ -27,7 +27,7 @@ const Higher = () => {
       marks: "1096",
     },
     {
-      imgUrl: "assets/img/highh1.JPG",
+      imgUrl: "assets/img/woman-01.jpg",
       description: "Ali Khan",
       marks: "1085",
     },
@@ -36,16 +36,6 @@ const Higher = () => {
       description: "Ayesha Noor",
       marks: "1072",
     },
-  ];
-
-    const Alumni = [
-    { title: "Sports Day", description: "October 2024", imageUrl: "/assets/img/gallery/01.jpg" },
-    { title: "School Opening", description: "February 2025", imageUrl: "/assets/img/gallery/02.jpg" },
-    { title: "Annual Day", description: "December 2024", imageUrl: "/assets/img/gallery/03.jpg"  },
-    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/team/01.jpg" },
-    { title: "Art Competition", description: "December 2024", imageUrl: "/assets/img/team/01.jpg" },
-    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/team/01.jpg" },
-    { title: "Art Competition", description: "December 2024", imageUrl: "/assets/img/team/01.jpg" },
   ];
 
   return (

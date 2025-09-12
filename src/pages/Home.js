@@ -140,7 +140,7 @@ const Home = () => {
                   </div>
                   <div className="about-author">
                     <div className="about-button" data-aos="fade-up" data-aos-delay="300">
-                      <Link to="About-us" className="theme-btn">
+                      <Link to="/about-us" className="theme-btn">
                         Explore More <i className="fa-solid fa-arrow-right-long" />
                       </Link>
                     </div>
@@ -337,7 +337,11 @@ const Home = () => {
 {/*Teamsection
 <TeamSection/>
 */}
-<div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleSlidesOnly"
+     className="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-touch="true"
+     data-bs-interval="3000">
   <h2>Meet Our Staff</h2>
   <div className="carousel-inner">
     <div className="carousel-item active">
