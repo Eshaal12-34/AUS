@@ -9,7 +9,7 @@ import '../assets/main.css';
 
 const Gallery = () => {
   const galleryData = [
-    { title: "Sports Day", description: "October 2024", imageUrl: "/assets/img/gall/7.jpeg" },
+    { title: "Sports Day", description: "October 2024", imageUrl: "/assets/img/gall/01.jpeg" },
     { title: "School Opening", description: "February 2025", imageUrl: "/assets/img/gall/6.jpeg" },
     { title: "Annual Day", description: "December 2024", imageUrl: "/assets/img/gall/03.jpg"  },
     { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/3.jpg" },

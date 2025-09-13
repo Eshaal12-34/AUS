@@ -1,7 +1,4 @@
 import React from "react";
-import Card from "../components/Card";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import '../assets/scss/_team.scss'; 
@@ -10,7 +7,6 @@ import Banner from "../components/Banner";
 import Picture from "../components/Picture";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaChalkboardTeacher, FaGraduationCap, FaHandsHelping, FaHeart } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
 import { 
   faClipboardCheck, 
   faChalkboardTeacher, 
@@ -22,19 +18,19 @@ import {
 const Higher = () => {
   const Pics = [
     {
-      imgUrl: "assets/img/highh1.JPG",
+      imgUrl: "assets/img/woman.png",
+      description: "Romaisa Khan",
+      marks: "1111",
+    },
+    {
+      imgUrl: "assets/img/huzaifa.jpeg",
       description: "Huzaifa Aqeel",
       marks: "1096",
     },
     {
-      imgUrl: "assets/img/woman-01.jpg",
-      description: "Ali Khan",
-      marks: "1085",
-    },
-    {
-      imgUrl: "assets/img/highh1.JPG",
-      description: "Ayesha Noor",
-      marks: "1072",
+      imgUrl: "assets/img/woman.png",
+      description: "Mahnoor Siddiqui",
+      marks: "1069",
     },
   ];
 

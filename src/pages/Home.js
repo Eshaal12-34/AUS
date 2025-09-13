@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import '../assets/scss/_hero.scss';
 import Testimonial from "../components/Testimonial";
 import Gallery from "../components/Gallery";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay} from "swiper/modules";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 
 const Home = () => {
@@ -337,21 +340,34 @@ const Home = () => {
 {/*Teamsection
 <TeamSection/>
 */}
-<div id="carouselExampleSlidesOnly"
-     className="carousel slide"
-     data-bs-ride="carousel"
-     data-bs-touch="true"
-     data-bs-interval="3000">
-  <h2>Meet Our Staff</h2>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="assets/img/staff.jpg" className="d-block w-70 mx-auto img-fluid" alt="staff1" />
+<div className="my-5">
+      <h2 className="text-center">Meet Our Staff</h2>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className="w-75 mx-auto"
+      >
+        <SwiperSlide>
+          <img
+            src="assets/img/staff.jpg"
+            className="d-block mx-auto img-fluid"
+            alt="staff1"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="assets/img/staff2.jpg"
+            className="d-block mx-auto img-fluid"
+            alt="staff2"
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
-    <div className="carousel-item">
-      <img src="assets/img/staff2.jpg" className="d-block w-70 mx-auto img-fluid" alt="staff2" />
-    </div>
-  </div>
-</div>
 
 
 {/*Testimonial section*/}
@@ -383,9 +399,9 @@ const Home = () => {
             className="cta-button mt-4 mt-md-0 wow fadeInUp"
             data-wow-delay=".5s"
           >
-            <a href="contact.html" className="theme-btn bg-white">
+            <Link to="/contact-us" className="theme-btn bg-white">
               Apply Now <i className="fa-solid fa-arrow-right-long" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-lg-5 wow fadeInUp" data-wow-delay=".4s">

@@ -4,8 +4,11 @@ import '../assets/scss/_about.scss'
 import '../assets/scss/_section.scss'
 import "../assets/main.css"
 import FAQSection from "../components/Faqs";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay} from "swiper/modules";
 const About = () => {
     return(
 
@@ -200,18 +203,34 @@ const About = () => {
       </div>
     </div>
   </section>
-
-<div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-  <h2 className="mt-5">Meet Our Staff</h2>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="assets/img/staff.jpg" className="d-block w-70 mx-auto img-fluid" alt="staff1" />
+<div className="my-5">
+      <h2 className="text-center">Meet Our Staff</h2>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className="w-75 mx-auto"
+      >
+        <SwiperSlide>
+          <img
+            src="assets/img/staff.jpg"
+            className="d-block mx-auto img-fluid"
+            alt="staff1"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="assets/img/staff2.jpg"
+            className="d-block mx-auto img-fluid"
+            alt="staff2"
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
-    <div className="carousel-item">
-      <img src="assets/img/staff2.jpg" className="d-block w-70 mx-auto img-fluid" alt="staff2" />
-    </div>
-  </div>
-</div>
 
 </>
 )
