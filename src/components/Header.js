@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../assets/scss/_header.scss";
 import "../assets/scss/_buttons.scss";
 import "../assets/main.css";
@@ -94,24 +94,20 @@ const Header = () => {
                 <div className="header-button mt-4">
                   <Link to="/contact-us" className="theme-btn text-center" onClick={closeOffcanvas}>
                     <span>
-                      Get A Quote
+                     Contact Us
                       <i className="fa-solid fa-arrow-right-long" />
                     </span>
                   </Link>
                 </div>
                 <div className="social-icon d-flex align-items-center">
-                  <a href="#">
+                  <a href="https://www.facebook.com/share/19hYixwkuP/">
                     <i className="fab fa-facebook-f" />
                   </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
+                 
+                  <a href="https://www.youtube.com/@abasynuniversityschoolcoll2033">
                     <i className="fab fa-youtube" />
                   </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
+                
                 </div>
               </div>
             </div>
@@ -141,8 +137,8 @@ const Header = () => {
             </ul>
             <div className="social-icon d-flex align-items-center">
               <span>Follow Us On:</span>
-              <a href="#"><i className="fab fa-facebook-f"></i></a>
-              <a href="#"><i className="fab fa-youtube"></i></a>
+              <a href="https://www.facebook.com/share/19hYixwkuP/"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@abasynuniversityschoolcoll2033"><i className="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>

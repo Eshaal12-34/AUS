@@ -199,7 +199,7 @@ const Home = () => {
               <div className="program-box-items">
                 <div className="program-bg" />
                 <div className="program-image">
-                  <img src="assets/img/program/01.jpg" alt="img" />
+                  <img src="assets/img/program/fac2.jpg" alt="img" />
                 </div>
                 <div className="program-content text-center">
                   <h4><a href="program-details.html">Science Labs</a></h4>
@@ -212,7 +212,7 @@ const Home = () => {
               <div className="program-box-items">
                 <div className="program-bg bg-2" />
                 <div className="program-image">
-                  <img src="assets/img/program/02.jpg" alt="img" />
+                  <img src="assets/img/program/fac1..jpg" alt="img" />
                 </div>
                 <div className="program-content text-center">
                   <h4><a href="program-details.html">Computer Lab</a></h4>
@@ -399,7 +399,7 @@ const Home = () => {
             className="cta-button mt-4 mt-md-0 wow fadeInUp"
             data-wow-delay=".5s"
           >
-            <Link to="/contact-us" className="theme-btn bg-white">
+            <Link to="/contact-us" className="theme-btn bg-white mb-4">
               Apply Now <i className="fa-solid fa-arrow-right-long" />
             </Link>
           </div>
@@ -468,48 +468,49 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-8 mt-5 mt-xl-0">  
-  <div className="news-right-items wow fadeInUp" data-wow-delay=".4s">  
-    <div className="news-thumb text-center">   {/* Added text-center here */}
-      <img src="assets/img/news/4.jpg" alt="img" className="d-inline-block" /> {/* img-fluid + d-inline-block */}
-    </div>  
-    <div className="news-content">  
-      <div style={{display:"flex", gap:"5px", justifyContent:"center"}}>  
-        <div>  
-          <i className="fas fa-bus" style={{color: "#FF0000"}}></i>  
-        </div>  
-        <h3>  
-          <a href="news-details.html">  
-            Recreational Trip  
-          </a>  
-        </h3>  
-      </div>  
-      <p style={{textAlign:"justify"}}>  
-        An exciting day filled with fun, adventure, and learning beyond the classroom. Our students enjoyed activities, games, and bonding moments in a refreshing outdoor environment.  
-      </p>  
-    </div>  
-  </div>  
+  <div className="col-xl-6 col-lg-8 col-md-12 col-sm-12 mt-5 mt-xl-0">
 
-  <div className="news-right-items wow fadeInUp" data-wow-delay=".6s">  
-    <div className="news-thumb text-center">   {/* Added text-center here */}
-      <img src="assets/img/news/03.jpg" alt="img" className="d-inline-block" /> {/* img-fluid + d-inline-block */}
-    </div>  
-    <div className="news-content">  
-      <div style={{display:"flex", gap:"5px", justifyContent:"center"}}>  
-        <div>  
-          <i className="fas fa-smile-beam" style={{color: "#FF0000"}}></i>  
-        </div>  
-        <h3>  
-          <a href="news-details.html">  
-            Funfair Festivities<br />  
-          </a>  
-        </h3>  
+    <div className="news-right-items wow fadeInUp" data-wow-delay=".4s">  
+      <div className="news-thumb text-center">   {/* Added text-center here */}
+        <img src="assets/img/news/4.jpg" alt="img" className="d-inline-block" /> {/* img-fluid + d-inline-block */}
       </div>  
-      <p style={{textAlign:"justify"}}>  
-        Our annual Funfair brought students, teachers, and families together for a day full of laughter, exciting games, delicious treats, and colorful stalls — creating memories that will last a lifetime.  
-      </p>  
+      <div className="news-content">  
+        <div style={{display:"flex", gap:"5px", justifyContent:"center"}}>  
+          <div>  
+            <i className="fas fa-bus" style={{color: "#FF0000"}}></i>  
+          </div>  
+          <h3>  
+            <a href="news-details.html">  
+              Recreational Trip  
+            </a>  
+          </h3>  
+        </div>  
+        <p style={{textAlign:"justify"}}>  
+          An exciting day filled with fun, adventure, and learning beyond the classroom. Our students enjoyed activities, games, and bonding moments in a refreshing outdoor environment.  
+        </p>  
+      </div>  
     </div>  
-  </div>  
+   
+    <div className="news-right-items wow fadeInUp " data-wow-delay=".6s">  
+      <div className="news-thumb text-center">   
+        <img src="assets/img/news/03.jpg" alt="img" className="d-inline-block" /> 
+      </div>  
+      <div className="news-content">  
+        <div style={{display:"flex", gap:"5px", justifyContent:"center"}}>  
+          <div>  
+            <i className="fas fa-smile-beam" style={{color: "#FF0000"}}></i>  
+          </div>  
+          <h3>  
+            <a href="news-details.html">  
+              Funfair Festivities<br />  
+            </a>  
+          </h3>  
+        </div>  
+        <p style={{textAlign:"justify"}}>  
+          Our annual Funfair brought students, teachers, and families together for a day full of laughter, exciting games, delicious treats, and colorful stalls — creating memories that will last a lifetime.  
+        </p>  
+      </div>  
+    </div>  
 </div>
 
         </div>

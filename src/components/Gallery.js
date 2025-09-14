@@ -9,15 +9,14 @@ import '../assets/main.css';
 
 const Gallery = () => {
   const galleryData = [
-    { title: "Sports Day", description: "October 2024", imageUrl: "/assets/img/gall/01.jpeg" },
-    { title: "School Opening", description: "February 2025", imageUrl: "/assets/img/gall/6.jpeg" },
-    { title: "Annual Day", description: "December 2024", imageUrl: "/assets/img/gall/03.jpg"  },
-    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/3.jpg" },
+    { title: "Sports Day", description: "October 2024", imageUrl: "/assets/img/gall/1.jpeg" },
+    { title: "School Opening", description: "February 2025", imageUrl: "/assets/img/gall/2.jpeg" },
+    { title: "Annual Day", description: "December 2024", imageUrl: "/assets/img/gall/3.jpeg"  },
+    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/4.jpeg" },
     { title: "Art Competition", description: "December 2024", imageUrl: "/assets/img/gall/4.jpg" },
-    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/5.jpg" },
-    { title: "Art Competition", description: "December 2024", imageUrl: "/assets/img/gall/6.jpg" },
-    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/7.jpg" },
-    { title: "Art Competition", description: "December 2024", imageUrl: "/assets/img/gall/8.jpg" },
+    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/7.jpeg" },
+    { title: "Art Competition", description: "December 2024", imageUrl: "/assets/img/gall/6.jpeg" },
+    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/8.jpeg" },
   ];
 
   return (

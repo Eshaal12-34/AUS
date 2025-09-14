@@ -12,9 +12,6 @@ const Footer = () => {
     <div className="frame-shape">
       <img src="/assets/img/frame.png" alt="shape-img" />
     </div>
-    <div className="zebra-shape">
-      <img src="/assets/img/about/zebra.png" alt="shape-img" />
-    </div>
     <div className="container">
       <div className="contact-info-area">
         <div className="contact-info-items wow fadeInUp" data-wow-delay=".3s">
@@ -112,22 +109,27 @@ const Footer = () => {
           >
             <div className="single-footer-widget">
               <div className="widget-head">
-                <a href="index.html">
-                  <img src="assets/img/logo/logo.svg" alt="logo-img" />
-                </a>
+                  <img src="assets/img/logo/logo.png" alt="logo-img" height={160} />
               </div>
               <div className="footer-content">
                 <p>
-                  Phasellus ultricies aliquam volutpat ullamcorper laoreet
-                  neque, a lacinia curabitur lacinia mollis
+                 Abasyn University School is dedicated to providing quality education in a nurturing environment.
                 </p>
                 <div className="social-icon d-flex align-items-center">
-                  <Link to="">
+                  <a href ="https://www.facebook.com/share/19hYixwkuP/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                  >
                     <i className="fab fa-facebook-f" />
-                  </Link>
-                  <Link to="#">
-                    <i className="fa-brands fa-youtube" />
-                  </Link>
+                  </a>
+              <a 
+                href="https://www.youtube.com/@abasynuniversityschoolcoll2033" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+              <i className="fab fa-youtube" />
+            </a>
+
                 </div>
               </div>
             </div>
@@ -142,28 +144,34 @@ const Footer = () => {
               </div>
               <ul className="list-area">
                 <li>
-                  <a href="program-details.html">
+                  <Link to ="/">
                     <i className="fa-solid fa-chevron-right" />
-                    Our Services
-                  </a>
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a href="news-details.html">
+                  <Link to="/about-us">
                     <i className="fa-solid fa-chevron-right" />
-                    Our Blogs
-                  </a>
+                    About Us
+                  </Link>
                 </li>
                 <li>
-                  <a href="faq.html">
+                  <Link to ="/history">
                     <i className="fa-solid fa-chevron-right" />
-                    FAQ’S
-                  </a>
+                    History
+                  </Link>
+                </li>
+                 <li>
+                  <Link to = "/admission-policy">
+                    <i className="fa-solid fa-chevron-right" />
+                     Admission
+                  </Link>
                 </li>
                 <li>
-                  <a href="contact.html">
+                  <Link to = "/contact-us">
                     <i className="fa-solid fa-chevron-right" />
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -178,28 +186,28 @@ const Footer = () => {
               </div>
               <ul className="list-area">
                 <li>
-                  <a href="program-details.html">
+                  <Link to = "/funfair">
                     <i className="fa-solid fa-chevron-right" />
-                    Music Learning
-                  </a>
+                    Funfair
+                  </Link>
                 </li>
                 <li>
-                  <a href="program-details.html">
+                  <Link to = "/sports-gala">
                     <i className="fa-solid fa-chevron-right" />
                     Sports, Games
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="program-details.html">
+                  <Link to="/annual-day">
                     <i className="fa-solid fa-chevron-right" />
-                    Science Class
-                  </a>
+                    Annual Day
+                  </Link>
                 </li>
                 <li>
-                  <a href="program-details.html">
+                  <Link to="student-engagement">
                     <i className="fa-solid fa-chevron-right" />
-                    Drawing
-                  </a>
+                    Activites
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -215,39 +223,23 @@ const Footer = () => {
               <div className="recent-post-area">
                 <div className="recent-post-items">
                   <div className="thumb">
-                    <img src="assets/img/news/pp1.jpg" alt="post-img" />
+                    <img src="assets/img/footer.png" alt="post-img" />
                   </div>
                   <div className="content">
-                    <ul className="post-date">
-                      <li>
-                        <i className="fa-solid fa-calendar-days me-2" />
-                        20 Feb, 2024
-                      </li>
-                    </ul>
                     <h6>
-                      <a href="news-details.html">
-                        That jerk Form Finance <br />
-                        really threw me
-                      </a>
+                     
+                       Rainforest Water<br/> Cycle Project
+                    
                     </h6>
                   </div>
                 </div>
                 <div className="recent-post-items mb-0">
                   <div className="thumb">
-                    <img src="assets/img/news/pp2.jpg" alt="post-img" />
+                    <img src="assets/img/footer2.png" alt="post-img" />
                   </div>
                   <div className="content">
-                    <ul className="post-date">
-                      <li>
-                        <i className="fa-solid fa-calendar-days me-2" />
-                        15 Dec, 2024
-                      </li>
-                    </ul>
                     <h6>
-                      <a href="news-details.html">
-                        From without content <br />
-                        style without
-                      </a>
+                        Learn More <br />Every Day 
                     </h6>
                   </div>
                 </div>
@@ -264,16 +256,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-wrapper d-flex align-items-center justify-content-between">
           <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-            © All Copyright 2024 by <a href="index.html">Kidsa</a>
+            © Developed By Eshaal Aqeel
           </p>
-          <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
-            <li>
-              <a href="contact.html">Terms &amp; Condition</a>
-            </li>
-            <li>
-              <a href="contact.html">Privacy Policy</a>
-            </li>
-          </ul>
         </div>
       </div>
         <a href="#" id="scrollUp" class="scroll-icon">
