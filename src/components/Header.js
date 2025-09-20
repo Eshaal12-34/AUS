@@ -57,9 +57,9 @@ const Header = () => {
                       <FontAwesomeIcon icon={faLocationDot} />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
+                      <Link to="/contact-us">
                         Laki Dehri Road, Peshawar
-                      </a>
+                      </Link>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -69,16 +69,6 @@ const Header = () => {
                     <div className="offcanvas__contact-text">
                       <a href="mailto:info@example.com">
                         <span>info@example.com</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <div className="offcanvas__contact-icon mr-15">
-                      <i className="fal fa-clock" />
-                    </div>
-                    <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
-                        Mon-friday, 09am -05pm
                       </a>
                     </div>
                   </li>

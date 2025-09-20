@@ -60,19 +60,19 @@ const Early = () => {
   ];
   const activities = [
     {
-      imageUrl: "assets/img/kinder.jpg",
-      title:"Circle Time",
-      description:"At Abasyn University School, children explore learning through indoor and outdoor activities that reflect their interests, preferences, and curiosity. By engaging students in what they enjoy, our teachers help them develop essential skills and introduce new concepts within meaningful and purposeful contexts."
+      imageUrl: "assets/img/early2.png",
+      title:"Height Activity",
+      description:"At Abasyn University School, our early year students learn through fun activities that spark curiosity. In the Height Activity, children measure themselves and friends, discovering how everyone grows differently. This playful exercise introduces the concept of measurement while building confidence, teamwork, and awareness of growth in a joyful way."
     },
      {
-      imageUrl: "assets/img/kinder.jpg",
-      title:"Circle Time",
-      description:"At Abasyn University School, children explore learning through indoor and outdoor activities that reflect their interests, preferences, and curiosity. By engaging students in what they enjoy, our teachers help them develop essential skills and introduce new concepts within meaningful and purposeful contexts."
+     imageUrl: "assets/img/early3.jpeg",
+      title:"Hands-On Learning",
+      description:"At Abasyn University School, our early year students learn through hands-on tasks that make them active participants in their growth. While working on classroom activities, children explore, create, and practice skills that build focus, independence, and confidence. These experiences help them value effort and teamwork while enjoying a supportive, engaging environment."
     },
      {
-      imageUrl: "assets/img/kinder.jpg",
-      title:"Circle Time",
-      description:"At Abasyn University School, children explore learning through indoor and outdoor activities that reflect their interests, preferences, and curiosity. By engaging students in what they enjoy, our teachers help them develop essential skills and introduce new concepts within meaningful and purposeful contexts."
+      imageUrl: "assets/img/early3.png",
+      title:"Color Recognition",
+      description:"At AUS, our early year students explore the world of colors through interactive Color Recognition Activities. Using flashcards, toys, and everyday objects, children identify and name colors in a fun, engaging way. This activity supports cognitive development while strengthening observation, memory, and communication skills, making learning exciting and meaningful."
     },
   ]
   return (
@@ -83,7 +83,7 @@ const Early = () => {
      <div className="row align-items-center mt-4">
   <div className="col-lg-6 order-lg-2 mb-3 mb-lg-0"> 
     <img
-      src="assets/img/team/01.jpg"
+      src="assets/img/earlypic.png"
       alt="Early Years"
       width={300}
       className="img-fluid rounded"

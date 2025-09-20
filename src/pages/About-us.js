@@ -161,7 +161,7 @@ const About = () => {
         <div className="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".4s">
           <div className="feature-value-items">
             <div className="feature-value-image">
-              <img src="assets/img/cta/cta-2.png" alt="img" />
+              <img src="assets/img/aboutt.jpeg" alt="img" />
               <div className="value-shape">
                 <img src="assets/img/cta/cta-shape-2.png" alt="shape-img" />
               </div>

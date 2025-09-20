@@ -207,18 +207,19 @@ const Contact = () => {
       
       {/* Map Section */}
       <div className="map-section mt-5">
-        <div className="container">
-          <div className="ratio ratio-16x9">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.2401230712276!2d71.6015052748126!3d34.0120468198533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d93d112cdc5669%3A0x371c5387e84c73cd!2sAbasyn%20University%20School%20and%20College!5e0!3m2!1sen!2s!4v1754558846581!5m2!1sen!2s"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              title="Abasyn University Location"
-            ></iframe>
-          </div>
-        </div>
-      </div>
+  <div className="container">
+    <div className="ratio ratio-16x9">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.2401230712276!2d71.6015052748126!3d34.0120468198533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d93d112cdc5669%3A0x371c5387e84c73cd!2sAbasyn%20University%20School%20and%20College!5e0!3m2!1sen!2s!4v1754558846581!5m2!1sen!2s"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        title="Abasyn University Location"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
     </>
   );
 };

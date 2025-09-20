@@ -32,6 +32,7 @@ import PTM from "./pages/PTM";
 import Higher from "./pages/Highsec";
 import Fee from "./pages/Fees";
 import Scholarship from "./pages/ScholarshipTemp";
+import  Scrolltop from "./components/Scrolltop"
 function App() {
   useEffect(() => {
   AOS.init({
@@ -43,6 +44,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+         <Scrolltop />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about-us" element={<About/>} />

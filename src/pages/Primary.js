@@ -97,19 +97,19 @@ const Primary = () => {
   ];
   const activities = [
     {
-      imageUrl: "assets/img/kinder.jpg",
+      imageUrl: "assets/img/primary.jpeg",
       title:"Outdoor Adventures",
-      description:"At Abasyn University School, outdoor adventures allow children to explore nature, play freely, and discover the world around them. Through activities like games, teamwork, and exploration, our students build confidence, strengthen social skills, and develop a love for the environment in fun and meaningful ways"
+      description:"At our School, we make learning directions fun and engaging for our early year students through the East and West Activity. Children are introduced to the idea of the sun rising in the East and setting in the West with the help of simple stories, songs, and colorful props. By using playful role-plays and movement-based games, students actively participate in finding and walking toward East and West, making the concept easy to understand and remember.This activity not only teaches children about directions but also helps develop their spatial awareness, teamwork, and confidence."
     },
     {
-      imageUrl: "assets/img/kinder.jpg",
+      imageUrl: "assets/img/primary2.jpeg",
       title:"Team Work",
-      description:"At Abasyn University School, teamwork helps children learn the value of collaboration and respect. By engaging in group activities, projects, and play, students develop communication skills, problem-solving abilities, and a strong sense of responsibility while working together toward shared goals."
+      description:"At our School, we encourage students to develop strong literacy skills through well-structured Reading Activities. Learners are guided to read with understanding, expression, and confidence using a variety of age-appropriate texts, novels, and informational materials. Through group reading, discussions, and guided practice, they not only strengthen their vocabulary and comprehension but also build a deeper love for books and knowledge.This activity goes beyond just reading words—it helps students think critically, analyze ideas, and connect lessons to real-life situations. By engaging in regular reading practice, they develop focus, imagination, and communication skills that support their academic success."
     },
-    {
-      imageUrl: "assets/img/kinder.jpg",
+      {
+      imageUrl: "assets/img/primary3.jpeg",
       title:"Fun with Friends",
-      description:"At Abasyn University School, children learn the joy of collaboration through activities that encourage friendship, communication, and teamwork. Our teachers guide them in creating meaningful connections, solving problems together, and enjoying shared experiences that make learning both fun and memorable "
+      description:"At our School, we encourage students to practice and improve their writing skills through creative and structured Writing Activities. Learners are guided to write with clarity, neatness, and confidence using different exercises such as journaling, story writing, and note-taking. Through regular practice and teacher support, they not only enhance their handwriting and sentence formation but also learn to express their thoughts in an organized and meaningful way.This activity goes beyond just putting words on paper—it helps students develop creativity, critical thinking, and self-expression. "
     },
     ]
   return (

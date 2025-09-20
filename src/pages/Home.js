@@ -202,7 +202,7 @@ const Home = () => {
                   <img src="assets/img/program/fac2.jpg" alt="img" />
                 </div>
                 <div className="program-content text-center">
-                  <h4><a href="program-details.html">Science Labs</a></h4>
+                  <h4  style={{color:"white"}}>Science Lab</h4>
                   <p >Hands-on experiments in physics, chemistry, and biology that turn curiosity into real discovery.</p>
                 </div>
               </div>
@@ -215,7 +215,7 @@ const Home = () => {
                   <img src="assets/img/program/fac1..jpg" alt="img" />
                 </div>
                 <div className="program-content text-center">
-                  <h4><a href="program-details.html">Computer Lab</a></h4>
+                  <h4 style={{color:"white"}}>Computer Lab</h4>
                   <p> Modern computers and software empower students to learn, create, and innovate with technology.</p>
                 </div>
               </div>
@@ -225,10 +225,10 @@ const Home = () => {
               <div className="program-box-items">
                 <div className="program-bg bg-3" />
                 <div className="program-image">
-                  <img src="assets/img/program/03.jpg" alt="img" />
+                  <img src="assets/img/fac3.jpeg" alt="img" />
                 </div>
                 <div className="program-content text-center style-2">
-                  <h4><a href="program-details.html">library</a></h4>
+                  <h4>Library</h4>
                   <p> A quiet, resource-rich space where students read, research, and grow their knowledge daily.</p>
 
                 </div>
@@ -442,9 +442,9 @@ const Home = () => {
                    <i class="fas fa-football-ball" style= {{color: "#FF0000"}}></i>
                   </div>
                 <h3>
-                  <a href="news-details.html">
+                  <Link to="/sports-gala">
                     School Sports Day
-                  </a>
+                  </Link>
                 </h3>
                 </div>
                 <p style={{textAlign:"justify"}}>
@@ -480,9 +480,9 @@ const Home = () => {
             <i className="fas fa-bus" style={{color: "#FF0000"}}></i>  
           </div>  
           <h3>  
-            <a href="news-details.html">  
+            <Link to="/trips">  
               Recreational Trip  
-            </a>  
+            </Link>  
           </h3>  
         </div>  
         <p style={{textAlign:"justify"}}>  
@@ -501,9 +501,9 @@ const Home = () => {
             <i className="fas fa-smile-beam" style={{color: "#FF0000"}}></i>  
           </div>  
           <h3>  
-            <a href="news-details.html">  
+            <Link to="/funfair">  
               Funfair Festivities<br />  
-            </a>  
+            </Link>  
           </h3>  
         </div>  
         <p style={{textAlign:"justify"}}>  

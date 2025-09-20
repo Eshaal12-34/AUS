@@ -95,7 +95,7 @@ const Footer = () => {
           </div>
           <div className="content" data-aos="fade-up" data-aos-delay="700">
             <p>Location</p>
-            <h3>4517 Washington ave.</h3>
+            <h3>Laki Dehri Road, Peshawar</h3>
           </div>
         </div>
       </div>

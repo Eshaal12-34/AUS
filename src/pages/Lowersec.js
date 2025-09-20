@@ -154,29 +154,6 @@ At Abasyn University School & College, we view education as the cornerstone of a
     ))}
   </div>
 </div>
-      <div className="row justify-content-center">
-  <div className="col-lg-10 col-xl-8">
-    <h3 className="mb-3 text-center text-md-start fs-3">
-      Our Little Explorers in Action
-    </h3>
-    <p 
-      className="
-        text-justify 
-        text-center text-md-start 
-        fs-6 fs-md-5 
-        lh-lg lh-md-xl 
-        text-secondary
-      "
-      data-aos="fade-up" data-aos-delay="400"
-    >
-      At Abasyn University School, we believe that education goes beyond textbooks and classrooms. 
-      By engaging students in outdoor adventures, creative projects, physical activities, and 
-      interactive learning, we nurture their curiosity, confidence, and character. These experiences 
-      not only build essential life skills but also inspire a lifelong love for learning in fun and 
-      meaningful ways.
-    </p>
-  </div>
-</div>
  <SubjectsOffered title="Subjects Offered" subjects={middleSubjects} />
    </div>
   );
