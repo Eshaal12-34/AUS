@@ -58,7 +58,7 @@ const Scholarship = () => {
             <div className="text-center text-md-start">
               {/* Subjects */}
               <div className="d-flex align-items-start mb-4">
-                <FaBookOpen size={24} color="#1E3A8A" className="me-3 mt-1" />
+                <FaBookOpen size={28} color="#1E3A8A" className="flex-shrink-0 me-3 mt-1" />
                 <div>
                   <h4 className="mb-1 fw-semibold">Subjects</h4>
                   <p
@@ -69,7 +69,8 @@ const Scholarship = () => {
                     Computer Science – optional), English, and Urdu.
                   </p>
                 </div>
-              </div>
+             </div>
+
 
               {/* Scholarship Criteria */}
               <div className="d-flex align-items-start mb-4">
