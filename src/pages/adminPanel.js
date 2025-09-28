@@ -45,25 +45,24 @@ const AdminForm = () => {
     data.append("experience", JSON.stringify(experience));
     data.append("languages", JSON.stringify(languages));
 
-    try {
-      await axios.post("http://localhost:5000/api/faculty", data, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
-      alert("Teacher added successfully!");
+   try {
+  await axios.post("https://my-backend.vercel.app/api/faculty", data, {
+    headers: { "Content-Type": "multipart/form-data" },
+  });
+  alert("Teacher added successfully!");
 
-      // Reset form
-      setFormData({ name: "", designation: "", email: "", section: "" });
-      setEducation([{ degree: "", institute: "", subject: "", duration: "" }]);
-      setExperience([{ title: "", organization: "", years: "" }]);
-      setLanguages([""]);
-      setImageFile(null);
-      imageInputRef.current && (imageInputRef.current.value = "");
-    } catch (err) {
-      console.error("Error creating teacher", err);
-      alert("Failed to add teacher.");
-    }
+  // Reset form
+  setFormData({ name: "", designation: "", email: "", section: "" });
+  setEducation([{ degree: "", institute: "", subject: "", duration: "" }]);
+  setExperience([{ title: "", organization: "", years: "" }]);
+  setLanguages([""]);
+  setImageFile(null);
+  imageInputRef.current && (imageInputRef.current.value = "");
+} catch (err) {
+  console.error("Error creating teacher", err);
+  alert("Failed to add teacher.");
+}
   };
-
   return (
     <div className="container mt-5">
       <div
