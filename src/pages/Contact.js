@@ -76,7 +76,7 @@ const Contact = () => {
                       <div className="content">
                         <p>Call Us 7/24</p>
                         <h3>
-                          <a href="tel:+2085550112">+208-555-0112</a>
+                          <a href="tel:+091-258-8777">+091-258-8777</a>
                         </h3>
                       </div>
                     </div>
@@ -135,7 +135,7 @@ const Contact = () => {
                       </div>
                       <div className="content">
                         <p>Location</p>
-                        <h3>4517 Washington ave.</h3>
+                        <h3>Lakhi Dheri Road.</h3>
                       </div>
                     </div>
                   </div>
@@ -204,7 +204,80 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+      <div style={{ 
+        maxWidth: "420px",
+        margin: "40px 0 40px 145px",
+        padding: "25px",
+        borderRadius: "15px",
+        boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
+        background: "linear-gradient(135deg, #ffffff, #f1f9ff)",
+        fontFamily: "Segoe UI, sans-serif",
+        textAlign: "center"
+      }}>
+        <h2 style={{ 
+          fontSize: "26px", 
+          marginBottom: "25px", 
+          color: "#2c3e50", 
+          fontWeight: "600"
+        }}>
+          Our Other Contacts
+        </h2>
+
+        <div style={{ marginBottom: "15px" }}>
+          <a href="tel:+0912588666" 
+            style={{ 
+              display: "inline-block", 
+              padding: "12px 20px", 
+              borderRadius: "8px", 
+              backgroundColor: "#385469", 
+              color: "#fff", 
+              fontSize: "18px", 
+              fontWeight: "500", 
+              textDecoration: "none", 
+              transition: "0.3s" 
+            }}
+          >
+            +091 2588666
+          </a>
+        </div>
+
+        <div style={{ marginBottom: "15px" }}>
+          <a href="tel:+03339444958" 
+            style={{ 
+              display: "inline-block", 
+              padding: "12px 20px", 
+              borderRadius: "8px", 
+              backgroundColor: "#385469", 
+              color: "#fff", 
+              fontSize: "18px", 
+              fontWeight: "500", 
+              textDecoration: "none", 
+              transition: "0.3s" 
+            }}
+          >
+            +0333 9444958
+          </a>
+        </div>
+
+        <div>
+          <a href="tel:+03339444968" 
+            style={{ 
+              display: "inline-block", 
+              padding: "12px 20px", 
+              borderRadius: "8px", 
+              backgroundColor: "#385469", 
+              color: "#fff", 
+              fontSize: "18px", 
+              fontWeight: "500", 
+              textDecoration: "none", 
+              transition: "0.3s" 
+            }}
+          >
+            +0333 9444968
+          </a>
+        </div>
+      </div>
+
       {/* Map Section */}
       <div className="map-section mt-5">
   <div className="container">

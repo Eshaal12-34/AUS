@@ -97,16 +97,7 @@ const CvDetails = () => {
               </li>
             ))}
           </ul>
-
-          {/* Languages */}
-          <h4 className="text-success my-3">Languages</h4>
-          <ul className="list-group text-start">
-            {cvData.languages?.map((lang, i) => (
-              <li key={i} className="list-group-item">
-                {lang}
-              </li>
-            ))}
-          </ul>
+          
         </div>
       </div>
     </div>

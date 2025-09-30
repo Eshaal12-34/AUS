@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="content" data-aos="fade-up" data-aos-delay="700">
             <p>Call Us 7/24</p>
             <h3>
-              <a href="tel:+2085550112">+208-555-0112</a>
+              <a href="tel: +091 2588777">+091-258-8777</a>
             </h3>
           </div>
         </div>

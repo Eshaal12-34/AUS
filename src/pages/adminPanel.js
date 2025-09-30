@@ -15,7 +15,6 @@ const AdminForm = () => {
   const [experience, setExperience] = useState([
     { title: "", organization: "", years: "" },
   ]);
-  const [languages, setLanguages] = useState([""]);
   const [imageFile, setImageFile] = useState(null);
   const imageInputRef = useRef(null);
 
@@ -43,26 +42,25 @@ const AdminForm = () => {
     if (imageFile) data.append("image", imageFile);
     data.append("education", JSON.stringify(education));
     data.append("experience", JSON.stringify(experience));
-    data.append("languages", JSON.stringify(languages));
 
-   try {
-  await axios.post("https://my-backend.vercel.app/api/faculty", data, {
-    headers: { "Content-Type": "multipart/form-data" },
-  });
-  alert("Teacher added successfully!");
+    try {
+      await axios.post("http://localhost:5000/api/faculty", data, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
+      alert("Teacher added successfully!");
 
-  // Reset form
-  setFormData({ name: "", designation: "", email: "", section: "" });
-  setEducation([{ degree: "", institute: "", subject: "", duration: "" }]);
-  setExperience([{ title: "", organization: "", years: "" }]);
-  setLanguages([""]);
-  setImageFile(null);
-  imageInputRef.current && (imageInputRef.current.value = "");
-} catch (err) {
-  console.error("Error creating teacher", err);
-  alert("Failed to add teacher.");
-}
+      // Reset form
+      setFormData({ name: "", designation: "", email: "", section: "" });
+      setEducation([{ degree: "", institute: "", subject: "", duration: "" }]);
+      setExperience([{ title: "", organization: "", years: "" }]);
+      setImageFile(null);
+      imageInputRef.current && (imageInputRef.current.value = "");
+    } catch (err) {
+      console.error("Error creating teacher", err);
+      alert("Failed to add teacher.");
+    }
   };
+
   return (
     <div className="container mt-5">
       <div
@@ -206,37 +204,7 @@ const AdminForm = () => {
               ➕ Add More Experience
             </button>
 
-            {/* Languages */}
-            <h5 className="fw-bold mt-4">Languages</h5>
-            {languages.map((lang, i) => (
-              <div key={i} className="mb-2 d-flex">
-                <input
-                  type="text"
-                  className="form-control rounded-3 shadow-sm"
-                  placeholder="Enter a language"
-                  value={lang}
-                  onChange={(e) =>
-                    handleArrayChange(setLanguages, languages, i, null, e.target.value)
-                  }
-                />
-                {languages.length > 1 && (
-                  <button
-                    type="button"
-                    className="btn btn-danger btn-sm ms-2"
-                    onClick={() => removeField(setLanguages, languages, i)}
-                  >
-                    Remove
-                  </button>
-                )}
-              </div>
-            ))}
-            <button
-              type="button"
-              onClick={() => addField(setLanguages, "")}
-              className="btn btn-outline-secondary mb-3"
-            >
-              ➕ Add More Languages
-            </button>
+           
 
             {/* Submit */}
             <button
