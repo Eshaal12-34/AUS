@@ -206,19 +206,6 @@ const Contact = () => {
         </div>
       </section>
      <div className="contact-box">
-  <h2>Our Other Contacts</h2>
-
-  <div>
-    <a href="tel:+0912588666">+091 2588666</a>
-  </div>
-
-  <div>
-    <a href="tel:+03339444958">+0333 9444958</a>
-  </div>
-
-  <div>
-    <a href="tel:+03339444968">+0333 9444968</a>
-  </div>
 </div>
 
 
