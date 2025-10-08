@@ -43,7 +43,7 @@ const Header = () => {
                 </div>
                 <div className="offcanvas__close">
                   <button onClick={closeOffcanvas}>
-                    <FontAwesomeIcon icon={faTimes} />
+                    <FontAwesomeIcon icon={faTimes} style={{color:"white"}} />
                   </button>
                 </div>
               </div>

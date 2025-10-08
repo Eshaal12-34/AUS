@@ -9,14 +9,14 @@ import '../assets/main.css';
 
 const Gallery = () => {
   const galleryData = [
-    { title: "Sports Day", description: "October 2024", imageUrl: "/assets/img/gall/1.jpeg" },
-    { title: "School Opening", description: "February 2025", imageUrl: "/assets/img/gall/2.jpeg" },
-    { title: "Annual Day", description: "December 2024", imageUrl: "/assets/img/gall/3.jpeg"  },
-    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/4.jpeg" },
-    { title: "Art Competition", description: "December 2024", imageUrl: "/assets/img/gall/4.jpg" },
-    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/7.jpeg" },
-    { title: "Art Competition", description: "December 2024", imageUrl: "/assets/img/gall/6.jpeg" },
-    { title: "Science Exhibition", description: "January 2025", imageUrl: "/assets/img/gall/8.jpeg" },
+    { title: "Sports Day", imageUrl: "/assets/img/gall/1.jpeg" },
+    { title: "School Opening", imageUrl: "/assets/img/gall/2.jpeg" },
+    { title: "Annual Day", imageUrl: "/assets/img/gall/3.jpeg"  },
+    { title: "Activity On Board",imageUrl: "/assets/img/gall/4.jpeg" },
+    { title: "Planting Activites", imageUrl: "/assets/img/gall/4.jpg" },
+    { title: "Science Exhibition",imageUrl: "/assets/img/gall/7.jpeg" },
+    { title: "Funafir", imageUrl: "/assets/img/gall/6.jpeg" },
+    { title: "Milaad", imageUrl: "/assets/img/gall/8.jpeg" },
   ];
 
   return (

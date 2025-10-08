@@ -204,79 +204,22 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <div style={{ 
-        maxWidth: "420px",
-        margin: "40px 0 40px 145px",
-        padding: "25px",
-        borderRadius: "15px",
-        boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
-        background: "linear-gradient(135deg, #ffffff, #f1f9ff)",
-        fontFamily: "Segoe UI, sans-serif",
-        textAlign: "center"
-      }}>
-        <h2 style={{ 
-          fontSize: "26px", 
-          marginBottom: "25px", 
-          color: "#2c3e50", 
-          fontWeight: "600"
-        }}>
-          Our Other Contacts
-        </h2>
+     <div className="contact-box">
+  <h2>Our Other Contacts</h2>
 
-        <div style={{ marginBottom: "15px" }}>
-          <a href="tel:+0912588666" 
-            style={{ 
-              display: "inline-block", 
-              padding: "12px 20px", 
-              borderRadius: "8px", 
-              backgroundColor: "#385469", 
-              color: "#fff", 
-              fontSize: "18px", 
-              fontWeight: "500", 
-              textDecoration: "none", 
-              transition: "0.3s" 
-            }}
-          >
-            +091 2588666
-          </a>
-        </div>
+  <div>
+    <a href="tel:+0912588666">+091 2588666</a>
+  </div>
 
-        <div style={{ marginBottom: "15px" }}>
-          <a href="tel:+03339444958" 
-            style={{ 
-              display: "inline-block", 
-              padding: "12px 20px", 
-              borderRadius: "8px", 
-              backgroundColor: "#385469", 
-              color: "#fff", 
-              fontSize: "18px", 
-              fontWeight: "500", 
-              textDecoration: "none", 
-              transition: "0.3s" 
-            }}
-          >
-            +0333 9444958
-          </a>
-        </div>
+  <div>
+    <a href="tel:+03339444958">+0333 9444958</a>
+  </div>
 
-        <div>
-          <a href="tel:+03339444968" 
-            style={{ 
-              display: "inline-block", 
-              padding: "12px 20px", 
-              borderRadius: "8px", 
-              backgroundColor: "#385469", 
-              color: "#fff", 
-              fontSize: "18px", 
-              fontWeight: "500", 
-              textDecoration: "none", 
-              transition: "0.3s" 
-            }}
-          >
-            +0333 9444968
-          </a>
-        </div>
-      </div>
+  <div>
+    <a href="tel:+03339444968">+0333 9444968</a>
+  </div>
+</div>
+
 
       {/* Map Section */}
       <div className="map-section mt-5">
