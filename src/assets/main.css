@@ -9595,7 +9595,6 @@ input.main-search-input::placeholder {
 .contact-box {
   max-width: 90%;
   width: 420px;
-  margin: 40px 0 40px 145px; /* left aligned on large */
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
