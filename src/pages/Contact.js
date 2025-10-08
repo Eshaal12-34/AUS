@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import axios from "axios";
+import "../assets/main.css";
 import { useState } from "react";
 
 const Contact = () => {
