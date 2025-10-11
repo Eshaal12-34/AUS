@@ -10,11 +10,11 @@ const FacultyList = () => {
   const [faculty, setFaculty] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`http://localhost:5000/api/faculty/${section}`) 
-      .then((res) => setFaculty(res.data))
-      .catch((err) => console.error("Error fetching faculty:", err));
-  }, [section]);
+  axios
+    .get(`https://backend-fylo.vercel.app/api/faculty/${section}`)
+    .then((res) => setFaculty(res.data))
+    .catch((err) => console.error("Error fetching faculty:", err));
+}, [section]);
 
   return (
     <>
