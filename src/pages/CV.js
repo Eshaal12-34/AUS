@@ -11,7 +11,7 @@ const CvDetails = () => {
     const fetchCV = async () => {
       try {
         const res = await axios.get(
-          `https://backend-fylo.vercel.app/api/cv/${id}` // ✅ fixed
+          `http://localhost:5000/api/faculty/cv/${id}` // ✅ fixed
         );
         setCvData(res.data);
       } catch (error) {
@@ -40,7 +40,7 @@ const CvDetails = () => {
             <div className="col-md-4 text-center order-1 order-md-2">
               {cvData.image && (
                 <img
-                src={`https://backend-fylo.vercel.app/api/uploads/${cvData.image}`} 
+                src={`http://localhost:5000/uploads/${cvData.image}`} 
                   alt={cvData.name}
                   className="img-fluid"
                   style={{
