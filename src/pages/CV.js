@@ -11,8 +11,9 @@ const CvDetails = () => {
     const fetchCV = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/faculty/cv/${id}` // ✅ fixed
-        );
+  `https://backend-fylo.vercel.app/api/faculty/cv/${id}`
+);
+
         setCvData(res.data);
       } catch (error) {
         console.error("Error fetching CV:", error);
@@ -38,18 +39,18 @@ const CvDetails = () => {
           <div className="row align-items-center">
             {/* Image first on small, right side on medium+ */}
             <div className="col-md-4 text-center order-1 order-md-2">
-              {cvData.image && (
-                <img
-                src={`http://localhost:5000/uploads/${cvData.image}`} 
-                  alt={cvData.name}
-                  className="img-fluid"
-                  style={{
-                    width: "112px",
-                    height: "150px",
-                    objectFit: "cover",
-                  }}
-                />
-              )}
+             {cvData.image && (
+              <img
+                src={`https://backend-fylo.vercel.app/uploads/${cvData.image}`}
+                alt={cvData.name}
+                className="img-fluid"
+                style={{
+                  width: "112px",
+                  height: "150px",
+                  objectFit: "cover",
+                }}
+              />
+            )}
             </div>
 
             {/* Text second on small, left side on medium+ */}

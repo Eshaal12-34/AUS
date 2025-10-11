@@ -27,17 +27,17 @@ const FacultyList = () => {
           <Col key={member._id} xs={12} lg={6} xl={4}>
             <Card className="shadow-sm p-2 h-100">
               <div className="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
-                <Card.Img
-                 src={`http://localhost:5000/uploads/${member.image}`} 
-                  alt={member.name}
-                  style={{
-                    width: "100px",
-                    height: "auto",
-                    objectFit: "cover",
-                    borderRadius: "8px",
-                    marginRight: "15px",
-                  }}
-                />
+               <Card.Img
+                src={`https://backend-fylo.vercel.app/uploads/${member.image}`} 
+                alt={member.name}
+                style={{
+                  width: "100px", 
+                  height: "auto",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                  marginRight: "15px",
+                }}
+              />
                 <div>
                   <Card.Title className="mb-1">Name: {member.name}</Card.Title>
                   <Card.Text className="text-muted mb-2">
