@@ -13,19 +13,19 @@ const Early = () => {
       id: "english",
       name: "English",
       description:
-        "our English program is designed to spark curiosity and nurture a love for language. Children are introduced to the fundamentals of listening, speaking, reading, and writing through play-based and interactive activities that make learning fun and engaging.Reading is introduced through age-appropriate picture books, phonics activities, and shared reading sessions, which lay the foundation for strong literacy skills. Early writing experiences focus on letter recognition and simple sentence formation, encouraging children to express their ideas creatively.By combining structured learning with creative play, we ensure that every child develops not only language skills but also confidence and curiosity that will benefit them throughout their educational journey"
+        "Our English program is designed to spark curiosity and nurture a love for language. Children are introduced to the fundamentals of listening, speaking, reading, and writing through play-based and interactive activities that make learning fun and engaging.Reading is introduced through age-appropriate picture books, phonics activities, and shared reading sessions, which lay the foundation for strong literacy skills. Early writing experiences focus on letter recognition and simple sentence formation, encouraging children to express their ideas creatively.By combining structured learning with creative play, we ensure that every child develops not only language skills but also confidence and curiosity that will benefit them throughout their educational journey"
     },
     {
       id: "maths",
       name: "Maths",
       description:
-        "our Mathematics program focuses on developing numeracy skills, logical thinking, and problem-solving abilities in a fun and engaging way. Children explore numbers, shapes, patterns, and measurements through hands-on activities, games, and interactive learning.Our approach encourages children to count, compare, and recognize patterns, helping them build a strong foundation for future mathematical concepts. By integrating play-based learning, we ensure that every child enjoys discovering the world of numbers while developing confidence and critical thinking skills."
+        "Our Mathematics program focuses on developing numeracy skills, logical thinking, and problem-solving abilities in a fun and engaging way. Children explore numbers, shapes, patterns, and measurements through hands-on activities, games, and interactive learning.Our approach encourages children to count, compare, and recognize patterns, helping them build a strong foundation for future mathematical concepts. By integrating play-based learning, we ensure that every child enjoys discovering the world of numbers while developing confidence and critical thinking skills."
     },
     {
       id: "science",
       name: "Science",
       description:
-        "our Science program encourages children to explore, observe, and ask questions about the world around them. Through hands-on experiments, nature walks, and interactive activities, children learn about plants, animals, weather, and basic physical phenomena.This approach helps develop curiosity, critical thinking, and problem-solving skills, while fostering a love for discovery and understanding how things work. Children gain confidence in exploring ideas and making connections between their experiences and scientific concepts."
+        "Our Science program encourages children to explore, observe, and ask questions about the world around them. Through hands-on experiments, nature walks, and interactive activities, children learn about plants, animals, weather, and basic physical phenomena.This approach helps develop curiosity, critical thinking, and problem-solving skills, while fostering a love for discovery and understanding how things work. Children gain confidence in exploring ideas and making connections between their experiences and scientific concepts."
     },
     {
       id: "arts",

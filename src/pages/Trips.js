@@ -6,12 +6,12 @@ import "../assets/scss/_footer.scss"; // Assuming you have a specific SCSS file 
 
 const Trip = () => {
   const pics = [
-    { imgUrl: "assets/img/trip/trip1.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/trip/trip2.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/trip/trip7.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/trip/trip11.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/trip/trip12.jpeg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
-    { imgUrl: "assets/img/trip/trip1.jpg", description: "A vibrant scene from the Funfair, showcasing the joy and excitement of the event." },
+    { imgUrl: "assets/img/trip/trip1.jpg" },
+    { imgUrl: "assets/img/trip/trip2.jpg"},
+    { imgUrl: "assets/img/trip/trip7.jpeg"},
+    { imgUrl: "assets/img/trip/trip11.jpeg" },
+    { imgUrl: "assets/img/trip/trip12.jpeg"},
+    { imgUrl: "assets/img/trip/trip20.jpeg" },
   ];
 
   return (
@@ -20,19 +20,7 @@ const Trip = () => {
 
       <section className="funfair-section section-padding">
         <div className="container" style={{ position: "relative", textAlign: "center" }}>
-         <div className="bus-shape float-bob-x">
-          <img 
-            src="assets/img/about/bus.png" 
-            alt="shape-img"
-            style={{
-              position: "absolute",
-              top: "-40px",  
-              right: "4%", 
-              width: "140px",
-              height: "auto",
-            }}
-          />
-          </div> 
+      
 
           {/* Heading */}
           <h2 style={{ margin: 0 }}> Learning Beyond the Classroom</h2>
@@ -72,7 +60,7 @@ const Trip = () => {
 
           <div className="funfair-grid">
             {pics.map((pic, index) => (
-              <Picture key={index} imgUrl={pic.imgUrl} description={pic.description} />
+              <Picture key={index} imgUrl={pic.imgUrl}/>
             ))}
           </div>
         </section>
