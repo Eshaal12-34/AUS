@@ -41,7 +41,7 @@ const CvDetails = () => {
             <div className="col-md-4 text-center order-1 order-md-2">
              {cvData.image && (
               <img
-                src={`https://backend-fylo.vercel.app/uploads/${cvData.image}`}
+                src={cvData.image}
                 alt={cvData.name}
                 className="img-fluid"
                 style={{

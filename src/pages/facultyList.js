@@ -28,7 +28,7 @@ const FacultyList = () => {
             <Card className="shadow-sm p-2 h-100">
               <div className="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
                <Card.Img
-                src={`https://backend-fylo.vercel.app/uploads/${member.image}`} 
+                src={member.image} 
                 alt={member.name}
                 style={{
                   width: "100px", 
