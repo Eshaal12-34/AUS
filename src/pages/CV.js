@@ -99,8 +99,9 @@ const CvDetails = () => {
                     <strong>{edu.degree}</strong> in{" "}
                     <strong>{edu.subject}</strong> from {edu.institute}
                     {edu.gpa && <> (GPA: {edu.gpa})</>}
-                    <br />
-                    <span className="text-muted small">{edu.duration}</span>
+                    <div className="text-muted small mt-1">
+                      <strong>Duration:</strong> {edu.duration}
+                    </div>
                   </li>
                 ))
               ) : (
@@ -120,10 +121,9 @@ const CvDetails = () => {
                     className="list-group-item border-0 border-bottom py-3"
                   >
                     <strong>{exp.title}</strong> at {exp.organization}
-                    <br />
-                    <span className="text-muted small">
+                    <div className="text-muted small mt-1">
                       <strong>Duration:</strong> {exp.years}
-                    </span>
+                    </div>
                   </li>
                 ))
               ) : (
