@@ -40,7 +40,7 @@ const Testimonial = () => {
           spaceBetween={20}
           slidesPerView={3}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           breakpoints={{
           1200: { slidesPerView: 3, spaceBetween: 30 },
           992: { slidesPerView: 2, spaceBetween: 20 },

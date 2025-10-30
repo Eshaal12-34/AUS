@@ -69,22 +69,7 @@ const VisionMission = () => {
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <p style={{ textAlign: "justify" }}>
-              At Abasyn University School, our mission is to provide a nurturing,
-              inclusive, and stimulating environment where every student is
-              encouraged and inspired to achieve their fullest potential. We are
-              committed to delivering a holistic education that integrates
-              academic excellence with moral values, creativity, critical
-              thinking, and emotional intelligence. We aim to equip students with
-              the skills, mindset, and confidence to navigate and contribute
-              positively to an ever-changing, interconnected world. Through
-              emphasizing integrity, resilience, empathy, and collaboration, we
-              ensure our students tackle global challenges with ethical judgment
-              and determination. Our mission is to shape well-rounded individuals
-              who think critically, act responsibly, and embrace diversity,
-              nurturing not only their intellectual growth but also their
-              emotional, social, and moral development. We strive to develop
-              leaders, innovators, and change-makers who will make a meaningful
-              impact on society and the world.
+       At Abasyn University School, our mission is to cultivate a dynamic learning community that empowers students to reach their highest potential through academic rigor, character development, and innovative thinking. We are dedicated to fostering intellectual curiosity, creativity, and lifelong learning while nurturing values of respect, empathy, and social responsibility. Our goal is to provide students with the knowledge, skills, and confidence to excel in an ever-evolving world, preparing them to be responsible global citizens and future leaders. Through collaboration between educators, students, and families, we aim to create an inclusive environment that celebrates diversity and encourages personal growth. We strive to inspire every learner to pursue excellence, embrace challenges, and make meaningful contributions to their communities and the wider world.
             </p>
           </div>
         </div>

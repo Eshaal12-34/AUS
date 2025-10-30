@@ -63,12 +63,22 @@ const Footer = () => {
               />
             </svg>
           </div>
-          <div className="content" data-aos="fade-up" data-aos-delay="700">
-            <p>Email</p>
-            <h3>
-              <a href="mailto:kidsa@gmail.com">abasynschool@abasyn.edu.pk</a>
-            </h3>
-          </div>
+          <div
+  className="content"
+  data-aos="fade-up"
+  data-aos-delay="700"
+>
+  <p style={{ textTransform: "none" }}>Email</p>
+  <h3 style={{ textTransform: "none" }}>
+    <a
+      href="mailto:abasynschool@abasyn.edu.pk"
+      style={{ textTransform: "none" }}
+    >
+      abasynschool@abasyn.edu.pk
+    </a>
+  </h3>
+</div>
+
         </div>
         <div className="contact-info-items wow fadeInUp" data-wow-delay=".7s">
           <div className="icon" data-aos="fade-up" data-aos-delay="700">
