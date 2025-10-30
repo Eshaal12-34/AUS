@@ -105,9 +105,9 @@ const Contact = () => {
                         </svg>
                       </div>
                       <div className="content">
-                        <p>Make a Quote</p>
+                        <p>Email Us</p>
                         <h3>
-                          <a href="mailto:infotech@gmail.com">Infotech@gmail.com</a>
+                          <a href="mailto:abasynschool@abasyn.edu.pk">abasynschool@abasyn.edu.pk</a>
                         </h3>
                       </div>
                     </div>
@@ -205,21 +205,22 @@ const Contact = () => {
           </div>
         </div>
       </section>
-     <div className="contact-box">
-  <h2>Our Other Contacts</h2>
+      <div className="container">
+      <div className="contact-box">
+      <h2>Our Other Contacts</h2>
 
-  <div>
-    <a href="tel:+0912588666">+091 2588666</a>
-  </div>
+      <div>
+        <a href="tel:+0912588666">+091 2588666</a>
+      </div>
 
-  <div>
-    <a href="tel:+03339444958">+0333 9444958</a>
-  </div>
+      <div>
+        <a href="tel:+03339444958">+0333 9444958</a>
+      </div>
 
-  <div>
-    <a href="tel:+03339444968">+0333 9444968</a>
-  </div>
-</div>
+      <div>
+        <a href="tel:+03339444968">+0333 9444968</a>
+      </div>
+    </div>
 
 
       {/* Map Section */}
@@ -235,6 +236,7 @@ const Contact = () => {
       ></iframe>
     </div>
   </div>
+</div>
 </div>
 
     </>

@@ -14,9 +14,9 @@ const Gallery = () => {
     { title: "Annual Day", imageUrl: "/assets/img/gall/3.jpeg"  },
     { title: "Activity On Board",imageUrl: "/assets/img/gall/4.jpeg" },
     { title: "Planting Activites", imageUrl: "/assets/img/gall/4.jpg" },
-    { title: "Science Exhibition",imageUrl: "/assets/img/gall/7.jpeg" },
-    { title: "Funafir", imageUrl: "/assets/img/gall/6.jpeg" },
-    { title: "Milaad", imageUrl: "/assets/img/gall/8.jpeg" },
+    { title: "Annual Day",imageUrl: "/assets/img/gall/7.jpeg" },
+    { title: "Milaad", imageUrl: "/assets/img/gall/6.jpeg" },
+    { title: "Funfair", imageUrl: "/assets/img/gall/8.jpeg" },
   ];
 
   return (

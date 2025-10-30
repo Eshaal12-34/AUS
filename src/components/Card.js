@@ -25,9 +25,16 @@ const Card = ({ title, imageUrl, description }) => {
               <i className="fas fa-share-alt" />
             </span>
             <ul>
-              <li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-              <li><a href="#"><i className="fab fa-instagram" /></a></li>
-              <li><a href="#"><i className="fab fa-linkedin-in" /></a></li>
+              <li>
+               <a href="https://www.facebook.com/share/19hYixwkuP/">
+                    <i className="fab fa-facebook-f" />
+               </a>
+              </li>
+              <li>
+               <a href="https://www.youtube.com/@abasynuniversityschoolcoll2033">
+                    <i className="fab fa-youtube" />
+                  </a>
+              </li>
             </ul>
           </div>
         </div>

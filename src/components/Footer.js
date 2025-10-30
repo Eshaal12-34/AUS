@@ -64,9 +64,9 @@ const Footer = () => {
             </svg>
           </div>
           <div className="content" data-aos="fade-up" data-aos-delay="700">
-            <p>Make a Quote</p>
+            <p>Email</p>
             <h3>
-              <a href="mailto:kidsa@gmail.com">kidsa@gmail.com</a>
+              <a href="mailto:kidsa@gmail.com">abasynschool@abasyn.edu.pk</a>
             </h3>
           </div>
         </div>

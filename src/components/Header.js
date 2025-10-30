@@ -67,8 +67,8 @@ const Header = () => {
                       <i className="fal fa-envelope" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@example.com">
-                        <span>info@example.com</span>
+                      <a href="mailto:abasynschool@abasyn.edu.pk">
+                        <span>abasynschool@abasyn.edu.pk</span>
                       </a>
                     </div>
                   </li>
@@ -77,7 +77,7 @@ const Header = () => {
                       <i className="far fa-phone" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
+                      <a href="tel:+091-258-8777">+091-258-8777</a>
                     </div>
                   </li>
                 </ul>
@@ -120,8 +120,9 @@ const Header = () => {
               </li>
               <li>
                 <i className="far fa-envelope" />
-                <a href="mailto:info@example.com" className="link">
-                  info@example.com
+                <a href="mailto:abasynschool@abasyn.edu.pk" className="link">
+                 abasynschool@abasyn.edu.pk
+
                 </a>
               </li>
             </ul>
