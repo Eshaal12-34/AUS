@@ -145,7 +145,7 @@ const Contact = () => {
                       </div>
                       <div className="content">
                         <p>Location</p>
-                        <h3>Lakhi Dheri Road.</h3>
+                        <h3> Lakhi Dheri Road, Gulbahar No. 4, Peshawar</h3>
                       </div>
                     </div>
                   </div>
