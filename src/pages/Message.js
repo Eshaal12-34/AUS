@@ -6,67 +6,121 @@ const Message = () => {
   return (
     <>
       <Banner title="Messages" />
-      
+
+      {/* Board of Director's Message */}
       <div className="container my-5">
-        {/* Director's Message */}
         <h2 
           className="section-title text-center mb-5" 
           data-aos="fade-up" 
           data-aos-delay="300"
         >
-          Director's Message
+          Board of Director's Message
         </h2>
 
-        <div className="row align-items-center">
-          {/* Left Image */}
-          <div 
-            className="col-md-5 mb-4 mb-md-0" 
-            data-aos="fade-up" 
-            data-aos-delay="300"
-          >
-            <img 
-              src="assets/img/director.jpg" 
-              alt="Director" 
-              className="img-fluid mx-auto d-block rounded shadow" 
-            />
+        <div className="container my-5">
+          <div className="row justify-content-center text-center g-4">
+            {/* Director 1 */}
+            <div className="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+              <div className="card border-0 shadow-lg rounded-4 overflow-hidden h-100">
+                <img
+                  src="assets/img/directors.jpeg"
+                  alt="Director 1"
+                  className="img-fluid"
+                  style={{
+                    height: "250px",
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Imran */}
+            <div className="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+              <div className="card border-0 shadow-lg rounded-4 overflow-hidden h-100">
+                <img
+                  src="assets/img/history.jpg"
+                  alt="Imran"
+                  className="img-fluid"
+                  style={{
+                    height: "250px",
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Director 3 */}
+            <div className="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+              <div className="card border-0 shadow-lg rounded-4 overflow-hidden h-100">
+                <img
+                  src="assets/img/director3.jpeg"
+                  alt="Director 3"
+                  className="img-fluid"
+                  style={{
+                    height: "250px",
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Director 4 */}
+            <div className="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+              <div className="card border-0 shadow-lg rounded-4 overflow-hidden h-100">
+                <img
+                  src="assets/img/director4.jpeg"
+                  alt="Director 4"
+                  className="img-fluid"
+                  style={{
+                    height: "250px",
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </div>
+            </div>
           </div>
-
-          {/* Right Text */}
-        <div 
-  className="col-md-7" 
-  data-aos="fade-up" 
-  data-aos-delay="400"
->
-  <p className="fs-6 fs-md-5" style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.8" }}>
-    Our school was founded with the vision of uplifting society by equipping students 
-    with knowledge and skills that prepare them for a successful future. Since its 
-    establishment in 2018, the institution has proudly guided hundreds of students 
-    through their board examinations. Many of them are now pursuing higher education 
-    at esteemed national and international universities, while others have begun 
-    contributing to the IT industry.
-  </p>
-  <br/>
-  <p className="fs-6 fs-md-5" style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.8" }}>
-    In addition to academic excellence, we place a strong emphasis on preparing our 
-    students for the demands of the modern world. This is the era of technology, 
-    where expertise in software development, web technologies, mobile application 
-    development, cybersecurity, and artificial intelligence is in high demand. 
-    Recognizing this need, we have established state-of-the-art computer laboratories 
-    and introduced specialized IT courses for our students.
-  </p>
-  <br/>
-  <p className="fs-6 fs-md-5" style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.8" }}>
-    Through these initiatives, we aim to equip our learners with practical, 
-    market-relevant skills that will empower them to thrive as professionals and 
-    freelancers, offering valuable services to both national and international 
-    clients. It is our firm belief that by nurturing talent and fostering innovation, 
-    we can contribute meaningfully to the progress of society.
-  </p>
-</div>
-
         </div>
 
-        {/* Principal's Message */}
+        {/* Director's Text */}
+        <div 
+          className="col-lg-12" 
+          data-aos="fade-up" 
+          data-aos-delay="400"
+        >
+          <p className="fs-6 fs-md-5" style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.8" }}>
+            Our school was founded with the vision of uplifting society by equipping students 
+            with knowledge and skills that prepare them for a successful future. Since its 
+            establishment in 2018, the institution has proudly guided hundreds of students 
+            through their board examinations. Many of them are now pursuing higher education 
+            at esteemed national and international universities, while others have begun 
+            contributing to the IT industry.
+          </p>
+          <br/>
+          <p className="fs-6 fs-md-5" style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.8" }}>
+            In addition to academic excellence, we place a strong emphasis on preparing our 
+            students for the demands of the modern world. This is the era of technology, 
+            where expertise in software development, web technologies, mobile application 
+            development, cybersecurity, and artificial intelligence is in high demand. 
+            Recognizing this need, we have established state-of-the-art computer laboratories 
+            and introduced specialized IT courses for our students.
+          </p>
+          <br/>
+          <p className="fs-6 fs-md-5" style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.8" }}>
+            Through these initiatives, we aim to equip our learners with practical, 
+            market-relevant skills that will empower them to thrive as professionals and 
+            freelancers, offering valuable services to both national and international 
+            clients. It is our firm belief that by nurturing talent and fostering innovation, 
+            we can contribute meaningfully to the progress of society.
+          </p>
+        </div>
+      </div>
+
+      {/* Principal's Message */}
+      <div className="container my-5">
         <h2 
           className="section-title text-center mb-5 mt-5" 
           data-aos="fade-up" 
@@ -96,7 +150,7 @@ const Message = () => {
             data-aos-delay="400"
           >
             <p 
-              className=" fs-6 fs-md-5" 
+              className="fs-6 fs-md-5" 
               style={{ textAlign: "justify", textJustify: "inter-word", lineHeight: "1.8" }}
             >
               Learning is not just about acquiring knowledge; it must bring about 
@@ -118,8 +172,10 @@ const Message = () => {
             </p>
           </div>
         </div>
+      </div>
 
-        {/* Vice Principal's Message */}
+      {/* Vice Principal's Message */}
+      <div className="container my-5">
         <h2 
           className="section-title text-center mb-5 mt-5" 
           data-aos="fade-up" 

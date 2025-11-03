@@ -14,21 +14,7 @@ const History = () => {
           History Of Abasyn University School
         </h2>
 
-        {/* Image on left, text on right */}
-       <div data-aos="fade-up" data-aos-delay="300">
-  {/* FLOAT IMAGE ON LEFT */}
-  <img
-    src="assets/img/history.jpg"
-    alt="History"
-    style={{
-      width: "400px",
-      height: "auto",
-      borderRadius: "8px",
-      float: "left",
-      marginRight: "20px",
-      marginBottom: "10px",
-    }}
-  />
+       
 
   {/* TEXT WRAPS BESIDE IMAGE, THEN FULL WIDTH BELOW */}
   <div style={{ textAlign: "justify" }}>
@@ -66,8 +52,6 @@ const History = () => {
       Peshawar and Islamabad — offering an array of programs that span
       undergraduate, graduate, and doctoral levels.
     </p>
-
-    <div style={{ clear: "both" }}></div>
 
      <p>
               Currently, the University runs approximately{" "}
@@ -118,7 +102,7 @@ const History = () => {
   </div>
 </div>
 
-      </div>
+
     </>
   );
 };
