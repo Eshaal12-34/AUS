@@ -74,12 +74,28 @@ const Contact = () => {
                           />
                         </svg>
                       </div>
-                      <div className="content">
-                        <p>Call Us 7/24</p>
-                        <h3>
-                          <a href="tel:+091-258-8777">+091-258-8777</a>
-                        </h3>
-                      </div>
+                <div 
+                className="content d-flex flex-column align-items-center"
+                style={{ width: "100%", textAlign: "center" }}
+              >
+                <p 
+                  className="mb-1 fs-6 fs-md-5"
+                  style={{ textAlign: "center" }}
+                >
+                  Call Us 24/7
+                </p>
+
+                <h3 className="fs-4 fs-md-4 mb-0 ">
+                  <a 
+                    href="tel:+091-258-8777"
+                    className="content"
+                  >
+                    +091-258-8777
+                  </a>
+                </h3>
+              </div>
+
+
                     </div>
                     <div className="contact-info-items mb-4">
                       <div className="icon">
@@ -104,21 +120,33 @@ const Contact = () => {
                           />
                         </svg>
                       </div>
-                       <div
+                                      
+                                  <div
+                    className="content "
+                    data-aos="fade-up"
+                    data-aos-delay="700"
+                  >
+                    <p 
+                      className="mb-1 fs-6 fs-md-5 " 
+                      style={{ textTransform: "none" }}
+                    >
+                      Email
+                    </p>
+                    <h3 
+                      className="fs-4 fs-md-5 fw-semibold" 
+                      style={{ textTransform: "none", wordBreak: "break-word" }}
+                    >
+                      <a
+                        href="mailto:abasynschool@abasyn.edu.pk"
                         className="content"
-                        data-aos="fade-up"
-                        data-aos-delay="700"
+                        style={{ textTransform: "none" }}
                       >
-                        <p style={{ textTransform: "none" }}>Email</p>
-                        <h3 style={{ textTransform: "none" }}>
-                          <a
-                            href="mailto:abasynschool@abasyn.edu.pk"
-                            style={{ textTransform: "none" }}
-                          >
-                            abasynschool@abasyn.edu.pk
-                          </a>
-                        </h3>
-                      </div>
+                        abasynschool@abasyn.edu.pk
+                      </a>
+                    </h3>
+                  </div>
+
+
                     </div>
                     <div className="contact-info-items border-none">
                       <div className="icon">

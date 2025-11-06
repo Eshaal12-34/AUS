@@ -170,6 +170,7 @@ const Header = () => {
                             <li><Link to="/about-us">About Us</Link></li>
                             <li><Link to="/vision-mission">Vision & Mission</Link></li>
                             <li><Link to="/message">Messages</Link></li>
+                            <li><Link to="/board-of-directors">Board Of Directors</Link></li>
                             <li><Link to="/history">History</Link></li>
                             <li><Link to="/parent-teacher-interaction">Parent-Teacher Interaction</Link></li>
                             <li><Link to="/faculty">Our Faculty</Link></li>

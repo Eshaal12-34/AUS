@@ -33,6 +33,7 @@ import Higher from "./pages/Highsec";
 import Fee from "./pages/Fees";
 import Scholarship from "./pages/ScholarshipTemp";
 import  Scrolltop from "./components/Scrolltop"
+import Bod from "./pages/Bod";
 function App() {
   useEffect(() => {
   AOS.init({
@@ -70,6 +71,7 @@ function App() {
           <Route path="higher-secondary-year" element={<Higher />}/>
           <Route path="fee-structure" element={<Fee />}/>
           <Route path="scholarships" element={<Scholarship />}/>
+          <Route path="board-of-directors" element={<Bod />}/>
         </Routes>
         <Footer />
       </div>
