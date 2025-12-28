@@ -58,7 +58,7 @@ const Message = () => {
         </div>
       </div>
 
-      {/* Principal's Message */}
+      {/* Principal's Message 
       <div className="container my-5">
         <h2 className="section-title text-center mb-5" data-aos="fade-up" data-aos-delay="300">
           Principal's Message
@@ -90,12 +90,12 @@ const Message = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div>*/}
 
       {/* Vice Principal's Message */}
       <div className="container my-5">
         <h2 className="section-title text-center mb-5" data-aos="fade-up" data-aos-delay="300">
-          Vice Principal's Message
+          Headmistress’s Message
         </h2>
 
         <div className="row align-items-center gy-4" data-aos="fade-up" data-aos-delay="200">
