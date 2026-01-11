@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Banner from "../components/Banner";
-
+import Banner from "../components/Facban";
 const CvDetails = () => {
   const { id } = useParams();
   const [cvData, setCvData] = useState(null);
